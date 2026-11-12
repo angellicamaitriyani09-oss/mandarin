@@ -1,0 +1,4450 @@
+{
+    "toneTrainer": [
+        {
+            "id": 1,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "妈",
+            "pinyin": "mā",
+            "tone": 1,
+            "audio": "妈",
+            "meaning": "Ibu \/ Mama",
+            "tip": "Nada 1: Datar tinggi & stabil seperti menyanyi laaa"
+        },
+        {
+            "id": 2,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "麻",
+            "pinyin": "má",
+            "tone": 2,
+            "audio": "麻",
+            "meaning": "Rami \/ Mati rasa",
+            "tip": "Nada 2: Meluncur naik seperti bertanya \"Hah?\""
+        },
+        {
+            "id": 3,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "马",
+            "pinyin": "mǎ",
+            "tone": 3,
+            "audio": "马",
+            "meaning": "Kuda",
+            "tip": "Nada 3: Turun rendah lalu naik sedikit (ayunan)"
+        },
+        {
+            "id": 4,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "骂",
+            "pinyin": "mà",
+            "tone": 4,
+            "audio": "骂",
+            "meaning": "Memarahi",
+            "tip": "Nada 4: Jatuh menukik tajam seperti penegasan!"
+        },
+        {
+            "id": 5,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "八",
+            "pinyin": "bā",
+            "tone": 1,
+            "audio": "八",
+            "meaning": "Delapan (8)",
+            "tip": "Nada 1: Datar tinggi"
+        },
+        {
+            "id": 6,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "拔",
+            "pinyin": "bá",
+            "tone": 2,
+            "audio": "拔",
+            "meaning": "Mencabut \/ Menarik",
+            "tip": "Nada 2: Meluncur naik dari nada sedang ke tinggi"
+        },
+        {
+            "id": 7,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "把",
+            "pinyin": "bǎ",
+            "tone": 3,
+            "audio": "把",
+            "meaning": "Menggenggam \/ Kata pengukur",
+            "tip": "Nada 3: Mengendap rendah di tenggorokan"
+        },
+        {
+            "id": 8,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "爸",
+            "pinyin": "bà",
+            "tone": 4,
+            "audio": "爸",
+            "meaning": "Ayah \/ Papa",
+            "tip": "Nada 4: Diucapkan tegas dan cepat dari tinggi ke rendah"
+        },
+        {
+            "id": 9,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "天",
+            "pinyin": "tiān",
+            "tone": 1,
+            "audio": "天",
+            "meaning": "Langit \/ Hari",
+            "tip": "Nada 1: Suara tinggi konstan"
+        },
+        {
+            "id": 10,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "甜",
+            "pinyin": "tián",
+            "tone": 2,
+            "audio": "甜",
+            "meaning": "Manis",
+            "tip": "Nada 2: Naik seperti senyuman manis"
+        },
+        {
+            "id": 11,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "tone": 3,
+            "audio": "你",
+            "meaning": "Kamu \/ Anda",
+            "tip": "Nada 3: Lengkung turun ke dasar lalu naik"
+        },
+        {
+            "id": 12,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "大",
+            "pinyin": "dà",
+            "tone": 4,
+            "audio": "大",
+            "meaning": "Besar",
+            "tip": "Nada 4: Tekan kuat menukik"
+        },
+        {
+            "id": 13,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "吃",
+            "pinyin": "chī",
+            "tone": 1,
+            "audio": "吃",
+            "meaning": "Makan",
+            "tip": "Nada 1: Datar stabil di puncak"
+        },
+        {
+            "id": 14,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "十",
+            "pinyin": "shí",
+            "tone": 2,
+            "audio": "十",
+            "meaning": "Sepuluh (10)",
+            "tip": "Nada 2: Meluncur naik tegas"
+        },
+        {
+            "id": 15,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "水",
+            "pinyin": "shuǐ",
+            "tone": 3,
+            "audio": "水",
+            "meaning": "Air",
+            "tip": "Nada 3: Lengkung lembut mengalir"
+        },
+        {
+            "id": 16,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "看",
+            "pinyin": "kàn",
+            "tone": 4,
+            "audio": "看",
+            "meaning": "Melihat \/ Menonton",
+            "tip": "Nada 4: Menukik tegas ke bawah"
+        },
+        {
+            "id": 17,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "三",
+            "pinyin": "sān",
+            "tone": 1,
+            "audio": "三",
+            "meaning": "Tiga (3)",
+            "tip": "Nada 1: Datar jernih"
+        },
+        {
+            "id": 18,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "白",
+            "pinyin": "bái",
+            "tone": 2,
+            "audio": "白",
+            "meaning": "Putih",
+            "tip": "Nada 2: Meluncur naik jernih"
+        },
+        {
+            "id": 19,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "好",
+            "pinyin": "hǎo",
+            "tone": 3,
+            "audio": "好",
+            "meaning": "Baik \/ Bagus",
+            "tip": "Nada 3: Ayunan rendah khas salam"
+        },
+        {
+            "id": 20,
+            "level": 1,
+            "difficulty": "easy",
+            "hanzi": "不",
+            "pinyin": "bù",
+            "tone": 4,
+            "audio": "不",
+            "meaning": "Tidak \/ Bukan",
+            "tip": "Nada 4: Penolakan singkat menukik tajam"
+        },
+        {
+            "id": 21,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "歌",
+            "pinyin": "gē",
+            "tone": 1,
+            "audio": "歌",
+            "meaning": "Lagu",
+            "tip": "Nada 1: Bernyanyi dengan nada datar"
+        },
+        {
+            "id": 22,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "红",
+            "pinyin": "hóng",
+            "tone": 2,
+            "audio": "红",
+            "meaning": "Merah",
+            "tip": "Nada 2: Meluncur naik penuh semangat"
+        },
+        {
+            "id": 23,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "买",
+            "pinyin": "mǎi",
+            "tone": 3,
+            "audio": "买",
+            "meaning": "Membeli",
+            "tip": "Nada 3: Ingat turun-naik saat menawar belanja"
+        },
+        {
+            "id": 24,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "卖",
+            "pinyin": "mài",
+            "tone": 4,
+            "audio": "卖",
+            "meaning": "Menjual",
+            "tip": "Nada 4: Lawan kata dari mǎi, diucapkan tegas mài!"
+        },
+        {
+            "id": 25,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "新",
+            "pinyin": "xīn",
+            "tone": 1,
+            "audio": "新",
+            "meaning": "Baru",
+            "tip": "Nada 1: Cerah dan tinggi"
+        },
+        {
+            "id": 26,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "房",
+            "pinyin": "fáng",
+            "tone": 2,
+            "audio": "房",
+            "meaning": "Rumah \/ Kamar",
+            "tip": "Nada 2: Mengalun naik lembut"
+        },
+        {
+            "id": 27,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "走",
+            "pinyin": "zǒu",
+            "tone": 3,
+            "audio": "走",
+            "meaning": "Berjalan \/ Pergi",
+            "tip": "Nada 3: Melangkah turun lalu naik"
+        },
+        {
+            "id": 28,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "跳",
+            "pinyin": "tiào",
+            "tone": 4,
+            "audio": "跳",
+            "meaning": "Melompat",
+            "tip": "Nada 4: Hentakan menukik seperti melompat"
+        },
+        {
+            "id": 29,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "春",
+            "pinyin": "chūn",
+            "tone": 1,
+            "audio": "春",
+            "meaning": "Musim Semi",
+            "tip": "Nada 1: Tenang, hangat dan datar"
+        },
+        {
+            "id": 30,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "鱼",
+            "pinyin": "yú",
+            "tone": 2,
+            "audio": "鱼",
+            "meaning": "Ikan",
+            "tip": "Nada 2: Berenang meluncur naik ke permukaan"
+        },
+        {
+            "id": 31,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "雨",
+            "pinyin": "yǔ",
+            "tone": 3,
+            "audio": "雨",
+            "meaning": "Hujan",
+            "tip": "Nada 3: Tetesan air turun ke dasar lembah"
+        },
+        {
+            "id": 32,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "热",
+            "pinyin": "rè",
+            "tone": 4,
+            "audio": "热",
+            "meaning": "Panas",
+            "tip": "Nada 4: Sentakan panas menukik"
+        },
+        {
+            "id": 33,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "车",
+            "pinyin": "chē",
+            "tone": 1,
+            "audio": "车",
+            "meaning": "Mobil \/ Kendaraan",
+            "tip": "Nada 1: Datar panjang seperti bunyi klakson"
+        },
+        {
+            "id": 34,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "茶",
+            "pinyin": "chá",
+            "tone": 2,
+            "audio": "茶",
+            "meaning": "Teh",
+            "tip": "Nada 2: Hirup aroma teh meluncur naik"
+        },
+        {
+            "id": 35,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "洗",
+            "pinyin": "xǐ",
+            "tone": 3,
+            "audio": "洗",
+            "meaning": "Mencuci",
+            "tip": "Nada 3: Gesekan mencuci turun-naik"
+        },
+        {
+            "id": 36,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "笑",
+            "pinyin": "xiào",
+            "tone": 4,
+            "audio": "笑",
+            "meaning": "Tertawa \/ Tersenyum",
+            "tip": "Nada 4: Letupan tawa menukik"
+        },
+        {
+            "id": 37,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "高",
+            "pinyin": "gāo",
+            "tone": 1,
+            "audio": "高",
+            "meaning": "Tinggi",
+            "tip": "Nada 1: Datar di puncak tertinggi"
+        },
+        {
+            "id": 38,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "学",
+            "pinyin": "xué",
+            "tone": 2,
+            "audio": "学",
+            "meaning": "Belajar",
+            "tip": "Nada 2: Menuntut ilmu naik ke atas"
+        },
+        {
+            "id": 39,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "小",
+            "pinyin": "xiǎo",
+            "tone": 3,
+            "audio": "小",
+            "meaning": "Kecil",
+            "tip": "Nada 3: Merendah kecil lalu naik tipis"
+        },
+        {
+            "id": 40,
+            "level": 2,
+            "difficulty": "easy",
+            "hanzi": "去",
+            "pinyin": "qù",
+            "tone": 4,
+            "audio": "去",
+            "meaning": "Pergi",
+            "tip": "Nada 4: Melangkah pergi tegas!"
+        },
+        {
+            "id": 41,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "安",
+            "pinyin": "ān",
+            "tone": 1,
+            "audio": "安",
+            "meaning": "Aman \/ Tenang",
+            "tip": "Nada 1: Damai, datar dan stabil"
+        },
+        {
+            "id": 42,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "爬",
+            "pinyin": "pá",
+            "tone": 2,
+            "audio": "爬",
+            "meaning": "Memanjat \/ Merangkak",
+            "tip": "Nada 2: Mendaki naik ke atas bukit"
+        },
+        {
+            "id": 43,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "懂",
+            "pinyin": "dǒng",
+            "tone": 3,
+            "audio": "懂",
+            "meaning": "Mengerti \/ Paham",
+            "tip": "Nada 3: Mengangguk paham turun-naik"
+        },
+        {
+            "id": 44,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "照",
+            "pinyin": "zhào",
+            "tone": 4,
+            "audio": "照",
+            "meaning": "Menyinari \/ Memotret",
+            "tip": "Nada 4: Kilatan blitz menukik tegas"
+        },
+        {
+            "id": 45,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "班",
+            "pinyin": "bān",
+            "tone": 1,
+            "audio": "班",
+            "meaning": "Kelas \/ Shift Kerja",
+            "tip": "Nada 1: Tegak rapi berbaris"
+        },
+        {
+            "id": 46,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "词",
+            "pinyin": "cí",
+            "tone": 2,
+            "audio": "词",
+            "meaning": "Kata \/ Kosakata",
+            "tip": "Nada 2: Ucapan meluncur naik"
+        },
+        {
+            "id": 47,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "渴",
+            "pinyin": "kě",
+            "tone": 3,
+            "audio": "渴",
+            "meaning": "Haus",
+            "tip": "Nada 3: Tenggorokan kering mengendap rendah"
+        },
+        {
+            "id": 48,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "借",
+            "pinyin": "jiè",
+            "tone": 4,
+            "audio": "借",
+            "meaning": "Meminjam",
+            "tip": "Nada 4: Perjanjian tegas meminjam"
+        },
+        {
+            "id": 49,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "包",
+            "pinyin": "bāo",
+            "tone": 1,
+            "audio": "包",
+            "meaning": "Tas \/ Membungkus",
+            "tip": "Nada 1: Datar melingkupi bungkusan"
+        },
+        {
+            "id": 50,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "蓝",
+            "pinyin": "lán",
+            "tone": 2,
+            "audio": "蓝",
+            "meaning": "Biru",
+            "tip": "Nada 2: Mengarungi langit biru naik"
+        },
+        {
+            "id": 51,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "选",
+            "pinyin": "xuǎn",
+            "tone": 3,
+            "audio": "选",
+            "meaning": "Memilih",
+            "tip": "Nada 3: Menimbang pilihan turun dan naik"
+        },
+        {
+            "id": 52,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "绿",
+            "pinyin": "lǜ",
+            "tone": 4,
+            "audio": "绿",
+            "meaning": "Hijau",
+            "tip": "Nada 4: Daun hijau segar menancap"
+        },
+        {
+            "id": 53,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "刷",
+            "pinyin": "shuā",
+            "tone": 1,
+            "audio": "刷",
+            "meaning": "Menyikat",
+            "tip": "Nada 1: Gesekan sikat datar berulang"
+        },
+        {
+            "id": 54,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "查",
+            "pinyin": "chá",
+            "tone": 2,
+            "audio": "查",
+            "meaning": "Memeriksa",
+            "tip": "Nada 2: Meneliti naik ke atas"
+        },
+        {
+            "id": 55,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "草",
+            "pinyin": "cǎo",
+            "tone": 3,
+            "audio": "草",
+            "meaning": "Rumput",
+            "tip": "Nada 3: Tumbuh rendah di tanah lalu naik"
+        },
+        {
+            "id": 56,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "试",
+            "pinyin": "shì",
+            "tone": 4,
+            "audio": "试",
+            "meaning": "Mencoba \/ Ujian",
+            "tip": "Nada 4: Hentakan mantap mencoba"
+        },
+        {
+            "id": 57,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "花",
+            "pinyin": "huā",
+            "tone": 1,
+            "audio": "花",
+            "meaning": "Bunga",
+            "tip": "Nada 1: Kelopak mekar di udara tinggi"
+        },
+        {
+            "id": 58,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "晴",
+            "pinyin": "qíng",
+            "tone": 2,
+            "audio": "晴",
+            "meaning": "Cerah",
+            "tip": "Nada 2: Mentari terbit meluncur naik"
+        },
+        {
+            "id": 59,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "久",
+            "pinyin": "jiǔ",
+            "tone": 3,
+            "audio": "久",
+            "meaning": "Lama",
+            "tip": "Nada 3: Waktu mengendap dalam dan panjang"
+        },
+        {
+            "id": 60,
+            "level": 3,
+            "difficulty": "medium",
+            "hanzi": "病",
+            "pinyin": "bìng",
+            "tone": 4,
+            "audio": "病",
+            "meaning": "Sakit",
+            "tip": "Nada 4: Hentakan rasa sakit menukik"
+        },
+        {
+            "id": 61,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "商",
+            "pinyin": "shāng",
+            "tone": 1,
+            "audio": "商",
+            "meaning": "Bisnis \/ Perdagangan",
+            "tip": "Nada 1: Transaksi bernilai tinggi dan stabil"
+        },
+        {
+            "id": 62,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "研",
+            "pinyin": "yán",
+            "tone": 2,
+            "audio": "研",
+            "meaning": "Mengkaji \/ Meneliti",
+            "tip": "Nada 2: Analisis mendalam meluncur naik"
+        },
+        {
+            "id": 63,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "准",
+            "pinyin": "zhǔn",
+            "tone": 3,
+            "audio": "准",
+            "meaning": "Akurat \/ Izin",
+            "tip": "Nada 3: Target presisi dengan ayunan nada"
+        },
+        {
+            "id": 64,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "律",
+            "pinyin": "lǜ",
+            "tone": 4,
+            "audio": "律",
+            "meaning": "Hukum \/ Aturan",
+            "tip": "Nada 4: Ketuk palu hukum menukik adil"
+        },
+        {
+            "id": 65,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "邀",
+            "pinyin": "yāo",
+            "tone": 1,
+            "audio": "邀",
+            "meaning": "Mengundang",
+            "tip": "Nada 1: Memanggil ramah di nada tinggi"
+        },
+        {
+            "id": 66,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "穷",
+            "pinyin": "qióng",
+            "tone": 2,
+            "audio": "穷",
+            "meaning": "Miskin \/ Habis",
+            "tip": "Nada 2: Berjuang naik dari keterbatasan"
+        },
+        {
+            "id": 67,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "省",
+            "pinyin": "shěng",
+            "tone": 3,
+            "audio": "省",
+            "meaning": "Hemat \/ Provinsi",
+            "tip": "Nada 3: Menabung hemat turun rendah"
+        },
+        {
+            "id": 68,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "拒",
+            "pinyin": "jù",
+            "tone": 4,
+            "audio": "拒",
+            "meaning": "Menolak",
+            "tip": "Nada 4: Penolakan tegas dan keras"
+        },
+        {
+            "id": 69,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "抽",
+            "pinyin": "chōu",
+            "tone": 1,
+            "audio": "抽",
+            "meaning": "Menarik keluar \/ Mengundi",
+            "tip": "Nada 1: Menarik lurus seimbang"
+        },
+        {
+            "id": 70,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "赢",
+            "pinyin": "yíng",
+            "tone": 2,
+            "audio": "赢",
+            "meaning": "Menang",
+            "tip": "Nada 2: Sorak kemenangan meluncur ke atas"
+        },
+        {
+            "id": 71,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "奖",
+            "pinyin": "jiǎng",
+            "tone": 3,
+            "audio": "奖",
+            "meaning": "Penghargaan \/ Hadiah",
+            "tip": "Nada 3: Menerima piala dengan hormat"
+        },
+        {
+            "id": 72,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "骗",
+            "pinyin": "piàn",
+            "tone": 4,
+            "audio": "骗",
+            "meaning": "Menipu",
+            "tip": "Nada 4: Jebakan menukik tiba-tiba"
+        },
+        {
+            "id": 73,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "专",
+            "pinyin": "zhuān",
+            "tone": 1,
+            "audio": "专",
+            "meaning": "Khusus \/ Ahli",
+            "tip": "Nada 1: Fokus satu arah datar"
+        },
+        {
+            "id": 74,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "寒",
+            "pinyin": "hán",
+            "tone": 2,
+            "audio": "寒",
+            "meaning": "Dingin menggigil",
+            "tip": "Nada 2: Angin dingin berhembus naik"
+        },
+        {
+            "id": 75,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "网",
+            "pinyin": "wǎng",
+            "tone": 3,
+            "audio": "网",
+            "meaning": "Jaring \/ Internet",
+            "tip": "Nada 3: Melengkung seperti jaring nelayan"
+        },
+        {
+            "id": 76,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "替",
+            "pinyin": "tì",
+            "tone": 4,
+            "audio": "替",
+            "meaning": "Menggantikan",
+            "tip": "Nada 4: Mengambil alih peran tegas"
+        },
+        {
+            "id": 77,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "遵",
+            "pinyin": "zūn",
+            "tone": 1,
+            "audio": "遵",
+            "meaning": "Mematuhi",
+            "tip": "Nada 1: Konsisten mematuhi aturan"
+        },
+        {
+            "id": 78,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "符",
+            "pinyin": "fú",
+            "tone": 2,
+            "audio": "符",
+            "meaning": "Sesuai \/ Simbol",
+            "tip": "Nada 2: Selaras naik bersamaan"
+        },
+        {
+            "id": 79,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "免",
+            "pinyin": "miǎn",
+            "tone": 3,
+            "audio": "免",
+            "meaning": "Bebas \/ Menghindari",
+            "tip": "Nada 3: Terhindar dari jurang"
+        },
+        {
+            "id": 80,
+            "level": 4,
+            "difficulty": "medium",
+            "hanzi": "赞",
+            "pinyin": "zàn",
+            "tone": 4,
+            "audio": "赞",
+            "meaning": "Pujian \/ Like",
+            "tip": "Nada 4: Jempol apresiasi menukik kuat"
+        },
+        {
+            "id": 81,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "咨",
+            "pinyin": "zī",
+            "tone": 1,
+            "audio": "咨",
+            "meaning": "Konsultasi",
+            "tip": "Nada 1: Diskusi formal di nada tinggi"
+        },
+        {
+            "id": 82,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "勤",
+            "pinyin": "qín",
+            "tone": 2,
+            "audio": "勤",
+            "meaning": "Rajin \/ Tekun",
+            "tip": "Nada 2: Langkah tekun menanjak prestasi"
+        },
+        {
+            "id": 83,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "审",
+            "pinyin": "shěn",
+            "tone": 3,
+            "audio": "审",
+            "meaning": "Memeriksa \/ Mengadili",
+            "tip": "Nada 3: Kehati-hatian hakim menimbang perkara"
+        },
+        {
+            "id": 84,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "魄",
+            "pinyin": "pò",
+            "tone": 4,
+            "audio": "魄",
+            "meaning": "Jiwa \/ Keberanian",
+            "tip": "Nada 4: Tekad keberanian membara"
+        },
+        {
+            "id": 85,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "宣",
+            "pinyin": "xuān",
+            "tone": 1,
+            "audio": "宣",
+            "meaning": "Mengumumkan",
+            "tip": "Nada 1: Suara proklamasi lantang"
+        },
+        {
+            "id": 86,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "详",
+            "pinyin": "xiáng",
+            "tone": 2,
+            "audio": "详",
+            "meaning": "Rinci \/ Detail",
+            "tip": "Nada 2: Penjelasan runut melangkah naik"
+        },
+        {
+            "id": 87,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "稳",
+            "pinyin": "wěn",
+            "tone": 3,
+            "audio": "稳",
+            "meaning": "Stabil \/ Mantap",
+            "tip": "Nada 3: Kaki berpijak kokoh di tanah"
+        },
+        {
+            "id": 88,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "策",
+            "pinyin": "cè",
+            "tone": 4,
+            "audio": "策",
+            "meaning": "Strategi \/ Taktik",
+            "tip": "Nada 4: Keputusan manuver cerdas"
+        },
+        {
+            "id": 89,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "倾",
+            "pinyin": "qīng",
+            "tone": 1,
+            "audio": "倾",
+            "meaning": "Condong \/ Tertumpah",
+            "tip": "Nada 1: Kemiringan sudut di atas"
+        },
+        {
+            "id": 90,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "凭",
+            "pinyin": "píng",
+            "tone": 2,
+            "audio": "凭",
+            "meaning": "Berdasarkan \/ Bukti",
+            "tip": "Nada 2: Bukti kuat menopang ke atas"
+        },
+        {
+            "id": 91,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "妥",
+            "pinyin": "tuǒ",
+            "tone": 3,
+            "audio": "妥",
+            "meaning": "Tepat \/ Kompromi",
+            "tip": "Nada 3: Penataan pas dan seimbang"
+        },
+        {
+            "id": 92,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "劣",
+            "pinyin": "liè",
+            "tone": 4,
+            "audio": "劣",
+            "meaning": "Inferior \/ Buruk",
+            "tip": "Nada 4: Jatuh ke bawah standar"
+        },
+        {
+            "id": 93,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "兼",
+            "pinyin": "jiān",
+            "tone": 1,
+            "audio": "兼",
+            "meaning": "Merangkap \/ Bersamaan",
+            "tip": "Nada 1: Menjinjing dua peran sejajar"
+        },
+        {
+            "id": 94,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "筹",
+            "pinyin": "chóu",
+            "tone": 2,
+            "audio": "筹",
+            "meaning": "Menggalang dana \/ Rencana",
+            "tip": "Nada 2: Modal bertambah naik"
+        },
+        {
+            "id": 95,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "抚",
+            "pinyin": "fǔ",
+            "tone": 3,
+            "audio": "抚",
+            "meaning": "Membelai \/ Menghibur",
+            "tip": "Nada 3: Elusan tangan lembut menenangkan"
+        },
+        {
+            "id": 96,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "措",
+            "pinyin": "cuò",
+            "tone": 4,
+            "audio": "措",
+            "meaning": "Langkah \/ Tindakan",
+            "tip": "Nada 4: Tindakan sigap dan presisi"
+        },
+        {
+            "id": 97,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "衰",
+            "pinyin": "shuāi",
+            "tone": 1,
+            "audio": "衰",
+            "meaning": "Melemah \/ Menurun",
+            "tip": "Nada 1: Hembusan napas tua yang redup"
+        },
+        {
+            "id": 98,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "循",
+            "pinyin": "xún",
+            "tone": 2,
+            "audio": "循",
+            "meaning": "Mengikuti alur \/ Siklus",
+            "tip": "Nada 2: Putaran roda berputar naik"
+        },
+        {
+            "id": 99,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "伪",
+            "pinyin": "wěi",
+            "tone": 3,
+            "audio": "伪",
+            "meaning": "Palsu \/ Tiruan",
+            "tip": "Nada 3: Topeng kepalsuan yang tersingkap"
+        },
+        {
+            "id": 100,
+            "level": 5,
+            "difficulty": "hard",
+            "hanzi": "魄",
+            "pinyin": "pò",
+            "tone": 4,
+            "audio": "魄",
+            "meaning": "Kharisma batin",
+            "tip": "Nada 4: Pancaran wibawa kuat"
+        },
+        {
+            "id": 101,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "渊",
+            "pinyin": "yuān",
+            "tone": 1,
+            "audio": "渊",
+            "meaning": "Palung dalam \/ Luas",
+            "tip": "Nada 1: Hamparan samudra pengetahuan tak bertepi"
+        },
+        {
+            "id": 102,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "韶",
+            "pinyin": "sháo",
+            "tone": 2,
+            "audio": "韶",
+            "meaning": "Indah \/ Masa muda",
+            "tip": "Nada 2: Melodi masa muda yang mekar"
+        },
+        {
+            "id": 103,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "揣",
+            "pinyin": "chuǎi",
+            "tone": 3,
+            "audio": "揣",
+            "meaning": "Menebak \/ Meraba batin",
+            "tip": "Nada 3: Kontemplasi sunyi yang mendalam"
+        },
+        {
+            "id": 104,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "魄",
+            "pinyin": "pò",
+            "tone": 4,
+            "audio": "魄",
+            "meaning": "Jiwa kepahlawanan",
+            "tip": "Nada 4: Dentuman pedang ksatria"
+        },
+        {
+            "id": 105,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "韬",
+            "pinyin": "tāo",
+            "tone": 1,
+            "audio": "韬",
+            "meaning": "Menyembunyikan bakat",
+            "tip": "Nada 1: Pedang tersarung tenang dalam selubung"
+        },
+        {
+            "id": 106,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "缭",
+            "pinyin": "liáo",
+            "tone": 2,
+            "audio": "缭",
+            "meaning": "Melilit \/ Mempesona",
+            "tip": "Nada 2: Asap dupa meliuk naik memukau"
+        },
+        {
+            "id": 107,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "抚",
+            "pinyin": "fǔ",
+            "tone": 3,
+            "audio": "抚",
+            "meaning": "Memelihara rakyat",
+            "tip": "Nada 3: Pengayoman pemimpin yang welas asih"
+        },
+        {
+            "id": 108,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "睿",
+            "pinyin": "ruì",
+            "tone": 4,
+            "audio": "睿",
+            "meaning": "Bijaksana \/ Visioner",
+            "tip": "Nada 4: Mata tajam elang membaca masa depan"
+        },
+        {
+            "id": 109,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "铿",
+            "pinyin": "kēng",
+            "tone": 1,
+            "audio": "铿",
+            "meaning": "Dentingan logam merdu",
+            "tip": "Nada 1: Gemerincing lonceng perunggu istana"
+        },
+        {
+            "id": 110,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "嶙",
+            "pinyin": "lín",
+            "tone": 2,
+            "audio": "嶙",
+            "meaning": "Batu terjal curam",
+            "tip": "Nada 2: Tebing karang menjulang menantang langit"
+        },
+        {
+            "id": 111,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "砥",
+            "pinyin": "dǐ",
+            "tone": 3,
+            "audio": "砥",
+            "meaning": "Batu asah \/ Penopang",
+            "tip": "Nada 3: Pondasi karang kokoh diterpa gelombang"
+        },
+        {
+            "id": 112,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "砺",
+            "pinyin": "lì",
+            "tone": 4,
+            "audio": "砺",
+            "meaning": "Mengasah diri keras",
+            "tip": "Nada 4: Gesekan keras membentuk permata mulia"
+        },
+        {
+            "id": 113,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "泱",
+            "pinyin": "yāng",
+            "tone": 1,
+            "audio": "泱",
+            "meaning": "Megah \/ Luas membentang",
+            "tip": "Nada 1: Aliran sungai besar yang abadi"
+        },
+        {
+            "id": 114,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "淳",
+            "pinyin": "chún",
+            "tone": 2,
+            "audio": "淳",
+            "meaning": "Tulus murni \/ Sederhana",
+            "tip": "Nada 2: Kejujuran mata air pegunungan yang jernih"
+        },
+        {
+            "id": 115,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "笃",
+            "pinyin": "dǔ",
+            "tone": 3,
+            "audio": "笃",
+            "meaning": "Setia teguh \/ Sungguh-sungguh",
+            "tip": "Nada 3: Janji suci yang terpatri dalam jiwa"
+        },
+        {
+            "id": 116,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "邃",
+            "pinyin": "suì",
+            "tone": 4,
+            "audio": "邃",
+            "meaning": "Misteri mendalam \/ Filosofis",
+            "tip": "Nada 4: Lorong hikmah kuno yang menembus zaman"
+        },
+        {
+            "id": 117,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "逍",
+            "pinyin": "xiāo",
+            "tone": 1,
+            "audio": "逍",
+            "meaning": "Bebas leluasa \/ Melanglang",
+            "tip": "Nada 1: Terbang bebas bagai burung rajawali"
+        },
+        {
+            "id": 118,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "遥",
+            "pinyin": "yáo",
+            "tone": 2,
+            "audio": "遥",
+            "meaning": "Jauh di cakrawala",
+            "tip": "Nada 2: Melintasi bintang di langit luas"
+        },
+        {
+            "id": 119,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "渺",
+            "pinyin": "miǎo",
+            "tone": 3,
+            "audio": "渺",
+            "meaning": "Kecil di alam semesta",
+            "tip": "Nada 3: Butiran debu di tengah keluasan kosmos"
+        },
+        {
+            "id": 120,
+            "level": 6,
+            "difficulty": "hard",
+            "hanzi": "阔",
+            "pinyin": "kuò",
+            "tone": 4,
+            "audio": "阔",
+            "meaning": "Lapang berjiwa besar",
+            "tip": "Nada 4: Samudra luas memeluk seribu sungai"
+        }
+    ],
+    "wordLink": [
+        {
+            "id": 1,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "电",
+            "pB": "脑",
+            "hanzi": "电脑",
+            "pinyin": "diàn nǎo",
+            "meaning": "Komputer (Listrik + Otak)"
+        },
+        {
+            "id": 2,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "手",
+            "pB": "机",
+            "hanzi": "手机",
+            "pinyin": "shǒu jī",
+            "meaning": "Ponsel \/ HP (Tangan + Mesin)"
+        },
+        {
+            "id": 3,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "飞",
+            "pB": "机",
+            "hanzi": "飞机",
+            "pinyin": "fēi jī",
+            "meaning": "Pesawat Terbang (Terbang + Mesin)"
+        },
+        {
+            "id": 4,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "电",
+            "pB": "视",
+            "hanzi": "电视",
+            "pinyin": "diàn shì",
+            "meaning": "Televisi (Listrik + Penglihatan)"
+        },
+        {
+            "id": 5,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "电",
+            "pB": "影",
+            "hanzi": "电影",
+            "pinyin": "diàn yǐng",
+            "meaning": "Film \/ Bioskop (Listrik + Bayangan)"
+        },
+        {
+            "id": 6,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "火",
+            "pB": "车",
+            "hanzi": "火车",
+            "pinyin": "huǒ chē",
+            "meaning": "Kereta Api (Api + Kendaraan)"
+        },
+        {
+            "id": 7,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "学",
+            "pB": "校",
+            "hanzi": "学校",
+            "pinyin": "xué xiào",
+            "meaning": "Sekolah (Belajar + Lembaga)"
+        },
+        {
+            "id": 8,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "老",
+            "pB": "师",
+            "hanzi": "老师",
+            "pinyin": "lǎo shī",
+            "meaning": "Guru \/ Pengajar (Tua\/Dihormati + Master)"
+        },
+        {
+            "id": 9,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "朋",
+            "pB": "友",
+            "hanzi": "朋友",
+            "pinyin": "péng you",
+            "meaning": "Teman \/ Sahabat (Rekan + Kawan)"
+        },
+        {
+            "id": 10,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "天",
+            "pB": "气",
+            "hanzi": "天气",
+            "pinyin": "tiān qì",
+            "meaning": "Cuaca (Langit + Hawa Udara)"
+        },
+        {
+            "id": 11,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "衣",
+            "pB": "服",
+            "hanzi": "衣服",
+            "pinyin": "yī fu",
+            "meaning": "Pakaian \/ Baju"
+        },
+        {
+            "id": 12,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "桌",
+            "pB": "子",
+            "hanzi": "桌子",
+            "pinyin": "zhuō zi",
+            "meaning": "Meja"
+        },
+        {
+            "id": 13,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "椅",
+            "pB": "子",
+            "hanzi": "椅子",
+            "pinyin": "yǐ zi",
+            "meaning": "Kursi"
+        },
+        {
+            "id": 14,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "房",
+            "pB": "间",
+            "hanzi": "房间",
+            "pinyin": "fáng jiān",
+            "meaning": "Kamar \/ Ruangan"
+        },
+        {
+            "id": 15,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "钟",
+            "pB": "表",
+            "hanzi": "钟表",
+            "pinyin": "zhōng biǎo",
+            "meaning": "Jam dinding \/ Arloji"
+        },
+        {
+            "id": 16,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "太",
+            "pB": "阳",
+            "hanzi": "太阳",
+            "pinyin": "tài yáng",
+            "meaning": "Matahari"
+        },
+        {
+            "id": 17,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "月",
+            "pB": "亮",
+            "hanzi": "月亮",
+            "pinyin": "yuè liang",
+            "meaning": "Bulan di Langit"
+        },
+        {
+            "id": 18,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "眼",
+            "pB": "睛",
+            "hanzi": "眼睛",
+            "pinyin": "yǎn jing",
+            "meaning": "Mata"
+        },
+        {
+            "id": 19,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "身",
+            "pB": "体",
+            "hanzi": "身体",
+            "pinyin": "shēn tǐ",
+            "meaning": "Tubuh \/ Kesehatan"
+        },
+        {
+            "id": 20,
+            "category": "cat1",
+            "difficulty": "easy",
+            "pA": "名",
+            "pB": "字",
+            "hanzi": "名字",
+            "pinyin": "míng zi",
+            "meaning": "Nama Lengkap"
+        },
+        {
+            "id": 21,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "牛",
+            "pB": "奶",
+            "hanzi": "牛奶",
+            "pinyin": "niú nǎi",
+            "meaning": "Susu Sapi (Sapi + Susu)"
+        },
+        {
+            "id": 22,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "面",
+            "pB": "包",
+            "hanzi": "面包",
+            "pinyin": "miàn bāo",
+            "meaning": "Roti (Tepung + Bungkus)"
+        },
+        {
+            "id": 23,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "苹",
+            "pB": "果",
+            "hanzi": "苹果",
+            "pinyin": "píng guǒ",
+            "meaning": "Buah Apel"
+        },
+        {
+            "id": 24,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "西",
+            "pB": "瓜",
+            "hanzi": "西瓜",
+            "pinyin": "xī guā",
+            "meaning": "Semangka (Barat + Melon)"
+        },
+        {
+            "id": 25,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "面",
+            "pB": "条",
+            "hanzi": "面条",
+            "pinyin": "miàn tiáo",
+            "meaning": "Mie (Tepung + Helai)"
+        },
+        {
+            "id": 26,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "鸡",
+            "pB": "蛋",
+            "hanzi": "鸡蛋",
+            "pinyin": "jī dàn",
+            "meaning": "Telur Ayam (Ayam + Telur)"
+        },
+        {
+            "id": 27,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "茶",
+            "pB": "叶",
+            "hanzi": "茶叶",
+            "pinyin": "chá yè",
+            "meaning": "Daun Teh"
+        },
+        {
+            "id": 28,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "果",
+            "pB": "汁",
+            "hanzi": "果汁",
+            "pinyin": "guǒ zhī",
+            "meaning": "Jus Buah (Buah + Sari)"
+        },
+        {
+            "id": 29,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "咖",
+            "pB": "啡",
+            "hanzi": "咖啡",
+            "pinyin": "kā fēi",
+            "meaning": "Kopi"
+        },
+        {
+            "id": 30,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "米",
+            "pB": "饭",
+            "hanzi": "米饭",
+            "pinyin": "mǐ fàn",
+            "meaning": "Nasi Putih Matang"
+        },
+        {
+            "id": 31,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "香",
+            "pB": "蕉",
+            "hanzi": "香蕉",
+            "pinyin": "xiāng jiāo",
+            "meaning": "Pisang"
+        },
+        {
+            "id": 32,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "葡",
+            "pB": "萄",
+            "hanzi": "葡萄",
+            "pinyin": "pú tao",
+            "meaning": "Anggur"
+        },
+        {
+            "id": 33,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "羊",
+            "pB": "肉",
+            "hanzi": "羊肉",
+            "pinyin": "yáng ròu",
+            "meaning": "Daging Kambing"
+        },
+        {
+            "id": 34,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "牛",
+            "pB": "肉",
+            "hanzi": "牛肉",
+            "pinyin": "niú ròu",
+            "meaning": "Daging Sapi"
+        },
+        {
+            "id": 35,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "鱼",
+            "pB": "肉",
+            "hanzi": "鱼肉",
+            "pinyin": "yú ròu",
+            "meaning": "Daging Ikan"
+        },
+        {
+            "id": 36,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "蛋",
+            "pB": "糕",
+            "hanzi": "蛋糕",
+            "pinyin": "dàn gāo",
+            "meaning": "Kue Bolu \/ Cake"
+        },
+        {
+            "id": 37,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "豆",
+            "pB": "腐",
+            "hanzi": "豆腐",
+            "pinyin": "dòu fu",
+            "meaning": "Tahu"
+        },
+        {
+            "id": 38,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "饺",
+            "pB": "子",
+            "hanzi": "饺子",
+            "pinyin": "jiǎo zi",
+            "meaning": "Pangsit \/ Dumpling"
+        },
+        {
+            "id": 39,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "蔬",
+            "pB": "菜",
+            "hanzi": "蔬菜",
+            "pinyin": "shū cài",
+            "meaning": "Sayur-sayuran"
+        },
+        {
+            "id": 40,
+            "category": "cat2",
+            "difficulty": "easy",
+            "pA": "草",
+            "pB": "莓",
+            "hanzi": "草莓",
+            "pinyin": "cǎo méi",
+            "meaning": "Stroberi"
+        },
+        {
+            "id": 41,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "机",
+            "pB": "场",
+            "hanzi": "机场",
+            "pinyin": "jī chǎng",
+            "meaning": "Bandara (Pesawat + Lapangan)"
+        },
+        {
+            "id": 42,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "地",
+            "pB": "铁",
+            "hanzi": "地铁",
+            "pinyin": "dì tiě",
+            "meaning": "MRT \/ Kereta Bawah Tanah (Bumi + Besi)"
+        },
+        {
+            "id": 43,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "出",
+            "pB": "租",
+            "hanzi": "出租",
+            "pinyin": "chū zū",
+            "meaning": "Rental \/ Taksi (Keluar + Sewa)"
+        },
+        {
+            "id": 44,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "宾",
+            "pB": "馆",
+            "hanzi": "宾馆",
+            "pinyin": "bīn guǎn",
+            "meaning": "Hotel \/ Penginapan (Tamu + Gedung)"
+        },
+        {
+            "id": 45,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "行",
+            "pB": "李",
+            "hanzi": "行李",
+            "pinyin": "xíng li",
+            "meaning": "Koper \/ Bagasi Perjalanan"
+        },
+        {
+            "id": 46,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "地",
+            "pB": "图",
+            "hanzi": "地图",
+            "pinyin": "dì tú",
+            "meaning": "Peta Lokasi (Bumi + Gambar)"
+        },
+        {
+            "id": 47,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "超",
+            "pB": "市",
+            "hanzi": "超市",
+            "pinyin": "chāo shì",
+            "meaning": "Supermarket (Super + Pasar)"
+        },
+        {
+            "id": 48,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "银",
+            "pB": "行",
+            "hanzi": "银行",
+            "pinyin": "yín háng",
+            "meaning": "Bank Keuangan (Perak + Perusahaan)"
+        },
+        {
+            "id": 49,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "公",
+            "pB": "园",
+            "hanzi": "公园",
+            "pinyin": "gōng yuán",
+            "meaning": "Taman Publik (Umum + Kebun)"
+        },
+        {
+            "id": 50,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "饭",
+            "pB": "店",
+            "hanzi": "饭店",
+            "pinyin": "fàn diàn",
+            "meaning": "Restoran \/ Rumah Makan"
+        },
+        {
+            "id": 51,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "护",
+            "pB": "照",
+            "hanzi": "护照",
+            "pinyin": "hù zhào",
+            "meaning": "Paspor (Lindung + Foto Izin)"
+        },
+        {
+            "id": 52,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "签",
+            "pB": "证",
+            "hanzi": "签证",
+            "pinyin": "qiān zhèng",
+            "meaning": "Visa Kunjungan (Tanda + Bukti)"
+        },
+        {
+            "id": 53,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "门",
+            "pB": "票",
+            "hanzi": "门票",
+            "pinyin": "mén piào",
+            "meaning": "Tiket Masuk (Pintu + Karcis)"
+        },
+        {
+            "id": 54,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "公",
+            "pB": "交",
+            "hanzi": "公交",
+            "pinyin": "gōng jiāo",
+            "meaning": "Bus Umum (Publik + Transportasi)"
+        },
+        {
+            "id": 55,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "车",
+            "pB": "站",
+            "hanzi": "车站",
+            "pinyin": "chē zhàn",
+            "meaning": "Stasiun Kendaraan \/ Terminal"
+        },
+        {
+            "id": 56,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "街",
+            "pB": "道",
+            "hanzi": "街道",
+            "pinyin": "jiē dào",
+            "meaning": "Jalanan Kota"
+        },
+        {
+            "id": 57,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "桥",
+            "pB": "梁",
+            "hanzi": "桥梁",
+            "pinyin": "qiáo liáng",
+            "meaning": "Jembatan Penghubung"
+        },
+        {
+            "id": 58,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "景",
+            "pB": "点",
+            "hanzi": "景点",
+            "pinyin": "jǐng diǎn",
+            "meaning": "Objek Wisata (Pemandangan + Titik)"
+        },
+        {
+            "id": 59,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "广",
+            "pB": "场",
+            "hanzi": "广场",
+            "pinyin": "guǎng chǎng",
+            "meaning": "Alun-alun \/ Lapangan Terbuka"
+        },
+        {
+            "id": 60,
+            "category": "cat3",
+            "difficulty": "medium",
+            "pA": "旅",
+            "pB": "客",
+            "hanzi": "旅客",
+            "pinyin": "lǚ kè",
+            "meaning": "Wisatawan \/ Pelancong"
+        },
+        {
+            "id": 61,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "经",
+            "pB": "理",
+            "hanzi": "经理",
+            "pinyin": "jīng lǐ",
+            "meaning": "Manajer \/ Pimpinan"
+        },
+        {
+            "id": 62,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "律",
+            "pB": "师",
+            "hanzi": "律师",
+            "pinyin": "lǜ shī",
+            "meaning": "Pengacara \/ Advokat (Hukum + Master)"
+        },
+        {
+            "id": 63,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "记",
+            "pB": "者",
+            "hanzi": "记者",
+            "pinyin": "jì zhě",
+            "meaning": "Wartawan \/ Jurnalis (Catat + Orang)"
+        },
+        {
+            "id": 64,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "司",
+            "pB": "机",
+            "hanzi": "司机",
+            "pinyin": "sī jī",
+            "meaning": "Sopir \/ Pengemudi (Kendalikan + Mesin)"
+        },
+        {
+            "id": 65,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "图",
+            "pB": "书",
+            "hanzi": "图书",
+            "pinyin": "tú shū",
+            "meaning": "Buku \/ Pustaka (Gambar + Kitab)"
+        },
+        {
+            "id": 66,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "字",
+            "pB": "典",
+            "hanzi": "字典",
+            "pinyin": "zì diǎn",
+            "meaning": "Kamus Karakter (Huruf + Kanon)"
+        },
+        {
+            "id": 67,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "试",
+            "pB": "卷",
+            "hanzi": "试卷",
+            "pinyin": "shì juàn",
+            "meaning": "Lembar Ujian (Uji + Gulungan)"
+        },
+        {
+            "id": 68,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "成",
+            "pB": "绩",
+            "hanzi": "成绩",
+            "pinyin": "chéng jì",
+            "meaning": "Nilai Ujian \/ Prestasi"
+        },
+        {
+            "id": 69,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "作",
+            "pB": "业",
+            "hanzi": "作业",
+            "pinyin": "zuò yè",
+            "meaning": "Pekerjaan Rumah (PR)"
+        },
+        {
+            "id": 70,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "毕",
+            "pB": "业",
+            "hanzi": "毕业",
+            "pinyin": "bì yè",
+            "meaning": "Kelulusan \/ Wisuda (Selesai + Studi)"
+        },
+        {
+            "id": 71,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "警",
+            "pB": "察",
+            "hanzi": "警察",
+            "pinyin": "jǐng chá",
+            "meaning": "Polisi (Waspada + Selidiki)"
+        },
+        {
+            "id": 72,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "翻",
+            "pB": "译",
+            "hanzi": "翻译",
+            "pinyin": "fān yì",
+            "meaning": "Penerjemah \/ Translasi"
+        },
+        {
+            "id": 73,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "教",
+            "pB": "授",
+            "hanzi": "教授",
+            "pinyin": "jiào shòu",
+            "meaning": "Profesor \/ Guru Besar"
+        },
+        {
+            "id": 74,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "导",
+            "pB": "游",
+            "hanzi": "导游",
+            "pinyin": "dǎo yóu",
+            "meaning": "Pemandu Wisata \/ Tour Guide"
+        },
+        {
+            "id": 75,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "科",
+            "pB": "学",
+            "hanzi": "科学",
+            "pinyin": "kē xué",
+            "meaning": "Sains \/ Ilmu Pengetahuan"
+        },
+        {
+            "id": 76,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "历",
+            "pB": "史",
+            "hanzi": "历史",
+            "pinyin": "lì shǐ",
+            "meaning": "Sejarah Perjalanan"
+        },
+        {
+            "id": 77,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "数",
+            "pB": "学",
+            "hanzi": "数学",
+            "pinyin": "shù xué",
+            "meaning": "Matematika (Angka + Ilmu)"
+        },
+        {
+            "id": 78,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "艺",
+            "pB": "术",
+            "hanzi": "艺术",
+            "pinyin": "yì shù",
+            "meaning": "Kesenian \/ Artistik"
+        },
+        {
+            "id": 79,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "体",
+            "pB": "育",
+            "hanzi": "体育",
+            "pinyin": "tǐ yù",
+            "meaning": "Pendidikan Jasmani \/ Olahraga"
+        },
+        {
+            "id": 80,
+            "category": "cat4",
+            "difficulty": "medium",
+            "pA": "语",
+            "pB": "言",
+            "hanzi": "语言",
+            "pinyin": "yǔ yán",
+            "meaning": "Bahasa Komunikasi"
+        },
+        {
+            "id": 81,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "投",
+            "pB": "资",
+            "hanzi": "投资",
+            "pinyin": "tóu zī",
+            "meaning": "Investasi Modal (Tanam + Dana)"
+        },
+        {
+            "id": 82,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "股",
+            "pB": "票",
+            "hanzi": "股票",
+            "pinyin": "gǔ piào",
+            "meaning": "Saham Bursa (Bagian + Karcis)"
+        },
+        {
+            "id": 83,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "贸",
+            "pB": "易",
+            "hanzi": "贸易",
+            "pinyin": "mào yì",
+            "meaning": "Perdagangan Internasional"
+        },
+        {
+            "id": 84,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "经",
+            "pB": "济",
+            "hanzi": "经济",
+            "pinyin": "jīng jì",
+            "meaning": "Perekonomian \/ Ekonomi"
+        },
+        {
+            "id": 85,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "合",
+            "pB": "同",
+            "hanzi": "合同",
+            "pinyin": "hé tong",
+            "meaning": "Kontrak \/ Perjanjian Resmi"
+        },
+        {
+            "id": 86,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "谈",
+            "pB": "判",
+            "hanzi": "谈判",
+            "pinyin": "tán pàn",
+            "meaning": "Negosiasi Bilateral"
+        },
+        {
+            "id": 87,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "利",
+            "pB": "润",
+            "hanzi": "利润",
+            "pinyin": "lì rùn",
+            "meaning": "Keuntungan Bersih \/ Profit"
+        },
+        {
+            "id": 88,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "专",
+            "pB": "利",
+            "hanzi": "专利",
+            "pinyin": "zhuān lì",
+            "meaning": "Hak Paten Cipta Eksklusif"
+        },
+        {
+            "id": 89,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "基",
+            "pB": "因",
+            "hanzi": "基因",
+            "pinyin": "jī yīn",
+            "meaning": "Gen \/ Genetika Hayati"
+        },
+        {
+            "id": 90,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "智",
+            "pB": "能",
+            "hanzi": "智能",
+            "pinyin": "zhì néng",
+            "meaning": "Kecerdasan Buatan \/ Pintar"
+        },
+        {
+            "id": 91,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "算",
+            "pB": "法",
+            "hanzi": "算法",
+            "pinyin": "suàn fǎ",
+            "meaning": "Algoritma Komputasi"
+        },
+        {
+            "id": 92,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "数",
+            "pB": "据",
+            "hanzi": "数据",
+            "pinyin": "shù jù",
+            "meaning": "Data Statistik Digital"
+        },
+        {
+            "id": 93,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "芯",
+            "pB": "片",
+            "hanzi": "芯片",
+            "pinyin": "xīn piàn",
+            "meaning": "Chip Mikroprosesor Silikon"
+        },
+        {
+            "id": 94,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "竞",
+            "pB": "争",
+            "hanzi": "竞争",
+            "pinyin": "jìng zhēng",
+            "meaning": "Kompetisi Pasar Sengit"
+        },
+        {
+            "id": 95,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "品",
+            "pB": "牌",
+            "hanzi": "品牌",
+            "pinyin": "pǐn pái",
+            "meaning": "Brand \/ Merek Dagang Ternama"
+        },
+        {
+            "id": 96,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "资",
+            "pB": "金",
+            "hanzi": "资金",
+            "pinyin": "zī jīn",
+            "meaning": "Finansial \/ Modal Usaha"
+        },
+        {
+            "id": 97,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "能",
+            "pB": "源",
+            "hanzi": "能源",
+            "pinyin": "néng yuán",
+            "meaning": "Sumber Energi Terbarukan"
+        },
+        {
+            "id": 98,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "航",
+            "pB": "天",
+            "hanzi": "航天",
+            "pinyin": "háng tiān",
+            "meaning": "Antariksa & Kedirgantaraan"
+        },
+        {
+            "id": 99,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "网",
+            "pB": "络",
+            "hanzi": "网络",
+            "pinyin": "wǎng luò",
+            "meaning": "Jaringan Internet Global"
+        },
+        {
+            "id": 100,
+            "category": "cat5",
+            "difficulty": "hard",
+            "pA": "创",
+            "pB": "新",
+            "hanzi": "创新",
+            "pinyin": "chuàng xīn",
+            "meaning": "Inovasi Terobosan Baru"
+        },
+        {
+            "id": 101,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "哲",
+            "pB": "学",
+            "hanzi": "哲学",
+            "pinyin": "zhé xué",
+            "meaning": "Filsafat Kebijaksanaan Hidup"
+        },
+        {
+            "id": 102,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "传",
+            "pB": "统",
+            "hanzi": "传统",
+            "pinyin": "chuán tǒng",
+            "meaning": "Tradisi Turun-temurun"
+        },
+        {
+            "id": 103,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "遗",
+            "pB": "产",
+            "hanzi": "遗产",
+            "pinyin": "yí chǎn",
+            "meaning": "Warisan Pusaka Leluhur"
+        },
+        {
+            "id": 104,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "戏",
+            "pB": "曲",
+            "hanzi": "戏曲",
+            "pinyin": "xì qǔ",
+            "meaning": "Opera Teater Tradisional Tiongkok"
+        },
+        {
+            "id": 105,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "书",
+            "pB": "法",
+            "hanzi": "书法",
+            "pinyin": "shū fǎ",
+            "meaning": "Seni Kaligrafi Kuas Klasik"
+        },
+        {
+            "id": 106,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "诗",
+            "pB": "歌",
+            "hanzi": "诗歌",
+            "pinyin": "shī gē",
+            "meaning": "Syair & Puisi Puitis"
+        },
+        {
+            "id": 107,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "道",
+            "pB": "德",
+            "hanzi": "道德",
+            "pinyin": "dào dé",
+            "meaning": "Moralitas Kebajikan Jiwa"
+        },
+        {
+            "id": 108,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "礼",
+            "pB": "节",
+            "hanzi": "礼节",
+            "pinyin": "lǐ jié",
+            "meaning": "Etiket Tata Krama Luhur"
+        },
+        {
+            "id": 109,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "宇",
+            "pB": "宙",
+            "hanzi": "宇宙",
+            "pinyin": "yǔ zhòu",
+            "meaning": "Kosmos Alam Semesta"
+        },
+        {
+            "id": 110,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "智",
+            "pB": "慧",
+            "hanzi": "智慧",
+            "pinyin": "zhì huì",
+            "meaning": "Kearifan & Kebijaksanaan Batin"
+        },
+        {
+            "id": 111,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "命",
+            "pB": "运",
+            "hanzi": "命运",
+            "pinyin": "mìng yùn",
+            "meaning": "Takdir Garis Kehidupan"
+        },
+        {
+            "id": 112,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "经",
+            "pB": "典",
+            "hanzi": "经典",
+            "pinyin": "jīng diǎn",
+            "meaning": "Karya Kanonik Klasik Abadi"
+        },
+        {
+            "id": 113,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "灵",
+            "pB": "魂",
+            "hanzi": "灵魂",
+            "pinyin": "líng hún",
+            "meaning": "Jiwa Nurani & Sukma"
+        },
+        {
+            "id": 114,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "和",
+            "pB": "谐",
+            "hanzi": "和谐",
+            "pinyin": "hé xié",
+            "meaning": "Keharmonisan Semesta"
+        },
+        {
+            "id": 115,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "宏",
+            "pB": "伟",
+            "hanzi": "宏伟",
+            "pinyin": "hóng wěi",
+            "meaning": "Kemegahan Agung & Monumental"
+        },
+        {
+            "id": 116,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "优",
+            "pB": "雅",
+            "hanzi": "优雅",
+            "pinyin": "yōu yǎ",
+            "meaning": "Keanggunan Budi Pekerti"
+        },
+        {
+            "id": 117,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "崇",
+            "pB": "高",
+            "hanzi": "崇高",
+            "pinyin": "chóng gāo",
+            "meaning": "Kemuliaan Cita-cita Tertinggi"
+        },
+        {
+            "id": 118,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "绘",
+            "pB": "画",
+            "hanzi": "绘画",
+            "pinyin": "huì huà",
+            "meaning": "Lukisan Seni Tinta Tiongkok"
+        },
+        {
+            "id": 119,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "散",
+            "pB": "文",
+            "hanzi": "散文",
+            "pinyin": "sǎn wén",
+            "meaning": "Karya Prosa Sastra Bebas"
+        },
+        {
+            "id": 120,
+            "category": "cat6",
+            "difficulty": "hard",
+            "pA": "境",
+            "pB": "界",
+            "hanzi": "境界",
+            "pinyin": "jìng jiè",
+            "meaning": "Pencapaian Tingkat Spritual"
+        }
+    ],
+    "memoryMatch": [
+        {
+            "id": 1,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "你好",
+            "text": "Nǐ hǎo (Halo)"
+        },
+        {
+            "id": 2,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "谢谢",
+            "text": "Xièxie (Terima Kasih)"
+        },
+        {
+            "id": 3,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "再见",
+            "text": "Zàijiàn (Sampai Jumpa)"
+        },
+        {
+            "id": 4,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "对不起",
+            "text": "Duìbuqǐ (Minta Maaf)"
+        },
+        {
+            "id": 5,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "没关系",
+            "text": "Méi guānxi (Tidak Apa-apa)"
+        },
+        {
+            "id": 6,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "请",
+            "text": "Qǐng (Silakan \/ Tolong)"
+        },
+        {
+            "id": 7,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "朋友",
+            "text": "Péngyou (Teman \/ Sahabat)"
+        },
+        {
+            "id": 8,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "高兴",
+            "text": "Gāoxìng (Senang \/ Gembira)"
+        },
+        {
+            "id": 9,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "名字",
+            "text": "Míngzi (Nama)"
+        },
+        {
+            "id": 10,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "中国",
+            "text": "Zhōngguó (Tiongkok)"
+        },
+        {
+            "id": 11,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "早上好",
+            "text": "Zǎoshang hǎo (Selamat Pagi)"
+        },
+        {
+            "id": 12,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "晚上好",
+            "text": "Wǎnshang hǎo (Selamat Malam)"
+        },
+        {
+            "id": 13,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "欢迎",
+            "text": "Huānyíng (Selamat Datang)"
+        },
+        {
+            "id": 14,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "不客气",
+            "text": "Bú kèqi (Sama-sama)"
+        },
+        {
+            "id": 15,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "认识",
+            "text": "Rènshi (Mengenal)"
+        },
+        {
+            "id": 16,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "您贵姓",
+            "text": "Nín guìxìng (Siapa marga Anda)"
+        },
+        {
+            "id": 17,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "祝贺",
+            "text": "Zhùhè (Selamat \/ Congratulation)"
+        },
+        {
+            "id": 18,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "保重",
+            "text": "Bǎozhòng (Jaga Diri Baik-baik)"
+        },
+        {
+            "id": 19,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "拜拜",
+            "text": "Bàibài (Dadah \/ Bye)"
+        },
+        {
+            "id": 20,
+            "session": "session1",
+            "difficulty": "easy",
+            "hanzi": "慢走",
+            "text": "Mànzǒu (Hati-hati di jalan)"
+        },
+        {
+            "id": 21,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "爸爸",
+            "text": "Bàba (Ayah \/ Papa)"
+        },
+        {
+            "id": 22,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "妈妈",
+            "text": "Māma (Ibu \/ Mama)"
+        },
+        {
+            "id": 23,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "哥哥",
+            "text": "Gēge (Kakak Laki-laki)"
+        },
+        {
+            "id": 24,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "姐姐",
+            "text": "Jiějie (Kakak Perempuan)"
+        },
+        {
+            "id": 25,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "弟弟",
+            "text": "Dìdi (Adik Laki-laki)"
+        },
+        {
+            "id": 26,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "妹妹",
+            "text": "Mèimei (Adik Perempuan)"
+        },
+        {
+            "id": 27,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "老师",
+            "text": "Lǎoshī (Guru \/ Pengajar)"
+        },
+        {
+            "id": 28,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "学生",
+            "text": "Xuésheng (Murid \/ Siswa)"
+        },
+        {
+            "id": 29,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "医生",
+            "text": "Yīshēng (Dokter)"
+        },
+        {
+            "id": 30,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "孩子",
+            "text": "Háizi (Anak \/ Anak-anak)"
+        },
+        {
+            "id": 31,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "爷爷",
+            "text": "Yéye (Kakek dari Ayah)"
+        },
+        {
+            "id": 32,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "奶奶",
+            "text": "Nǎinai (Nenek dari Ayah)"
+        },
+        {
+            "id": 33,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "叔叔",
+            "text": "Shūshu (Paman)"
+        },
+        {
+            "id": 34,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "阿姨",
+            "text": "Āyí (Bibi)"
+        },
+        {
+            "id": 35,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "同学",
+            "text": "Tóngxué (Teman Sekelas)"
+        },
+        {
+            "id": 36,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "邻居",
+            "text": "Línjū (Tetangga)"
+        },
+        {
+            "id": 37,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "客人",
+            "text": "Kèrén (Tamu)"
+        },
+        {
+            "id": 38,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "男孩",
+            "text": "Nánhái (Anak Laki-laki)"
+        },
+        {
+            "id": 39,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "女孩",
+            "text": "Nǚhái (Anak Perempuan)"
+        },
+        {
+            "id": 40,
+            "session": "session2",
+            "difficulty": "easy",
+            "hanzi": "亲戚",
+            "text": "Qīnqi (Kerabat Keluarga)"
+        },
+        {
+            "id": 41,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "米饭",
+            "text": "Mǐfàn (Nasi Putih)"
+        },
+        {
+            "id": 42,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "面条",
+            "text": "Miàntiáo (Mie)"
+        },
+        {
+            "id": 43,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "牛肉",
+            "text": "Niúròu (Daging Sapi)"
+        },
+        {
+            "id": 44,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "牛奶",
+            "text": "Niúnǎi (Susu Sapi)"
+        },
+        {
+            "id": 45,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "咖啡",
+            "text": "Kāfēi (Kopi)"
+        },
+        {
+            "id": 46,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "西瓜",
+            "text": "Xīguā (Semangka)"
+        },
+        {
+            "id": 47,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "苹果",
+            "text": "Píngguǒ (Apel)"
+        },
+        {
+            "id": 48,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "鸡蛋",
+            "text": "Jīdàn (Telur Ayam)"
+        },
+        {
+            "id": 49,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "面包",
+            "text": "Miànbāo (Roti)"
+        },
+        {
+            "id": 50,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "绿茶",
+            "text": "Lǜchá (Teh Hijau)"
+        },
+        {
+            "id": 51,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "香蕉",
+            "text": "Xiāngjiāo (Pisang)"
+        },
+        {
+            "id": 52,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "葡萄",
+            "text": "Pútao (Anggur)"
+        },
+        {
+            "id": 53,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "豆腐",
+            "text": "Dòufu (Tahu Segar)"
+        },
+        {
+            "id": 54,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "饺子",
+            "text": "Jiǎozi (Pangsit Rebus)"
+        },
+        {
+            "id": 55,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "羊肉",
+            "text": "Yángròu (Daging Kambing)"
+        },
+        {
+            "id": 56,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "鱼肉",
+            "text": "Yúròu (Daging Ikan)"
+        },
+        {
+            "id": 57,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "果汁",
+            "text": "Guǒzhī (Jus Buah)"
+        },
+        {
+            "id": 58,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "蛋糕",
+            "text": "Dàngāo (Kue Tart)"
+        },
+        {
+            "id": 59,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "蔬菜",
+            "text": "Shūcài (Sayuran Hijau)"
+        },
+        {
+            "id": 60,
+            "session": "session3",
+            "difficulty": "medium",
+            "hanzi": "冰水",
+            "text": "Bīngshuǐ (Air Dingin)"
+        },
+        {
+            "id": 61,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "学习",
+            "text": "Xuéxí (Belajar)"
+        },
+        {
+            "id": 62,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "工作",
+            "text": "Gōngzuò (Bekerja)"
+        },
+        {
+            "id": 63,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "看书",
+            "text": "Kànshū (Membaca Buku)"
+        },
+        {
+            "id": 64,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "睡觉",
+            "text": "Shuìjiào (Tidur)"
+        },
+        {
+            "id": 65,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "起床",
+            "text": "Qǐchuáng (Bangun Tidur)"
+        },
+        {
+            "id": 66,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "跑步",
+            "text": "Pǎobù (Berlari \/ Jogging)"
+        },
+        {
+            "id": 67,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "游泳",
+            "text": "Yóuyǒng (Berenang)"
+        },
+        {
+            "id": 68,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "唱歌",
+            "text": "Chànggē (Bernyanyi)"
+        },
+        {
+            "id": 69,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "写字",
+            "text": "Xiězì (Menulis Karakter)"
+        },
+        {
+            "id": 70,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "考试",
+            "text": "Kǎoshì (Ujian)"
+        },
+        {
+            "id": 71,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "复习",
+            "text": "Fùxí (Mengulang Pelajaran)"
+        },
+        {
+            "id": 72,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "练习",
+            "text": "Liànxí (Latihan Soal)"
+        },
+        {
+            "id": 73,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "旅游",
+            "text": "Lǚyóu (Berwisata \/ Jalan-jalan)"
+        },
+        {
+            "id": 74,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "拍照",
+            "text": "Pāizhào (Memotret Foto)"
+        },
+        {
+            "id": 75,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "打篮球",
+            "text": "Dǎ lánqiú (Bermain Basket)"
+        },
+        {
+            "id": 76,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "踢足球",
+            "text": "Tī zúqiú (Bermain Sepak Bola)"
+        },
+        {
+            "id": 77,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "上网",
+            "text": "Shàngwǎng (Berselancar Internet)"
+        },
+        {
+            "id": 78,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "听音乐",
+            "text": "Tīng yīnyuè (Mendengarkan Musik)"
+        },
+        {
+            "id": 79,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "跳舞",
+            "text": "Tiàowǔ (Menari \/ Dance)"
+        },
+        {
+            "id": 80,
+            "session": "session4",
+            "difficulty": "medium",
+            "hanzi": "休息",
+            "text": "Xiūxi (Beristirahat)"
+        },
+        {
+            "id": 81,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "明天",
+            "text": "Míngtiān (Besok Hari)"
+        },
+        {
+            "id": 82,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "昨天",
+            "text": "Zuótiān (Kemarin Hari)"
+        },
+        {
+            "id": 83,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "下雨",
+            "text": "Xiàyǔ (Turun Hujan)"
+        },
+        {
+            "id": 84,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "刮风",
+            "text": "Guāfēng (Angin Kencang)"
+        },
+        {
+            "id": 85,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "晴天",
+            "text": "Qíngtiān (Hari Cerah)"
+        },
+        {
+            "id": 86,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "东方",
+            "text": "Dōngfāng (Arah Timur)"
+        },
+        {
+            "id": 87,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "西方",
+            "text": "Xīfāng (Arah Barat)"
+        },
+        {
+            "id": 88,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "南方",
+            "text": "Nánfāng (Arah Selatan)"
+        },
+        {
+            "id": 89,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "北方",
+            "text": "Běifāng (Arah Utara)"
+        },
+        {
+            "id": 90,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "秋天",
+            "text": "Qiūtiān (Musim Gugur)"
+        },
+        {
+            "id": 91,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "春天",
+            "text": "Chūntiān (Musim Semi)"
+        },
+        {
+            "id": 92,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "夏天",
+            "text": "Xiàtiān (Musim Panas)"
+        },
+        {
+            "id": 93,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "冬天",
+            "text": "Dōngtiān (Musim Dingin)"
+        },
+        {
+            "id": 94,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "气候",
+            "text": "Qìhòu (Iklim Cuaca)"
+        },
+        {
+            "id": 95,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "温度",
+            "text": "Wēndù (Suhu Derajat)"
+        },
+        {
+            "id": 96,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "未来",
+            "text": "Wèilái (Masa Depan)"
+        },
+        {
+            "id": 97,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "过去",
+            "text": "Guòqù (Masa Lalu)"
+        },
+        {
+            "id": 98,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "季节",
+            "text": "Jìjié (Musim Berganti)"
+        },
+        {
+            "id": 99,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "阴天",
+            "text": "Yīntiān (Hari Mendung)"
+        },
+        {
+            "id": 100,
+            "session": "session5",
+            "difficulty": "hard",
+            "hanzi": "下雪",
+            "text": "Xiàxuě (Turun Salju)"
+        },
+        {
+            "id": 101,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "飞机",
+            "text": "Fēijī (Pesawat Terbang)"
+        },
+        {
+            "id": 102,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "火车",
+            "text": "Huǒchē (Kereta Api)"
+        },
+        {
+            "id": 103,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "地铁",
+            "text": "Dìtiě (MRT \/ Kereta Bawah Tanah)"
+        },
+        {
+            "id": 104,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "机场",
+            "text": "Jīchǎng (Bandara)"
+        },
+        {
+            "id": 105,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "车站",
+            "text": "Chēzhàn (Stasiun \/ Halte)"
+        },
+        {
+            "id": 106,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "宾馆",
+            "text": "Bīnguǎn (Hotel Bintang)"
+        },
+        {
+            "id": 107,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "银行",
+            "text": "Yínháng (Bank Devisa)"
+        },
+        {
+            "id": 108,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "医院",
+            "text": "Yīyuàn (Rumah Sakit)"
+        },
+        {
+            "id": 109,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "地图",
+            "text": "Dìtú (Peta Navigasi)"
+        },
+        {
+            "id": 110,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "行李",
+            "text": "Xíngli (Koper Perjalanan)"
+        },
+        {
+            "id": 111,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "护照",
+            "text": "Hùzhào (Paspor Resmi)"
+        },
+        {
+            "id": 112,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "签证",
+            "text": "Qiānzhèng (Visa Imigrasi)"
+        },
+        {
+            "id": 113,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "门票",
+            "text": "Ménpiào (Karcis Masuk)"
+        },
+        {
+            "id": 114,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "景点",
+            "text": "Jǐngdiǎn (Objek Wisata)"
+        },
+        {
+            "id": 115,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "广场",
+            "text": "Guǎngchǎng (Alun-alun Kota)"
+        },
+        {
+            "id": 116,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "街道",
+            "text": "Jiēdào (Jalan Raya Kota)"
+        },
+        {
+            "id": 117,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "出租车",
+            "text": "Chūzūchē (Armada Taksi)"
+        },
+        {
+            "id": 118,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "公共汽车",
+            "text": "Gōnggòng qìchē (Bus Kota)"
+        },
+        {
+            "id": 119,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "桥梁",
+            "text": "Qiáoliáng (Jembatan Megah)"
+        },
+        {
+            "id": 120,
+            "session": "session6",
+            "difficulty": "hard",
+            "hanzi": "博物馆",
+            "text": "Bówùguǎn (Museum Sejarah)"
+        }
+    ],
+    "pinyinHanzi": [
+        {
+            "id": 1,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "nǐ hǎo",
+            "hanzi": "你好",
+            "meaning": "Halo \/ Apa kabar",
+            "audio": "你好"
+        },
+        {
+            "id": 2,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "xièxie",
+            "hanzi": "谢谢",
+            "meaning": "Terima kasih",
+            "audio": "谢谢"
+        },
+        {
+            "id": 3,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "zàijiàn",
+            "hanzi": "再见",
+            "meaning": "Sampai jumpa",
+            "audio": "再见"
+        },
+        {
+            "id": 4,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "shì",
+            "hanzi": "是",
+            "meaning": "Adalah \/ Benar",
+            "audio": "是"
+        },
+        {
+            "id": 5,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "bù",
+            "hanzi": "不",
+            "meaning": "Tidak \/ Bukan",
+            "audio": "不"
+        },
+        {
+            "id": 6,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "hǎo",
+            "hanzi": "好",
+            "meaning": "Baik \/ Bagus",
+            "audio": "好"
+        },
+        {
+            "id": 7,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "wǒ",
+            "hanzi": "我",
+            "meaning": "Saya \/ Aku",
+            "audio": "我"
+        },
+        {
+            "id": 8,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "nǐ",
+            "hanzi": "你",
+            "meaning": "Kamu \/ Anda",
+            "audio": "你"
+        },
+        {
+            "id": 9,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "tā",
+            "hanzi": "他",
+            "meaning": "Dia (Laki-laki)",
+            "audio": "他"
+        },
+        {
+            "id": 10,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "chī",
+            "hanzi": "吃",
+            "meaning": "Makan",
+            "audio": "吃"
+        },
+        {
+            "id": 11,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "hē",
+            "hanzi": "喝",
+            "meaning": "Minum",
+            "audio": "喝"
+        },
+        {
+            "id": 12,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "chá",
+            "hanzi": "茶",
+            "meaning": "Teh",
+            "audio": "茶"
+        },
+        {
+            "id": 13,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "shuǐ",
+            "hanzi": "水",
+            "meaning": "Air",
+            "audio": "水"
+        },
+        {
+            "id": 14,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "kàn",
+            "hanzi": "看",
+            "meaning": "Melihat \/ Menonton",
+            "audio": "看"
+        },
+        {
+            "id": 15,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "shū",
+            "hanzi": "书",
+            "meaning": "Buku",
+            "audio": "书"
+        },
+        {
+            "id": 16,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "dà",
+            "hanzi": "大",
+            "meaning": "Besar",
+            "audio": "大"
+        },
+        {
+            "id": 17,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "xiǎo",
+            "hanzi": "小",
+            "meaning": "Kecil",
+            "audio": "小"
+        },
+        {
+            "id": 18,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "rén",
+            "hanzi": "人",
+            "meaning": "Orang \/ Manusia",
+            "audio": "人"
+        },
+        {
+            "id": 19,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "duō",
+            "hanzi": "多",
+            "meaning": "Banyak",
+            "audio": "多"
+        },
+        {
+            "id": 20,
+            "level": 1,
+            "difficulty": "easy",
+            "pinyin": "shǎo",
+            "hanzi": "少",
+            "meaning": "Sedikit",
+            "audio": "少"
+        },
+        {
+            "id": 21,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "bāngzhù",
+            "hanzi": "帮助",
+            "meaning": "Membantu \/ Menolong",
+            "audio": "帮助"
+        },
+        {
+            "id": 22,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "kāishǐ",
+            "hanzi": "开始",
+            "meaning": "Memulai",
+            "audio": "开始"
+        },
+        {
+            "id": 23,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "jièshào",
+            "hanzi": "介绍",
+            "meaning": "Memperkenalkan",
+            "audio": "介绍"
+        },
+        {
+            "id": 24,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "xīwàng",
+            "hanzi": "希望",
+            "meaning": "Berharap \/ Harapan",
+            "audio": "希望"
+        },
+        {
+            "id": 25,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "kuàilè",
+            "hanzi": "快乐",
+            "meaning": "Bahagia \/ Gembira",
+            "audio": "快乐"
+        },
+        {
+            "id": 26,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "yánsè",
+            "hanzi": "颜色",
+            "meaning": "Warna",
+            "audio": "颜色"
+        },
+        {
+            "id": 27,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "jīchǎng",
+            "hanzi": "机场",
+            "meaning": "Bandara",
+            "audio": "机场"
+        },
+        {
+            "id": 28,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "shíjiān",
+            "hanzi": "时间",
+            "meaning": "Waktu",
+            "audio": "时间"
+        },
+        {
+            "id": 29,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "shēntǐ",
+            "hanzi": "身体",
+            "meaning": "Kesehatan \/ Tubuh",
+            "audio": "身体"
+        },
+        {
+            "id": 30,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "yīyuàn",
+            "hanzi": "医院",
+            "meaning": "Rumah Sakit",
+            "audio": "医院"
+        },
+        {
+            "id": 31,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "pǎobù",
+            "hanzi": "跑步",
+            "meaning": "Berlari \/ Jogging",
+            "audio": "跑步"
+        },
+        {
+            "id": 32,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "yóuyǒng",
+            "hanzi": "游泳",
+            "meaning": "Berenang",
+            "audio": "游泳"
+        },
+        {
+            "id": 33,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "tiàowǔ",
+            "hanzi": "跳舞",
+            "meaning": "Menari",
+            "audio": "跳舞"
+        },
+        {
+            "id": 34,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "shàngbān",
+            "hanzi": "上班",
+            "meaning": "Masuk Kerja",
+            "audio": "上班"
+        },
+        {
+            "id": 35,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "xiàbān",
+            "hanzi": "下班",
+            "meaning": "Pulang Kerja",
+            "audio": "下班"
+        },
+        {
+            "id": 36,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "shēngbìng",
+            "hanzi": "生病",
+            "meaning": "Jatuh Sakit",
+            "audio": "生病"
+        },
+        {
+            "id": 37,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "mǎi",
+            "hanzi": "买",
+            "meaning": "Membeli",
+            "audio": "买"
+        },
+        {
+            "id": 38,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "mài",
+            "hanzi": "卖",
+            "meaning": "Menjual",
+            "audio": "卖"
+        },
+        {
+            "id": 39,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "chuān",
+            "hanzi": "穿",
+            "meaning": "Memakai Pakaian",
+            "audio": "穿"
+        },
+        {
+            "id": 40,
+            "level": 2,
+            "difficulty": "easy",
+            "pinyin": "wèn",
+            "hanzi": "问",
+            "meaning": "Bertanya",
+            "audio": "问"
+        },
+        {
+            "id": 41,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "nǔlì",
+            "hanzi": "努力",
+            "meaning": "Bekerja keras \/ Giat",
+            "audio": "努力"
+        },
+        {
+            "id": 42,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "jīhuì",
+            "hanzi": "机会",
+            "meaning": "Kesempatan \/ Peluang",
+            "audio": "机会"
+        },
+        {
+            "id": 43,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "fāzhǎn",
+            "hanzi": "发展",
+            "meaning": "Berkembang \/ Perkembangan",
+            "audio": "发展"
+        },
+        {
+            "id": 44,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "yǐngxiǎng",
+            "hanzi": "影响",
+            "meaning": "Mempengaruhi \/ Dampak",
+            "audio": "影响"
+        },
+        {
+            "id": 45,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "qíguài",
+            "hanzi": "奇怪",
+            "meaning": "Aneh \/ Ganjil",
+            "audio": "奇怪"
+        },
+        {
+            "id": 46,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "huánjìng",
+            "hanzi": "环境",
+            "meaning": "Lingkungan sekitar",
+            "audio": "环境"
+        },
+        {
+            "id": 47,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "jiějué",
+            "hanzi": "解决",
+            "meaning": "Menyelesaikan masalah",
+            "audio": "解决"
+        },
+        {
+            "id": 48,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "liǎojiě",
+            "hanzi": "了解",
+            "meaning": "Memahami secara mendalam",
+            "audio": "了解"
+        },
+        {
+            "id": 49,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "mǎnyì",
+            "hanzi": "满意",
+            "meaning": "Puas \/ Sesuai harapan",
+            "audio": "满意"
+        },
+        {
+            "id": 50,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "rènzhēn",
+            "hanzi": "认真",
+            "meaning": "Sungguh-sungguh \/ Serius",
+            "audio": "认真"
+        },
+        {
+            "id": 51,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "cānguān",
+            "hanzi": "参观",
+            "meaning": "Mengunjungi \/ Meninjau",
+            "audio": "参观"
+        },
+        {
+            "id": 52,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "tóngyì",
+            "hanzi": "同意",
+            "meaning": "Setuju \/ Sepakat",
+            "audio": "同意"
+        },
+        {
+            "id": 53,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "tíxǐng",
+            "hanzi": "提醒",
+            "meaning": "Mengingatkan",
+            "audio": "提醒"
+        },
+        {
+            "id": 54,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "yàojǐn",
+            "hanzi": "要紧",
+            "meaning": "Penting \/ Mendesak",
+            "audio": "要紧"
+        },
+        {
+            "id": 55,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "xínglǐ",
+            "hanzi": "行李",
+            "meaning": "Koper \/ Bagasi",
+            "audio": "行李"
+        },
+        {
+            "id": 56,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "yóuxì",
+            "hanzi": "游戏",
+            "meaning": "Permainan \/ Game",
+            "audio": "游戏"
+        },
+        {
+            "id": 57,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "gùkè",
+            "hanzi": "顾客",
+            "meaning": "Pelanggan \/ Pembeli",
+            "audio": "顾客"
+        },
+        {
+            "id": 58,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "zìrán",
+            "hanzi": "自然",
+            "meaning": "Alami \/ Alamiah",
+            "audio": "自然"
+        },
+        {
+            "id": 59,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "bānjiā",
+            "hanzi": "搬家",
+            "meaning": "Pindah Rumah",
+            "audio": "搬家"
+        },
+        {
+            "id": 60,
+            "level": 3,
+            "difficulty": "medium",
+            "pinyin": "wánchéng",
+            "hanzi": "完成",
+            "meaning": "Menyelesaikan tuntas",
+            "audio": "完成"
+        },
+        {
+            "id": 61,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "chénggōng",
+            "hanzi": "成功",
+            "meaning": "Berhasil \/ Sukses",
+            "audio": "成功"
+        },
+        {
+            "id": 62,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "jiānchí",
+            "hanzi": "坚持",
+            "meaning": "Gigih \/ Bertahan teguh",
+            "audio": "坚持"
+        },
+        {
+            "id": 63,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "jīngyàn",
+            "hanzi": "经验",
+            "meaning": "Pengalaman",
+            "audio": "经验"
+        },
+        {
+            "id": 64,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "fāyán",
+            "hanzi": "发言",
+            "meaning": "Berpidato \/ Mengeluarkan pendapat",
+            "audio": "发言"
+        },
+        {
+            "id": 65,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "shàngdāng",
+            "hanzi": "上当",
+            "meaning": "Tertipu \/ Terjebak muslihat",
+            "audio": "上当"
+        },
+        {
+            "id": 66,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "hòuhuǐ",
+            "hanzi": "后悔",
+            "meaning": "Menyesal",
+            "audio": "后悔"
+        },
+        {
+            "id": 67,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "zūnzhòng",
+            "hanzi": "尊重",
+            "meaning": "Menghormati \/ Menghargai",
+            "audio": "尊重"
+        },
+        {
+            "id": 68,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "guǎnlǐ",
+            "hanzi": "管理",
+            "meaning": "Mengelola \/ Manajemen",
+            "audio": "管理"
+        },
+        {
+            "id": 69,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "jījí",
+            "hanzi": "积极",
+            "meaning": "Positif \/ Berinisiatif aktif",
+            "audio": "积极"
+        },
+        {
+            "id": 70,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "yánjiū",
+            "hanzi": "研究",
+            "meaning": "Riset \/ Penelitian",
+            "audio": "研究"
+        },
+        {
+            "id": 71,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "fēngfù",
+            "hanzi": "丰富",
+            "meaning": "Kaya \/ Berlimpah ruah",
+            "audio": "丰富"
+        },
+        {
+            "id": 72,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "yǒuqù",
+            "hanzi": "有趣",
+            "meaning": "Menarik \/ Mengasyikkan",
+            "audio": "有趣"
+        },
+        {
+            "id": 73,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "shíjì",
+            "hanzi": "实际",
+            "meaning": "Kenyataan \/ Realitas",
+            "audio": "实际"
+        },
+        {
+            "id": 74,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "shùnlì",
+            "hanzi": "顺利",
+            "meaning": "Lancar tanpa hambatan",
+            "audio": "顺利"
+        },
+        {
+            "id": 75,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "gǎndòng",
+            "hanzi": "感动",
+            "meaning": "Terharu \/ Tersentuh",
+            "audio": "感动"
+        },
+        {
+            "id": 76,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "zǐxì",
+            "hanzi": "仔细",
+            "meaning": "Teliti \/ Cermat",
+            "audio": "仔细"
+        },
+        {
+            "id": 77,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "yàoqǐng",
+            "hanzi": "邀请",
+            "meaning": "Mengundang resmi",
+            "audio": "邀请"
+        },
+        {
+            "id": 78,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "zhèngmíng",
+            "hanzi": "证明",
+            "meaning": "Membuktikan \/ Bukti",
+            "audio": "证明"
+        },
+        {
+            "id": 79,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "fùzé",
+            "hanzi": "负责",
+            "meaning": "Bertanggung jawab",
+            "audio": "负责"
+        },
+        {
+            "id": 80,
+            "level": 4,
+            "difficulty": "medium",
+            "pinyin": "xíngxiàng",
+            "hanzi": "形象",
+            "meaning": "Citra \/ Reputasi",
+            "audio": "形象"
+        },
+        {
+            "id": 81,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "zhéxué",
+            "hanzi": "哲学",
+            "meaning": "Filsafat",
+            "audio": "哲学"
+        },
+        {
+            "id": 82,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "chàngyì",
+            "hanzi": "倡议",
+            "meaning": "Inisiatif \/ Memprakarsai",
+            "audio": "倡议"
+        },
+        {
+            "id": 83,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "xiàoguǒ",
+            "hanzi": "效果",
+            "meaning": "Efek \/ Khasiat hasil",
+            "audio": "效果"
+        },
+        {
+            "id": 84,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "mòshēng",
+            "hanzi": "陌生",
+            "meaning": "Asing \/ Tidak dikenal",
+            "audio": "陌生"
+        },
+        {
+            "id": 85,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "kāngkǎi",
+            "hanzi": "慷慨",
+            "meaning": "Murah hati \/ Dermawan",
+            "audio": "慷慨"
+        },
+        {
+            "id": 86,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "jiāoxùn",
+            "hanzi": "教训",
+            "meaning": "Pelajaran moral berharga",
+            "audio": "教训"
+        },
+        {
+            "id": 87,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "zǒngjié",
+            "hanzi": "总结",
+            "meaning": "Menyimpulkan \/ Ringkasan",
+            "audio": "总结"
+        },
+        {
+            "id": 88,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "jǐnshèn",
+            "hanzi": "谨慎",
+            "meaning": "Hati-hati \/ Waspada bijak",
+            "audio": "谨慎"
+        },
+        {
+            "id": 89,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "zhìhuì",
+            "hanzi": "智慧",
+            "meaning": "Kearifan \/ Kebijaksanaan",
+            "audio": "智慧"
+        },
+        {
+            "id": 90,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "dùjué",
+            "hanzi": "杜绝",
+            "meaning": "Mencegah tuntas \/ Menghapuskan",
+            "audio": "杜绝"
+        },
+        {
+            "id": 91,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "xùnxù",
+            "hanzi": "循序",
+            "meaning": "Bertahap berurutan",
+            "audio": "循序"
+        },
+        {
+            "id": 92,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "jīngmì",
+            "hanzi": "精密",
+            "meaning": "Presisi tinggi \/ Akurat",
+            "audio": "精密"
+        },
+        {
+            "id": 93,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "xiédài",
+            "hanzi": "携带",
+            "meaning": "Membawa serta",
+            "audio": "携带"
+        },
+        {
+            "id": 94,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "guǎnfàn",
+            "hanzi": "广泛",
+            "meaning": "Luas mencakup banyak hal",
+            "audio": "广泛"
+        },
+        {
+            "id": 95,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "jīfā",
+            "hanzi": "激发",
+            "meaning": "Memicu \/ Membangkitkan semangat",
+            "audio": "激发"
+        },
+        {
+            "id": 96,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "chíjiǔ",
+            "hanzi": "持久",
+            "meaning": "Tahan lama \/ Awet bertahan",
+            "audio": "持久"
+        },
+        {
+            "id": 97,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "tuǒxié",
+            "hanzi": "妥协",
+            "meaning": "Kompromi mufakat",
+            "audio": "妥协"
+        },
+        {
+            "id": 98,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "gōngxiàn",
+            "hanzi": "贡献",
+            "meaning": "Kontribusi sumbangsih",
+            "audio": "贡献"
+        },
+        {
+            "id": 99,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "jiāodài",
+            "hanzi": "交代",
+            "meaning": "Memberi pengarahan \/ Melapor",
+            "audio": "交代"
+        },
+        {
+            "id": 100,
+            "level": 5,
+            "difficulty": "hard",
+            "pinyin": "yíngyùn",
+            "hanzi": "营运",
+            "meaning": "Mengoperasikan usaha",
+            "audio": "营运"
+        },
+        {
+            "id": 101,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "bōtāo",
+            "hanzi": "波涛",
+            "meaning": "Gelombang dahsyat ombak",
+            "audio": "波涛"
+        },
+        {
+            "id": 102,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "chōngtū",
+            "hanzi": "冲突",
+            "meaning": "Konflik bentrokan",
+            "audio": "冲突"
+        },
+        {
+            "id": 103,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "lúnlǐ",
+            "hanzi": "伦理",
+            "meaning": "Etika moral filsafat",
+            "audio": "伦理"
+        },
+        {
+            "id": 104,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "fùhè",
+            "hanzi": "复合",
+            "meaning": "Komposit \/ Gabungan majemuk",
+            "audio": "复合"
+        },
+        {
+            "id": 105,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "shēnhé",
+            "hanzi": "深邃",
+            "meaning": "Mendalam filosofis \/ Misterius",
+            "audio": "深邃"
+        },
+        {
+            "id": 106,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "bóbó",
+            "hanzi": "磅礴",
+            "meaning": "Megah menggelora",
+            "audio": "磅礴"
+        },
+        {
+            "id": 107,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "chánchán",
+            "hanzi": "潺潺",
+            "meaning": "Gemericik air jernih",
+            "audio": "潺潺"
+        },
+        {
+            "id": 108,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "qīnxī",
+            "hanzi": "清晰",
+            "meaning": "Sangat jernih transparan",
+            "audio": "清晰"
+        },
+        {
+            "id": 109,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "yùnyù",
+            "hanzi": "酝酿",
+            "meaning": "Meracik ide \/ Merencanakan matang",
+            "audio": "酝酿"
+        },
+        {
+            "id": 110,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "diāofēng",
+            "hanzi": "巅峰",
+            "meaning": "Puncak kejayaan tertinggi",
+            "audio": "巅峰"
+        },
+        {
+            "id": 111,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "kēngqiāng",
+            "hanzi": "铿锵",
+            "meaning": "Berdenting bertenaga merdu",
+            "audio": "铿锵"
+        },
+        {
+            "id": 112,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "yíngyíng",
+            "hanzi": "萦绕",
+            "meaning": "Terngiang-ngiang melayang",
+            "audio": "萦绕"
+        },
+        {
+            "id": 113,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "hàohàn",
+            "hanzi": "浩瀚",
+            "meaning": "Luas tanpa batas membentang",
+            "audio": "浩瀚"
+        },
+        {
+            "id": 114,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "xiāoyáo",
+            "hanzi": "逍遥",
+            "meaning": "Bebas lepas tanpa beban",
+            "audio": "逍遥"
+        },
+        {
+            "id": 115,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "dùncuò",
+            "hanzi": "顿挫",
+            "meaning": "Irama naik turun berbobot",
+            "audio": "顿挫"
+        },
+        {
+            "id": 116,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "tāoyù",
+            "hanzi": "韬略",
+            "meaning": "Siasat strategi perang agung",
+            "audio": "韬略"
+        },
+        {
+            "id": 117,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "yìngyìng",
+            "hanzi": "荧荧",
+            "meaning": "Berkilau kemilau lembut",
+            "audio": "荧荧"
+        },
+        {
+            "id": 118,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "ruìzhì",
+            "hanzi": "睿智",
+            "meaning": "Kearifan visioner tajam",
+            "audio": "睿智"
+        },
+        {
+            "id": 119,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "dǐlì",
+            "hanzi": "砥砺",
+            "meaning": "Menggembleng diri tak gentar",
+            "audio": "砥砺"
+        },
+        {
+            "id": 120,
+            "level": 6,
+            "difficulty": "hard",
+            "pinyin": "kuòdà",
+            "hanzi": "阔步",
+            "meaning": "Melangkah tegap gagah",
+            "audio": "阔步"
+        }
+    ]
+}

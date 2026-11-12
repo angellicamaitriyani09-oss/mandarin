@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" width="100%" height="100%">
+  <defs>
+    <filter id="softShadowS" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#ea7a8f" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Speech bubble "Nǐ hǎo!" -->
+  <g transform="translate(60, 40)" filter="url(#softShadowS)">
+    <rect x="0" y="0" width="95" height="42" rx="14" fill="#ffffff" stroke="#ffb3c6" stroke-width="2"/>
+    <polygon points="40,42 52,42 35,55" fill="#ffffff"/>
+    <polyline points="40,42 35,55 52,42" stroke="#ffb3c6" stroke-width="2" fill="#ffffff"/>
+    <text x="47" y="27" font-family="'Nunito', sans-serif" font-weight="bold" font-size="16" fill="#d9536d" text-anchor="middle">Nǐ hǎo!</text>
+  </g>
+
+  <!-- Ears -->
+  <circle cx="125" cy="130" r="36" fill="#2d3142"/>
+  <circle cx="125" cy="130" r="20" fill="#474d61"/>
+  <circle cx="275" cy="130" r="36" fill="#2d3142"/>
+  <circle cx="275" cy="130" r="20" fill="#474d61"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="190" rx="100" ry="85" fill="#ffffff" filter="url(#softShadowS)"/>
+
+  <!-- Eye Patches -->
+  <ellipse cx="155" cy="185" rx="26" ry="20" fill="#2d3142" transform="rotate(-15 155 185)"/>
+  <ellipse cx="245" cy="185" rx="26" ry="20" fill="#2d3142" transform="rotate(15 245 185)"/>
+
+  <!-- Open shining eyes -->
+  <circle cx="158" cy="183" r="10" fill="#ffffff"/>
+  <circle cx="160" cy="182" r="6" fill="#1e2029"/>
+  <circle cx="162" cy="180" r="2.5" fill="#ffffff"/>
+
+  <circle cx="242" cy="183" r="10" fill="#ffffff"/>
+  <circle cx="240" cy="182" r="6" fill="#1e2029"/>
+  <circle cx="238" cy="180" r="2.5" fill="#ffffff"/>
+
+  <!-- Blush -->
+  <ellipse cx="130" cy="210" rx="15" ry="9" fill="#ff9ebb" opacity="0.6"/>
+  <ellipse cx="270" cy="210" rx="15" ry="9" fill="#ff9ebb" opacity="0.6"/>
+
+  <!-- Cute Nose & Open speaking mouth -->
+  <ellipse cx="200" cy="205" rx="8" ry="5" fill="#2d3142"/>
+  <path d="M190 216 Q200 234 210 216 Z" fill="#ff6b8b" stroke="#2d3142" stroke-width="2.5"/>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="310" rx="95" ry="65" fill="#2d3142"/>
+  <ellipse cx="200" cy="305" rx="60" ry="45" fill="#ffffff"/>
+
+  <!-- Microphone in Hand -->
+  <g transform="translate(182, 220)" filter="url(#softShadowS)">
+    <!-- Mic Head -->
+    <ellipse cx="18" cy="18" rx="14" ry="16" fill="#e07a5f"/>
+    <!-- Mesh lines -->
+    <line x1="8" y1="18" x2="28" y2="18" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="18" y1="5" x2="18" y2="31" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+    <!-- Mic handle -->
+    <path d="M12 30 L24 30 L21 65 L15 65 Z" fill="#2d3142"/>
+    <!-- Panda Paw holding it -->
+    <circle cx="18" cy="45" r="14" fill="#2d3142"/>
+    <ellipse cx="18" cy="45" rx="7" ry="5" fill="#ff9ebb"/>
+  </g>
+</svg>

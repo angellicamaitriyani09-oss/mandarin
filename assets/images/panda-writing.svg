@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" width="100%" height="100%">
+  <defs>
+    <filter id="softShadowW" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#ea7a8f" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Ears -->
+  <circle cx="125" cy="130" r="36" fill="#2d3142"/>
+  <circle cx="125" cy="130" r="20" fill="#474d61"/>
+  <circle cx="275" cy="130" r="36" fill="#2d3142"/>
+  <circle cx="275" cy="130" r="20" fill="#474d61"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="190" rx="100" ry="85" fill="#ffffff" filter="url(#softShadowW)"/>
+
+  <!-- Eye Patches -->
+  <ellipse cx="155" cy="185" rx="26" ry="20" fill="#2d3142" transform="rotate(-15 155 185)"/>
+  <ellipse cx="245" cy="185" rx="26" ry="20" fill="#2d3142" transform="rotate(15 245 185)"/>
+
+  <!-- Sparkly focused eyes -->
+  <circle cx="158" cy="184" r="10" fill="#ffffff"/>
+  <circle cx="160" cy="183" r="6" fill="#1e2029"/>
+  <circle cx="162" cy="181" r="2.5" fill="#ffffff"/>
+
+  <circle cx="242" cy="184" r="10" fill="#ffffff"/>
+  <circle cx="240" cy="183" r="6" fill="#1e2029"/>
+  <circle cx="238" cy="181" r="2.5" fill="#ffffff"/>
+
+  <!-- Blush -->
+  <ellipse cx="130" cy="210" rx="15" ry="9" fill="#ff9ebb" opacity="0.6"/>
+  <ellipse cx="270" cy="210" rx="15" ry="9" fill="#ff9ebb" opacity="0.6"/>
+
+  <!-- Cute Nose & Mouth -->
+  <ellipse cx="200" cy="205" rx="8" ry="5" fill="#2d3142"/>
+  <path d="M192 216 Q200 225 208 216" fill="none" stroke="#2d3142" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="310" rx="95" ry="65" fill="#2d3142"/>
+  <ellipse cx="200" cy="305" rx="60" ry="45" fill="#ffffff"/>
+
+  <!-- Big Yellow Pencil & Paw -->
+  <g transform="translate(260, 180) rotate(-35)" filter="url(#softShadowW)">
+    <!-- Pencil Body -->
+    <rect x="0" y="0" width="22" height="110" rx="4" fill="#f6bd60"/>
+    <line x1="7" y1="0" x2="7" y2="110" stroke="#ea9f3e" stroke-width="2"/>
+    <line x1="15" y1="0" x2="15" y2="110" stroke="#ea9f3e" stroke-width="2"/>
+    <!-- Pencil Eraser & Ferrule -->
+    <rect x="0" y="110" width="22" height="12" fill="#c0c0c0"/>
+    <rect x="0" y="122" width="22" height="22" rx="4" fill="#ff9ebb"/>
+    <!-- Pencil Tip -->
+    <polygon points="0,0 22,0 11,-30" fill="#eddcd2"/>
+    <polygon points="7,-20 15,-20 11,-30" fill="#2d3142"/>
+  </g>
+
+  <!-- Left Paw resting -->
+  <ellipse cx="120" cy="280" rx="18" ry="14" fill="#2d3142"/>
+  <!-- Right Paw gripping pencil -->
+  <ellipse cx="270" cy="235" rx="20" ry="16" fill="#2d3142"/>
+  <ellipse cx="270" cy="235" rx="10" ry="7" fill="#ff9ebb"/>
+</svg>
