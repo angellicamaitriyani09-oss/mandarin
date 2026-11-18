@@ -1848,7 +1848,6 @@ body {
 
 .flashcard-scene:hover .flashcard-inner:not(.is-flipped) {
   box-shadow: 0 20px 48px rgba(242, 114, 137, 0.22);
-  transform: translateY(-2px);
 }
 
 .flashcard-inner {
@@ -1856,9 +1855,9 @@ body {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    box-shadow 0.3s ease,
-    transform 0.3s ease;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s ease;
   border-radius: var(--radius-lg);
   box-shadow: var(--card-shadow);
 }
@@ -1872,6 +1871,7 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: var(--radius-lg);
   display: flex;
   flex-direction: column;
@@ -1879,12 +1879,34 @@ body {
   justify-content: center;
   gap: 10px;
   padding: 1.5rem;
+  transition: opacity 0.18s ease 0.12s, visibility 0s linear 0.18s;
 }
 
 /* Front Face */
 .flashcard-front {
   background: linear-gradient(145deg, #fff7f8 0%, #fff0f3 100%);
   border: 2px solid #ffd8e0;
+  transform: rotateY(0deg) translateZ(2px) !important;
+  opacity: 1;
+  visibility: visible;
+}
+
+.flashcard-inner.is-flipped .flashcard-front {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.flashcard-inner:not(.is-flipped) .flashcard-back {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.flashcard-inner.is-flipped .flashcard-back {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .flashcard-front .fc-chinese {
@@ -1916,7 +1938,7 @@ body {
 .flashcard-back {
   background: linear-gradient(145deg, #ecfdf5 0%, #d1fae5 100%);
   border: 2px solid #a7f3d0;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateZ(2px) !important;
 }
 
 .flashcard-back .fc-meaning {
@@ -2544,10 +2566,11 @@ body {
    3D DUAL-DIRECTION FLASHCARD SYSTEM STYLES (PREMIUM & ULTRA-AESTHETIC)
    ========================================================================== */
 .fc-card-stage {
-  perspective: 1600px;
+  perspective: 1500px;
+  -webkit-perspective: 1500px;
   width: 100%;
   max-width: 680px;
-  height: 420px;
+  height: 440px;
   margin: 0 auto 1.8rem auto;
   position: relative;
 }
@@ -2557,7 +2580,9 @@ body {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: transform 0.75s cubic-bezier(0.34, 1.56, 0.64, 1);
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
   cursor: pointer;
   border-radius: 32px;
 }
@@ -2575,40 +2600,56 @@ body {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 32px;
-  padding: 1.8rem 2.4rem;
+  padding: 1.75rem 2.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 20px 50px rgba(244, 114, 182, 0.16), 0 6px 18px rgba(0, 0, 0, 0.04);
-  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 50px rgba(244, 114, 182, 0.16), 0 6px 18px rgba(0, 0, 0, 0.05);
+  border: 2px solid #ffd2dc;
   user-select: none;
   box-sizing: border-box;
   overflow: hidden;
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.18s ease 0.12s, visibility 0s linear 0.18s, box-shadow 0.3s ease;
 }
 
 .fc-card-stage:hover .fc-face {
-  box-shadow: 0 28px 65px rgba(244, 114, 182, 0.28), 0 10px 25px rgba(0, 0, 0, 0.07);
-  transform: translateY(-3px);
+  box-shadow: 0 26px 60px rgba(244, 114, 182, 0.24), 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* Background Gradients & Watermark Elements */
+/* Background Gradients & Explicit 3D Face Orientations */
 .fc-face-front {
-  background:
-    radial-gradient(circle at 100% 0%, rgba(255, 182, 193, 0.35) 0%, transparent 50%),
-    radial-gradient(circle at 0% 100%, rgba(254, 205, 211, 0.3) 0%, transparent 45%),
-    linear-gradient(140deg, #ffffff 0%, #fff7f9 60%, #fff0f3 100%);
+  background: linear-gradient(145deg, #ffffff 0%, #fff7f9 65%, #fff0f3 100%);
   border-color: #ffd2dc;
+  transform: rotateY(0deg) translateZ(2px) !important;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 2;
 }
 
 .fc-face-back {
-  background:
-    radial-gradient(circle at 0% 0%, rgba(167, 243, 208, 0.4) 0%, transparent 50%),
-    radial-gradient(circle at 100% 100%, rgba(209, 250, 229, 0.35) 0%, transparent 45%),
-    linear-gradient(140deg, #ffffff 0%, #f7fef9 60%, #ecfdf5 100%);
-  transform: rotateY(180deg);
-  border-color: #bbf7d0;
+  background: linear-gradient(145deg, #ffffff 0%, #f4fdf8 65%, #ecfdf5 100%);
+  border-color: #86efac;
+  transform: rotateY(180deg) translateZ(2px) !important;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.fc-card-flipper.is-flipped .fc-face-front {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.fc-card-flipper.is-flipped .fc-face-back {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 2;
 }
 
 /* Hanzi Large Watermark in Background */
@@ -2618,17 +2659,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: var(--font-chinese, "Noto Serif SC", "Songti SC", serif);
-  font-size: 16rem;
+  font-size: 15rem;
   font-weight: 900;
-  color: rgba(244, 63, 94, 0.04);
+  color: rgba(244, 63, 94, 0.035);
   pointer-events: none;
   user-select: none;
-  z-index: 1;
+  z-index: 0;
   line-height: 1;
 }
 
 .fc-face-back .fc-face-watermark {
-  color: rgba(16, 185, 129, 0.04);
+  color: rgba(16, 185, 129, 0.035);
 }
 
 /* Ornate Corner Accents */
@@ -2683,42 +2724,39 @@ body {
   align-items: center;
   justify-content: center;
   min-width: 120px;
-  min-height: 120px;
+  min-height: 112px;
   padding: 8px 24px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.02), 0 4px 16px rgba(244, 114, 182, 0.1);
-  border: 1.5px dashed rgba(244, 63, 94, 0.25);
+  background: #fffafb;
+  box-shadow: 0 4px 14px rgba(244, 114, 182, 0.1);
+  border: 1.5px dashed rgba(244, 63, 94, 0.3);
   margin-bottom: 6px;
 }
 
 .fc-hanzi-display {
   font-family: var(--font-chinese, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif);
-  font-size: 4.5rem;
+  font-size: 4.3rem;
   font-weight: 900;
   color: #0f172a;
-  line-height: 1;
+  line-height: 1.05;
   text-align: center;
-  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   letter-spacing: 2px;
   position: relative;
   z-index: 2;
 }
 
 .fc-pinyin-display {
-  font-size: 1.65rem;
+  font-size: 1.6rem;
   font-weight: 800;
-  color: var(--primary-pink);
-  letter-spacing: 1.5px;
+  color: #e11d48 !important;
+  -webkit-text-fill-color: #e11d48 !important;
+  background: none !important;
+  letter-spacing: 1.2px;
   text-align: center;
-  background: linear-gradient(135deg, #e11d48 0%, #ff4071 50%, #fb7185 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 2px 8px rgba(244, 63, 94, 0.12);
 }
 
 .fc-meaning-display {
-  font-size: 2rem;
+  font-size: 1.95rem;
   font-weight: 900;
   color: #065f46;
   text-align: center;
@@ -2726,16 +2764,14 @@ body {
 }
 
 .fc-example-box {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1.5px solid rgba(167, 243, 208, 0.8);
+  background: #f0fdf4;
+  border: 1.5px solid #86efac;
   border-radius: 18px;
   padding: 12px 20px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.06);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.06);
 }
 
 .fc-flip-indicator-btn {
@@ -3957,19 +3993,19 @@ body.dark-mode .fc-stat-box {
 
 body.dark-mode .fc-hanzi-display {
   color: #ffffff !important;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6) !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5) !important;
 }
 
 body.dark-mode .fc-hanzi-wrap {
-  background: rgba(255, 255, 255, 0.04) !important;
-  border-color: rgba(242, 114, 137, 0.3) !important;
+  background: #1e293b !important;
+  border: 1.5px dashed rgba(244, 114, 182, 0.4) !important;
   box-shadow: none !important;
 }
 
 body.dark-mode .fc-pinyin-display {
-  background: linear-gradient(135deg, #fb7185 0%, #fda4af 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+  color: #ff8da1 !important;
+  -webkit-text-fill-color: #ff8da1 !important;
+  background: none !important;
 }
 
 body.dark-mode .fc-meaning-display {
@@ -3977,15 +4013,15 @@ body.dark-mode .fc-meaning-display {
 }
 
 body.dark-mode .fc-example-box {
-  background: rgba(255, 255, 255, 0.04) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: #1e293b !important;
+  border: 1.5px solid rgba(16, 185, 129, 0.3) !important;
   color: #f8fafc !important;
 }
 
 body.dark-mode .fc-flip-indicator-btn {
   background: #1e293b !important;
   color: #cbd5e1 !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
 }
 
 /* 9. Quiz Interaktif & Opsi Jawaban: Rounded Pill Cards */
@@ -5439,3 +5475,540 @@ body.dark-mode [style*="font-family: var(--font-chinese)"] rt {
   color: #fb923c !important;
   text-shadow: none;
 }
+
+/* ==========================================================================
+   18. UNIFIKASI TOTAL DARK MODE: SEMUA PERMUKAAN TERANG -> GELAP & KONTRAS TEKS
+   Menangani seluruh kartu, flashcard 3D/galeri, subtab, tabel, badge, tombol,
+   cerita mandarin, misi harian, e-sertifikat, tian zi ge, & panel admin
+   ========================================================================== */
+
+/* A. Flashcard 3D (.fc-face-front / .fc-face-back) & Mode Galeri (.fc-gallery-card) */
+body.dark-mode .fc-face,
+body.dark-mode .fc-face-front,
+body.dark-mode .fc-gallery-card {
+  background: linear-gradient(145deg, #161f30 0%, #0f172a 100%) !important;
+  background-color: #161f30 !important;
+  border: 2px solid rgba(244, 114, 182, 0.32) !important;
+  color: #f8fafc !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode .fc-face-back {
+  background: linear-gradient(145deg, #132226 0%, #0f172a 100%) !important;
+  background-color: #132226 !important;
+  border: 2px solid rgba(16, 185, 129, 0.38) !important;
+  color: #f8fafc !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode .fc-face-watermark {
+  color: rgba(255, 255, 255, 0.03) !important;
+}
+
+body.dark-mode .fc-example-box {
+  background: #1e293b !important;
+  background-image: none !important;
+  border: 1.5px solid rgba(16, 185, 129, 0.3) !important;
+  color: #f8fafc !important;
+}
+
+body.dark-mode .fc-direction-pill-btn,
+body.dark-mode .fc-nav-btn,
+body.dark-mode .fc-btn-review,
+body.dark-mode .fc-level-chip,
+body.dark-mode .fc-flip-indicator-btn,
+body.dark-mode .fc-card-stage:hover .fc-flip-indicator-btn {
+  background: #1e293b !important;
+  background-image: none !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .fc-direction-pill-btn.active {
+  background: linear-gradient(135deg, var(--primary-pink) 0%, #ff5277 100%) !important;
+  border-color: var(--primary-pink) !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .fc-audio-btn {
+  background: rgba(242, 114, 137, 0.18) !important;
+  background-image: none !important;
+  border-color: rgba(242, 114, 137, 0.35) !important;
+  color: #ff8da1 !important;
+}
+
+body.dark-mode .fc-audio-btn-emerald {
+  background: rgba(16, 185, 129, 0.18) !important;
+  background-image: none !important;
+  border-color: rgba(16, 185, 129, 0.35) !important;
+  color: #34d399 !important;
+}
+
+/* B. Skill Subtab Bar, Audio Player, Feedback Cards & Komponen Umum */
+body.dark-mode .skill-subtab-bar {
+  background: #111827 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .skill-subtab-btn {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .skill-subtab-btn:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #f8fafc !important;
+}
+
+body.dark-mode .skill-subtab-btn.active {
+  background: #1e293b !important;
+  color: #ff8da1 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35) !important;
+}
+
+body.dark-mode .custom-audio-player,
+body.dark-mode .role-quick-selector,
+body.dark-mode .stat-circle-inner,
+body.dark-mode .skill-card-btn-arrow,
+body.dark-mode .role-btn-chip,
+body.dark-mode .example-box-pill {
+  background: #111827 !important;
+  background-image: none !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f8fafc !important;
+}
+
+body.dark-mode .sidebar-panel,
+body.dark-mode .achievement-item,
+body.dark-mode .speech-bubble-mini,
+body.dark-mode .auth-split-card,
+body.dark-mode .auth-right-form,
+body.dark-mode .auth-left-illustration,
+body.dark-mode .grammar-card-box,
+body.dark-mode .adaptive-rec-card,
+body.dark-mode .bank-page-btn,
+body.dark-mode .footer-mascot-pill,
+body.dark-mode .back-to-top-btn,
+body.dark-mode .form-control {
+  background: #161f30 !important;
+  background-image: none !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f8fafc !important;
+}
+
+body.dark-mode .stat-circle-progress {
+  background: conic-gradient(var(--primary-pink) calc(var(--progress, 60) * 1%), #1e293b 0) !important;
+}
+
+body.dark-mode .progress-bar-container,
+body.dark-mode .fc-progress-bar {
+  background: #1e293b !important;
+}
+
+body.dark-mode .exercise-thumbnail,
+body.dark-mode .profile-avatar-mini {
+  background: rgba(242, 114, 137, 0.15) !important;
+  color: #ff8da1 !important;
+}
+
+body.dark-mode .completed-badge-pill,
+body.dark-mode .quiz-num-btn.answered {
+  background: rgba(16, 185, 129, 0.18) !important;
+  border-color: rgba(16, 185, 129, 0.35) !important;
+  color: #34d399 !important;
+}
+
+body.dark-mode .quiz-option-item.correct,
+body.dark-mode .duolingo-feedback-card.correct {
+  background: #064e3b !important;
+  background-image: none !important;
+  border-color: #10b981 !important;
+  color: #6ee7b7 !important;
+}
+
+body.dark-mode .quiz-option-item.wrong,
+body.dark-mode .duolingo-feedback-card.incorrect {
+  background: #450a0a !important;
+  background-image: none !important;
+  border-color: #ef4444 !important;
+  color: #fca5a5 !important;
+}
+
+body.dark-mode .footer-bottom-bar {
+  background: rgba(11, 15, 25, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .footer-badge-sys {
+  background: rgba(59, 130, 246, 0.15) !important;
+  color: #60a5fa !important;
+}
+
+body.dark-mode .vocab-table-mandarin tr:hover td,
+body.dark-mode .table-admin tr:hover td,
+body.dark-mode .table-user tr:hover td {
+  background: #1e293b !important;
+  color: #ffffff !important;
+}
+
+/* C. Cerita Mandarin (Reader Article, Controls, Options & Ruby Highlights) */
+body.dark-mode .cerita-full-article,
+body.dark-mode article[style*="background"] {
+  background: #111827 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #f8fafc !important;
+}
+
+body.dark-mode .cerita-control-btn,
+body.dark-mode .btn-speech-mini {
+  background: #1e293b !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .cerita-control-btn.active,
+body.dark-mode .btn-speech-mini:hover {
+  background: #431407 !important;
+  border-color: #fb923c !important;
+  color: #fdba74 !important;
+}
+
+body.dark-mode .cerita-quiz-item {
+  background: #111827 !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .cerita-option-label {
+  background: #161f30 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f8fafc !important;
+}
+
+body.dark-mode .cerita-option-label:hover {
+  background: #1e293b !important;
+  border-color: #fb923c !important;
+  color: #fdba74 !important;
+}
+
+body.dark-mode .cerita-ruby-active {
+  background: #7c2d12 !important;
+  color: #ffffff !important;
+  border-radius: 6px;
+}
+
+body.dark-mode .cerita-ruby-speaking {
+  background: #854d0e !important;
+  color: #fef08a !important;
+  border-radius: 6px;
+}
+
+body.dark-mode .cerita-char-tooltip {
+  background: #0f172a !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  color: #f8fafc !important;
+}
+
+/* D. Konversi Universal Semua Inline Background Terang (Putih, Abu Muda, Pastel, & Gradien Terang) */
+body.dark-mode [style*="background: #ffffff"],
+body.dark-mode [style*="background:#ffffff"],
+body.dark-mode [style*="background-color: #ffffff"],
+body.dark-mode [style*="background: #fff;"],
+body.dark-mode [style*="background:#fff;"],
+body.dark-mode [style*='background: #fff"'],
+body.dark-mode [style*='background:#fff"'],
+body.dark-mode [style*="background: white"],
+body.dark-mode [style*="background: rgb(255, 255, 255)"],
+body.dark-mode [style*="background: rgba(255, 255, 255, 0.7"],
+body.dark-mode [style*="background: rgba(255, 255, 255, 0.8"],
+body.dark-mode [style*="background: rgba(255, 255, 255, 0.9"],
+body.dark-mode [style*="background: rgba(255,255,255,0.7"],
+body.dark-mode [style*="background: rgba(255,255,255,0.8"],
+body.dark-mode [style*="background: rgba(255,255,255,0.9"],
+body.dark-mode [style*="background: #f8fafc"],
+body.dark-mode [style*="background:#f8fafc"],
+body.dark-mode [style*="background: rgb(248, 250, 252)"],
+body.dark-mode [style*="background: #f8f9fa"],
+body.dark-mode [style*="background: #f1f5f9"],
+body.dark-mode [style*="background:#f1f5f9"],
+body.dark-mode [style*="background: rgb(241, 245, 249)"],
+body.dark-mode [style*="background: #f1f3f7"],
+body.dark-mode [style*="background: #e2e8f0"],
+body.dark-mode [style*="background: #fafafa"],
+body.dark-mode [style*="background: rgb(250, 250, 250)"],
+body.dark-mode [style*="background: #fafaf9"],
+body.dark-mode [style*="background: #fcfdfe"],
+body.dark-mode [style*="background: #fdfbfb"],
+body.dark-mode [style*="background: #fdfafb"],
+body.dark-mode [style*="background: #fdf8f9"],
+body.dark-mode [style*="background: #fffdfa"],
+body.dark-mode [style*="background: #fffdfd"],
+body.dark-mode [style*="background: #fffcfd"],
+body.dark-mode [style*="background: #fffaf0"],
+body.dark-mode [style*="background: #fffafb"] {
+  background: #161f30 !important;
+  background-image: none !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  color: #f8fafc !important;
+}
+
+/* Sub-elemen di dalam kartu gelap dibuat sedikit lebih pekat (#111827) agar hierarki visual rapi */
+body.dark-mode .modern-course-card [style*="background: #"],
+body.dark-mode .interactive-panel [style*="background: #ffffff"],
+body.dark-mode .interactive-panel [style*="background: #fff;"],
+body.dark-mode .interactive-panel [style*="background: #f8fafc"],
+body.dark-mode .interactive-panel [style*="background: #f1f5f9"],
+body.dark-mode .interactive-panel [style*="background: #fafafa"],
+body.dark-mode .admin-card [style*="background: #ffffff"],
+body.dark-mode .admin-card [style*="background: #fff;"],
+body.dark-mode .admin-card [style*="background: #f8fafc"],
+body.dark-mode .admin-card [style*="background: #f1f5f9"],
+body.dark-mode #beranda-daily-missions-panel div[style*="background: #ffffff"] {
+  background: #111827 !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Pastel Pink / Rose / Merah Muda Terang -> Dark Rose Surface */
+body.dark-mode [style*="background: #fff0f3"],
+body.dark-mode [style*="background:#fff0f3"],
+body.dark-mode [style*="background: rgb(255, 240, 243)"],
+body.dark-mode [style*="background: rgba(255, 240, 243"],
+body.dark-mode [style*="background: #fff1f2"],
+body.dark-mode [style*="background:#fff1f2"],
+body.dark-mode [style*="background: rgb(255, 241, 242)"],
+body.dark-mode [style*="background: #fff5f7"],
+body.dark-mode [style*="background: #fff7f8"],
+body.dark-mode [style*="background: #fff8f9"],
+body.dark-mode [style*="background: #fdf2f8"],
+body.dark-mode [style*="background: #fdf2f4"],
+body.dark-mode [style*="background: #fce7f3"],
+body.dark-mode [style*="background: #fde8ec"],
+body.dark-mode [style*="background: #fdeced"],
+body.dark-mode [style*="background: #fef2f2"],
+body.dark-mode [style*="background:#fef2f2"],
+body.dark-mode [style*="background: rgb(254, 242, 242)"],
+body.dark-mode [style*="background: #fee2e2"],
+body.dark-mode [style*="background:#fee2e2"],
+body.dark-mode [style*="background: rgb(254, 226, 226)"] {
+  background: #2a1520 !important;
+  background-image: none !important;
+  border-color: rgba(244, 114, 182, 0.25) !important;
+  color: #fda4af !important;
+}
+
+/* Pastel Oranye / Kuning / Amber Terang -> Dark Bronze/Amber Surface */
+body.dark-mode [style*="background: #fff7ed"],
+body.dark-mode [style*="background:#fff7ed"],
+body.dark-mode [style*="background: #ffedd5"],
+body.dark-mode [style*="background: #fff8eb"],
+body.dark-mode [style*="background: #fffbeb"],
+body.dark-mode [style*="background:#fffbeb"],
+body.dark-mode [style*="background: #fef3c7"],
+body.dark-mode [style*="background: #fef9c3"],
+body.dark-mode [style*="background: #fef08a"],
+body.dark-mode [style*="background: #fed7aa"] {
+  background: #291a0e !important;
+  background-image: none !important;
+  border-color: rgba(251, 146, 60, 0.28) !important;
+  color: #fdba74 !important;
+}
+
+/* Pastel Hijau / Mint / Cyan Terang -> Dark Emerald/Teal Surface */
+body.dark-mode [style*="background: #ecfdf5"],
+body.dark-mode [style*="background:#ecfdf5"],
+body.dark-mode [style*="background: rgb(236, 253, 245)"],
+body.dark-mode [style*="background: rgba(236, 253, 245"],
+body.dark-mode [style*="background: rgba(236,253,245"],
+body.dark-mode [style*="background: #f0fdf4"],
+body.dark-mode [style*="background: #f0fdf9"],
+body.dark-mode [style*="background: #dcfce7"],
+body.dark-mode [style*="background: rgb(220, 252, 231)"],
+body.dark-mode [style*="background: #e6faf7"],
+body.dark-mode [style*="background: rgb(230, 250, 247)"],
+body.dark-mode [style*="background: #eafaf7"],
+body.dark-mode [style*="background: #ecfeff"],
+body.dark-mode [style*="background: #cff4fc"] {
+  background: #0d2822 !important;
+  background-image: none !important;
+  border-color: rgba(16, 185, 129, 0.28) !important;
+  color: #6ee7b7 !important;
+}
+
+/* Pastel Biru / Indigo / Ungu Terang -> Dark Slate-Blue/Indigo Surface */
+body.dark-mode [style*="background: #eff6ff"],
+body.dark-mode [style*="background:#eff6ff"],
+body.dark-mode [style*="background: rgb(239, 246, 255)"],
+body.dark-mode [style*="background: #f0f9ff"],
+body.dark-mode [style*="background: #e0f2fe"],
+body.dark-mode [style*="background: #dbeafe"],
+body.dark-mode [style*="background: #eef2ff"],
+body.dark-mode [style*="background: #f3e8ff"],
+body.dark-mode [style*="background: #f5f3ff"],
+body.dark-mode [style*="background:#f5f3ff"],
+body.dark-mode [style*="background: #faf5ff"],
+body.dark-mode [style*="background: #ede9fe"] {
+  background: #172554 !important;
+  background-image: none !important;
+  border-color: rgba(96, 165, 250, 0.28) !important;
+  color: #93c5fd !important;
+}
+
+/* Semua Inline Linear/Radial Gradient Berwarna Terang -> Dark Gradient Elegan */
+body.dark-mode [style*="linear-gradient(135deg, #fff"],
+body.dark-mode [style*="linear-gradient(135deg, #fef"],
+body.dark-mode [style*="linear-gradient(135deg, #f0f"],
+body.dark-mode [style*="linear-gradient(135deg, #f5f"],
+body.dark-mode [style*="linear-gradient(135deg, #eff"],
+body.dark-mode [style*="linear-gradient(135deg, #dcf"],
+body.dark-mode [style*="linear-gradient(135deg, #fee"],
+body.dark-mode [style*="linear-gradient(135deg, #ecf"],
+body.dark-mode [style*="linear-gradient(135deg, rgb(239"],
+body.dark-mode [style*="linear-gradient(135deg, rgb(240"],
+body.dark-mode [style*="linear-gradient(135deg, rgba(236"],
+body.dark-mode [style*="linear-gradient(145deg, #fff"],
+body.dark-mode [style*="linear-gradient(145deg, #ecf"],
+body.dark-mode [style*="linear-gradient(180deg, #fff"],
+body.dark-mode [style*=", #ffffff)"],
+body.dark-mode [style*=", #f0f9ff)"],
+body.dark-mode [style*="radial-gradient(circle at top right, #fff"] {
+  background: linear-gradient(135deg, #161f30 0%, #0f172a 100%) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f8fafc !important;
+}
+
+/* E. Konversi Global Warna Huruf Gelap ke Warna Terang Kontras Tinggi (Seluruh Halaman & Admin) */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode [style*="color: #0f172a"],
+body.dark-mode [style*="color:#0f172a"],
+body.dark-mode [style*="color: #1e293b"],
+body.dark-mode [style*="color:#1e293b"],
+body.dark-mode [style*="color: #334155"],
+body.dark-mode [style*="color:#334155"],
+body.dark-mode [style*="color: #374151"],
+body.dark-mode [style*="color: #2d3142"],
+body.dark-mode [style*="color: #000"],
+body.dark-mode [style*="color: black"],
+body.dark-mode [style*="color: #333"],
+body.dark-mode [style*="color: var(--dark-text)"] {
+  color: #f8fafc !important;
+}
+
+body.dark-mode [style*="color: #475569"],
+body.dark-mode [style*="color:#475569"],
+body.dark-mode [style*="color: #64748b"],
+body.dark-mode [style*="color:#64748b"],
+body.dark-mode [style*="color: #6b7280"],
+body.dark-mode [style*="color: #757c95"],
+body.dark-mode [style*="color: #555"],
+body.dark-mode [style*="color: #666"],
+body.dark-mode [style*="color: var(--text-muted)"] {
+  color: #cbd5e1 !important;
+}
+
+body.dark-mode [style*="color: #1e40af"],
+body.dark-mode [style*="color: #1e3a8a"],
+body.dark-mode [style*="color: #1d4ed8"],
+body.dark-mode [style*="color: #0369a1"],
+body.dark-mode [style*="color: #075985"],
+body.dark-mode [style*="color: rgb(30, 64, 175)"] {
+  color: #60a5fa !important;
+}
+
+body.dark-mode [style*="color: #065f46"],
+body.dark-mode [style*="color: #047857"],
+body.dark-mode [style*="color: #166534"],
+body.dark-mode [style*="color: #15803d"],
+body.dark-mode [style*="color: #0f766e"],
+body.dark-mode [style*="color: #059669"],
+body.dark-mode [style*="color: rgb(5, 150, 105)"] {
+  color: #34d399 !important;
+}
+
+body.dark-mode [style*="color: #7c2d12"],
+body.dark-mode [style*="color: #78350f"],
+body.dark-mode [style*="color: #9a3412"],
+body.dark-mode [style*="color: #92400e"],
+body.dark-mode [style*="color: #b45309"],
+body.dark-mode [style*="color: #c2410c"] {
+  color: #fbbf24 !important;
+}
+
+body.dark-mode [style*="color: #7f1d1d"],
+body.dark-mode [style*="color: #991b1b"],
+body.dark-mode [style*="color: #b91c1c"],
+body.dark-mode [style*="color: #be123c"],
+body.dark-mode [style*="color: #be185d"],
+body.dark-mode [style*="color: #831843"] {
+  color: #f87171 !important;
+}
+
+body.dark-mode [style*="color: #5b21b6"],
+body.dark-mode [style*="color: #6d28d9"],
+body.dark-mode [style*="color: #4c1d95"] {
+  color: #c084fc !important;
+}
+
+/* F. Pratinjau Kisi Kotak Menulis Tian Zi Ge (#tianzige-printable-area) di Dark Mode */
+body.dark-mode #tianzige-printable-area {
+  background: #161f30 !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+body.dark-mode #tianzige-printable-area div[style*="display: grid"] {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+}
+
+body.dark-mode #tianzige-printable-area div[style*="aspect-ratio: 1 / 1"] {
+  background: #0f172a !important;
+  border-right: 1.5px solid #334155 !important;
+  border-bottom: 1.5px solid #334155 !important;
+}
+
+body.dark-mode #tianzige-printable-area div[style*="border-top: 1px dashed"] {
+  border-top: 1px dashed rgba(148, 163, 184, 0.22) !important;
+}
+
+body.dark-mode #tianzige-printable-area div[style*="border-left: 1px dashed"] {
+  border-left: 1px dashed rgba(148, 163, 184, 0.22) !important;
+}
+
+body.dark-mode #tianzige-printable-area svg path[fill="#0f172a"] {
+  fill: #ffffff !important;
+}
+
+body.dark-mode #tianzige-printable-area svg path[stroke="#0f172a"] {
+  stroke: #ffffff !important;
+}
+
+/* G. Standalone Panel Admin (admin/*.php) di Dark Mode */
+body.dark-mode .admin-layout,
+body.dark-mode .admin-main {
+  background: #0b0f19 !important;
+  color: #f8fafc !important;
+}
+
+body.dark-mode .admin-sidebar {
+  background: #111827 !important;
+  border-right-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .admin-menu li a {
+  color: #cbd5e1 !important;
+}
+
+body.dark-mode .admin-menu li a:hover {
+  background: #1e293b !important;
+  color: #ff8da1 !important;
+}
+
+body.dark-mode .admin-menu li a.active {
+  background: linear-gradient(135deg, #2a1520, #1f121b) !important;
+  color: #ff8da1 !important;
+  border-left: 3.5px solid var(--primary-pink) !important;
+}
+

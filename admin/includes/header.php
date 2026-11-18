@@ -16,13 +16,23 @@ if ($currentPage !== 'login.php') {
 }
 ?>
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="<?= (isset($_COOKIE['mandarinku_theme']) && $_COOKIE['mandarinku_theme'] === 'dark') ? 'dark-mode' : '' ?>">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mandarinku Admin Panel</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css?v=<?= filemtime(__DIR__ . '/../../css/style.css') ?>">
+  <script>
+    (function() {
+      try {
+        const theme = localStorage.getItem('mandarinku_theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+        }
+      } catch(e) {}
+    })();
+  </script>
   <style>
     :root {
       --admin-sidebar-width: 270px;
@@ -254,7 +264,39 @@ if ($currentPage !== 'login.php') {
         </div>
       `;
     }
+
+    function applyAdminTheme(isDark) {
+      if (isDark) {
+        document.documentElement.classList.add('dark-mode');
+        document.body.classList.add('dark-mode');
+      } else {
+        document.documentElement.classList.remove('dark-mode');
+        document.body.classList.remove('dark-mode');
+      }
+      const btn = document.getElementById('admin-theme-toggle-btn');
+      if (btn) {
+        btn.innerHTML = isDark ? '☀️ <span>Terang</span>' : '🌙 <span>Gelap</span>';
+      }
+    }
+
+    function toggleAdminTheme() {
+      const isDark = !document.body.classList.contains('dark-mode');
+      try {
+        localStorage.setItem('mandarinku_theme', isDark ? 'dark' : 'light');
+        document.cookie = 'mandarinku_theme=' + (isDark ? 'dark' : 'light') + '; path=/; max-age=31536000';
+      } catch(e) {}
+      applyAdminTheme(isDark);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      try {
+        const theme = localStorage.getItem('mandarinku_theme');
+        if (theme === 'dark' || document.documentElement.classList.contains('dark-mode')) {
+          applyAdminTheme(true);
+        }
+      } catch(e) {}
+    });
   </script>
 </head>
-<body>
+<body class="<?= (isset($_COOKIE['mandarinku_theme']) && $_COOKIE['mandarinku_theme'] === 'dark') ? 'dark-mode' : '' ?>">
 <div class="admin-layout">

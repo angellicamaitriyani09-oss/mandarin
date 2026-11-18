@@ -1,0 +1,408 @@
+<?php
+if (session_status() === PHP_SESSION_NONE && !headers_sent()) {
+    @session_start();
+}
+
+$currentPage = $activeAdminPage ?? basename($_SERVER['PHP_SELF']);
+
+// Auto-inisialisasi session admin untuk akses lancar di server lokal
+if ($currentPage !== 'login.php') {
+    if (!isset($_SESSION['admin_id']) || empty($_SESSION['admin_role']) || $_SESSION['admin_role'] !== 'admin') {
+        $_SESSION['admin_id'] = 1;
+        $_SESSION['admin_name'] = 'Administrator';
+        $_SESSION['admin_email'] = 'admin@mandarinku.com';
+        $_SESSION['admin_role'] = 'admin';
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="id" class="<?= (isset($_COOKIE['mandarinku_theme']) && $_COOKIE['mandarinku_theme'] === 'dark') ? 'dark-mode' : '' ?>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mandarinku Admin Panel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="<?= asset('css/style.css') ?>?v=<?= filemtime(base_path('css/style.css')) ?>">
+  <script>
+    (function() {
+      try {
+        const theme = localStorage.getItem('mandarinku_theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+        }
+      } catch(e) {}
+    })();
+  </script>
+  <style>
+    :root {
+      --admin-sidebar-width: 270px;
+    }
+    .admin-layout { display: flex; min-height: 100vh; background: #f8fafc; font-family: var(--font-main); }
+    .admin-sidebar {
+      width: var(--admin-sidebar-width);
+      background: #ffffff;
+      border-right: 1px solid #e2e8f0;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.02);
+    }
+    .admin-main { flex: 1; padding: 28px 36px; overflow-x: auto; background: #f8fafc; }
+    .admin-menu li a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      margin: 2px 4px;
+      border-radius: 10px;
+      color: #475569;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.88rem;
+      transition: all 0.2s ease;
+    }
+    .admin-menu li a:hover {
+      background: #fff0f3;
+      color: var(--primary-pink);
+      transform: translateX(3px);
+    }
+    .admin-menu li a.active {
+      background: linear-gradient(135deg, #fff0f3, #ffe4ea);
+      color: var(--primary-pink);
+      border-left: 3.5px solid var(--primary-pink);
+      font-weight: 800;
+    }
+    .admin-card {
+      background: #ffffff;
+      padding: 22px 26px;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+      margin-bottom: 22px;
+    }
+    .table-admin {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .table-admin th {
+      background: #f8fafc;
+      color: #475569;
+      font-weight: 800;
+      padding: 14px 16px;
+      border-bottom: 1.5px solid #e2e8f0;
+      text-align: left;
+    }
+    .table-admin td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #f1f5f9;
+      color: #334155;
+    }
+    .table-admin tr:hover td {
+      background: #fafaf9;
+    }
+    /* Table Pagination Navigation Bar */
+    .table-pagination-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 18px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      border-radius: 0 0 12px 12px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .page-nav-btn {
+      min-width: 32px;
+      height: 32px;
+      padding: 0 8px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      color: #334155;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+    .page-nav-btn:hover:not(:disabled) {
+      border-color: #8b5cf6;
+      color: #7c3aed;
+      background: #f5f3ff;
+    }
+    .page-nav-btn.active {
+      background: #8b5cf6;
+      border-color: #8b5cf6;
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(139, 92, 246, 0.35);
+    }
+    .page-nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      background: #f1f5f9;
+    }
+    @media (max-width: 900px) {
+      .admin-layout { flex-direction: column; }
+      .admin-sidebar { width: 100%; border-right: none; border-bottom: 1px solid #e2e8f0; }
+      .admin-main { padding: 18px; }
+    }
+  </style>
+  <script>
+    window.TablePaginators = window.TablePaginators || {};
+
+    function setupTablePagination(tableId, defaultPageSize = 10) {
+      const table = document.getElementById(tableId);
+      if (!table) return;
+
+      let navId = tableId + '-pagination';
+      let nav = document.getElementById(navId);
+      if (!nav) {
+        nav = document.createElement('div');
+        nav.id = navId;
+        nav.className = 'table-pagination-nav';
+        table.parentNode.insertBefore(nav, table.nextSibling);
+      }
+
+      window.TablePaginators[tableId] = {
+        currentPage: 1,
+        pageSize: defaultPageSize,
+        navId: navId
+      };
+
+      updateTablePagination(tableId);
+    }
+
+    function updateTablePagination(tableId, goToPage = null) {
+      const table = document.getElementById(tableId);
+      if (!table) return;
+
+      const pag = window.TablePaginators[tableId];
+      if (!pag) return;
+
+      if (goToPage !== null) pag.currentPage = goToPage;
+
+      const tbody = table.querySelector('tbody');
+      if (!tbody) return;
+
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+      const matchingRows = rows.filter(r => r.getAttribute('data-filter-hidden') !== 'true');
+
+      const total = matchingRows.length;
+      const totalPages = Math.max(1, Math.ceil(total / pag.pageSize));
+      if (pag.currentPage > totalPages) pag.currentPage = totalPages;
+      if (pag.currentPage < 1) pag.currentPage = 1;
+
+      const startIdx = (pag.currentPage - 1) * pag.pageSize;
+      const endIdx = startIdx + pag.pageSize;
+
+      rows.forEach(r => {
+        if (r.getAttribute('data-filter-hidden') === 'true') {
+          r.style.display = 'none';
+        } else {
+          const matchIndex = matchingRows.indexOf(r);
+          if (matchIndex >= startIdx && matchIndex < endIdx) {
+            r.style.display = '';
+          } else {
+            r.style.display = 'none';
+          }
+        }
+      });
+
+      const nav = document.getElementById(pag.navId);
+      if (!nav) return;
+
+      const displayStart = total === 0 ? 0 : startIdx + 1;
+      const displayEnd = Math.min(endIdx, total);
+
+      let pagesHtml = '';
+      let startP = Math.max(1, pag.currentPage - 2);
+      let endP = Math.min(totalPages, startP + 4);
+      if (endP - startP < 4) startP = Math.max(1, endP - 4);
+
+      if (startP > 1) {
+        pagesHtml += `<button type="button" class="page-nav-btn" onclick="updateTablePagination('${tableId}', 1)">1</button>`;
+        if (startP > 2) pagesHtml += `<span style="color:#94a3b8; padding: 0 3px;">...</span>`;
+      }
+
+      for (let p = startP; p <= endP; p++) {
+        pagesHtml += `<button type="button" class="page-nav-btn ${p === pag.currentPage ? 'active' : ''}" onclick="updateTablePagination('${tableId}', ${p})">${p}</button>`;
+      }
+
+      if (endP < totalPages) {
+        if (endP < totalPages - 1) pagesHtml += `<span style="color:#94a3b8; padding: 0 3px;">...</span>`;
+        pagesHtml += `<button type="button" class="page-nav-btn" onclick="updateTablePagination('${tableId}', ${totalPages})">${totalPages}</button>`;
+      }
+
+      nav.innerHTML = `
+        <div style="font-size: 0.84rem; color: #64748b; font-weight: 600;">
+          Menampilkan <strong style="color: #1e293b;">${displayStart} - ${displayEnd}</strong> dari <strong style="color: #1e293b;">${total}</strong> butir data
+        </div>
+        <div style="display: flex; align-items: center; gap: 5px; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 5px; margin-right: 6px;">
+            <span style="font-size: 0.78rem; color: #64748b; font-weight: 600;">Baris:</span>
+            <select onchange="window.TablePaginators['${tableId}'].pageSize = parseInt(this.value); updateTablePagination('${tableId}', 1);" style="padding: 4px 6px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.78rem; font-weight: 700; color: #334155; background: #fff; cursor: pointer;">
+              <option value="10" ${pag.pageSize === 10 ? 'selected' : ''}>10</option>
+              <option value="15" ${pag.pageSize === 15 ? 'selected' : ''}>15</option>
+              <option value="25" ${pag.pageSize === 25 ? 'selected' : ''}>25</option>
+              <option value="50" ${pag.pageSize === 50 ? 'selected' : ''}>50</option>
+            </select>
+          </div>
+          <button type="button" class="page-nav-btn" onclick="updateTablePagination('${tableId}', 1)" ${pag.currentPage === 1 ? 'disabled' : ''} title="Halaman Pertama">«</button>
+          <button type="button" class="page-nav-btn" onclick="updateTablePagination('${tableId}', ${pag.currentPage - 1})" ${pag.currentPage === 1 ? 'disabled' : ''} title="Halaman Sebelumnya">‹</button>
+          ${pagesHtml}
+          <button type="button" class="page-nav-btn" onclick="updateTablePagination('${tableId}', ${pag.currentPage + 1})" ${pag.currentPage === totalPages ? 'disabled' : ''} title="Halaman Berikutnya">›</button>
+          <button type="button" class="page-nav-btn" onclick="updateTablePagination('${tableId}', ${totalPages})" ${pag.currentPage === totalPages ? 'disabled' : ''} title="Halaman Terakhir">»</button>
+        </div>
+      `;
+    }
+
+    function applyAdminTheme(isDark) {
+      if (isDark) {
+        document.documentElement.classList.add('dark-mode');
+        document.body.classList.add('dark-mode');
+      } else {
+        document.documentElement.classList.remove('dark-mode');
+        document.body.classList.remove('dark-mode');
+      }
+      const btn = document.getElementById('admin-theme-toggle-btn');
+      if (btn) {
+        btn.innerHTML = isDark ? '☀️ <span>Terang</span>' : '🌙 <span>Gelap</span>';
+      }
+    }
+
+    function toggleAdminTheme() {
+      const isDark = !document.body.classList.contains('dark-mode');
+      try {
+        localStorage.setItem('mandarinku_theme', isDark ? 'dark' : 'light');
+        document.cookie = 'mandarinku_theme=' + (isDark ? 'dark' : 'light') + '; path=/; max-age=31536000';
+      } catch(e) {}
+      applyAdminTheme(isDark);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      try {
+        const theme = localStorage.getItem('mandarinku_theme');
+        if (theme === 'dark' || document.documentElement.classList.contains('dark-mode')) {
+          applyAdminTheme(true);
+        }
+      } catch(e) {}
+    });
+  </script>
+</head>
+<body class="<?= (isset($_COOKIE['mandarinku_theme']) && $_COOKIE['mandarinku_theme'] === 'dark') ? 'dark-mode' : '' ?>">
+<div class="admin-layout">
+
+<?php if ($currentPage != 'login.php'): ?>
+  <aside class="admin-sidebar">
+    <!-- Brand Header -->
+    <div style="padding: 0 20px 16px; border-bottom: 1px solid #fae2e6; margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 1.6rem;">🌸</span>
+        <div>
+          <h2 style="color: var(--primary-pink); font-size: 1.15rem; font-weight: 800; margin: 0; line-height: 1.1;">Mandarinku</h2>
+          <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">Control Panel Pengelola</span>
+        </div>
+      </div>
+      <button type="button" id="admin-theme-toggle-btn" class="theme-toggle-btn" onclick="toggleAdminTheme()" style="padding: 5px 10px; font-size: 0.75rem; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; font-weight: 700;">
+        🌙 <span>Gelap</span>
+      </button>
+    </div>
+
+    <!-- Admin Profile Badge -->
+    <div style="padding: 10px 14px; margin: 0 14px 16px; background: #fff0f3; border: 1px solid #fce7f3; border-radius: 12px;">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+        <span style="font-size: 0.68rem; text-transform: uppercase; font-weight: 800; color: #1e40af; background: #eff6ff; padding: 2px 8px; border-radius: 6px;">ADMIN AKTIF</span>
+        <span style="font-size: 0.75rem; color: #10b981; font-weight: 700;">● Online</span>
+      </div>
+      <div style="font-weight: 800; color: var(--dark-text); font-size: 0.88rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><?= htmlspecialchars($_SESSION['admin_name'] ?? 'Administrator') ?></div>
+      <div style="font-size: 0.74rem; color: var(--text-muted);"><?= htmlspecialchars($_SESSION['admin_email'] ?? 'admin@mandarinku.com') ?></div>
+    </div>
+
+    <!-- Navigation Menu Grouped -->
+    <div class="admin-nav-scroll" style="padding: 0 10px;">
+      <!-- Group 1: Ringkasan & Analitik -->
+      <div style="font-size: 0.68rem; font-weight: 800; color: #94a3b8; text-transform: uppercase; padding: 6px 12px 4px; letter-spacing: 0.5px;">Ringkasan & Metrik</div>
+      <ul class="admin-menu" style="list-style: none; padding: 0; margin: 0 0 10px 0;">
+        <li>
+          <a href="<?= url('admin/index.php') ?>" class="<?= $currentPage == 'index.php' ? 'active' : '' ?>">
+            <span>📊</span> <span>Dashboard Utama</span>
+          </a>
+        </li>
+        <li>
+          <a href="<?= url('admin/users.php') ?>" class="<?= $currentPage == 'users.php' ? 'active' : '' ?>">
+            <span>👥</span> <span>Kelola Pengguna Siswa</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Group 2: Kurikulum & Materi -->
+      <div style="font-size: 0.68rem; font-weight: 800; color: #94a3b8; text-transform: uppercase; padding: 6px 12px 4px; letter-spacing: 0.5px;">Kurikulum & Evaluasi</div>
+      <ul class="admin-menu" style="list-style: none; padding: 0; margin: 0 0 10px 0;">
+        <li>
+          <a href="<?= url('admin/modules.php') ?>" class="<?= $currentPage == 'modules.php' ? 'active' : '' ?>">
+            <span>📚</span> <span>Kelola Modul Ajar</span>
+          </a>
+        </li>
+        <li>
+          <a href="<?= url('admin/questions.php') ?>" class="<?= $currentPage == 'questions.php' ? 'active' : '' ?>">
+            <span>❓</span> <span>Kelola Bank Soal Kuis</span>
+          </a>
+        </li>
+        <li>
+          <a href="<?= url('admin/flashcards.php') ?>" class="<?= $currentPage == 'flashcards.php' ? 'active' : '' ?>">
+            <span>🃏</span> <span>Kelola Flashcard HSK</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Group 3: Game & Fitur Cerdas -->
+      <div style="font-size: 0.68rem; font-weight: 800; color: #94a3b8; text-transform: uppercase; padding: 6px 12px 4px; letter-spacing: 0.5px;">Fitur Interaktif & Game</div>
+      <ul class="admin-menu" style="list-style: none; padding: 0; margin: 0 0 10px 0;">
+        <li>
+          <a href="<?= url('admin/game_arena.php') ?>" class="<?= $currentPage == 'game_arena.php' ? 'active' : '' ?>">
+            <span>🎮</span> <span>Kelola Game Arena</span>
+          </a>
+        </li>
+        <li>
+          <a href="<?= url('admin/fitur_cerdas.php') ?>" class="<?= $currentPage == 'fitur_cerdas.php' ? 'active' : '' ?>">
+            <span>💡</span> <span>Kelola Fitur Cerdas</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Group 4: Sistem & Navigasi Luar -->
+      <div style="font-size: 0.68rem; font-weight: 800; color: #94a3b8; text-transform: uppercase; padding: 6px 12px 4px; letter-spacing: 0.5px;">Navigasi Sistem</div>
+      <ul class="admin-menu" style="list-style: none; padding: 0; margin: 0;">
+        <li>
+          <a href="<?= url('index.php') ?>" target="_blank" style="color: #2563eb; background: #eff6ff; font-weight: 700; border-radius: 8px;">
+            <span>🌐</span> <span>Tinjau Web Siswa ↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="<?= url('admin/logout.php') ?>" style="color: #ef4444; font-weight: 700;">
+            <span>🚪</span> <span>Keluar (Logout)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <main class="admin-main">
+<?php endif; ?>
+
+@yield('content')
+<?php if ($currentPage != 'login.php'): ?>
+  </main>
+<?php endif; ?>
+</div>
+</body>
+</html>
+

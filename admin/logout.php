@@ -1,23 +1,4 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-
-// Kosongkan array session
-$_SESSION = [];
-
-// Hapus cookie session jika ada
-if (ini_get("session.use_cookies")) {
-    $params = session_get_cookie_params();
-    setcookie(session_name(), '', time() - 42000,
-        $params["path"], $params["domain"],
-        $params["secure"], $params["httponly"]
-    );
-}
-
-// Hancurkan session
-session_destroy();
-
-header("Location: login.php");
-exit();
-?>
+// Delegated to Laravel MVC Kernel (routes/web.php -> AdminController / AdminApiController)
+$app = require_once dirname(__DIR__) . '/bootstrap/app.php';
+$app->handleRequest('/admin/logout.php');

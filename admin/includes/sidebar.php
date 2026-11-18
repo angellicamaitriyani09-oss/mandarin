@@ -1,7 +1,7 @@
 <?php if (basename($_SERVER['PHP_SELF']) != 'login.php'): ?>
   <aside class="admin-sidebar">
     <!-- Brand Header -->
-    <div style="padding: 0 20px 16px; border-bottom: 1px solid #fae2e6; margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between;">
+    <div style="padding: 0 20px 16px; border-bottom: 1px solid #fae2e6; margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
       <div style="display: flex; align-items: center; gap: 8px;">
         <span style="font-size: 1.6rem;">🌸</span>
         <div>
@@ -9,6 +9,9 @@
           <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">Control Panel Pengelola</span>
         </div>
       </div>
+      <button type="button" id="admin-theme-toggle-btn" class="theme-toggle-btn" onclick="toggleAdminTheme()" style="padding: 5px 10px; font-size: 0.75rem; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; font-weight: 700;">
+        🌙 <span>Gelap</span>
+      </button>
     </div>
 
     <!-- Admin Profile Badge -->

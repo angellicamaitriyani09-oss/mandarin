@@ -19,3 +19,12 @@ __pycache__/
 # Dependencies (if any)
 node_modules/
 vendor/
+
+# Laravel compiled cache & sessions
+storage/framework/views/*.php
+storage/framework/sessions/*
+.superpowers/
+
+# Environment
+.env
+
