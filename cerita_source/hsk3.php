@@ -270,5 +270,95 @@ return [
         "explanation" => "Kalimat penutup menegaskan bahwa alam bebas adalah rumah sejati satwa liar, dan melindunginya adalah menjaga masa depan manusia."
       ]
     ]
+  ],
+  [
+    "id" => "cerita-hsk-3-4",
+    "level" => 3,
+    "levelName" => "HSK 3 (Menengah Awal)",
+    "badgeColor" => "#d97706",
+    "badgeBg" => "#fffbeb",
+    "theme" => "Budaya Festival Lampion & Keluarga (元宵节传统文化)",
+    "titleCn" => "正月十五的红灯笼与猜灯谜",
+    "titlePinyin" => "Zhēngyuè Shíwǔ de Hóng Dēnglong yǔ Cāi Dēngmí",
+    "titleId" => "Lampion Merah Bulan Purnama Pertama & Tebak Teka-Teki Lampion",
+    "estimatedMinutes" => 7,
+    "summary" => "Kisah hangat mengenai Lin Lin merayakan Festival Lampion (Yuanxiao Jie) di kota tua bersama neneknya, membuat onde-onde Tangyuan, dan memecahkan teka-teki lampion merah.",
+    "paragraphs" => [
+      [
+        "cn" => "农历正月十五是中国传统的元宵节，也是新年里的第一个月圆之夜。这天晚上，古老的小镇大街小巷挂满了成千上万盏亮晶晶的红灯笼，把整条街道照得像白天一样明亮。从外地回老家探亲的林林挽着奶奶的手臂，一边欣赏着喜庆的花灯，一边闻着空气中飘来的甜香。奶奶微笑着对林林说：“按照老家的习俗，只有过完了热闹的元宵节，整个春节才算真正圆满了。”",
+        "pinyin" => "Nónglì zhēngyuè shíwǔ shì Zhōngguó chuántǒng de Yuánxiāojié, yě shì xīnnián lǐ de dì yí gè yuèyuán zhī yè. Zhè tiān wǎnshang, gǔlǎo de xiǎozhèn dàjiē xiǎoxiàng guàmǎn le chéngqiān shàngwàn zhǎn liàngjīngjīng de hóng dēnglong, bǎ zhěng tiáo jiēdào zhào de xiàng báitiān yíyàng míngliàng. Cóng wàidì huí lǎojiā tànqīn de Línlin wǎnzhe nǎinai de shǒubì, yìbiān xīnshǎngzhe xǐqìng de huādēng, yìbiān wénzhe kōngqì zhōng piāolái de tiánxiāng. Nǎinai wēixiàozhe duì Línlin shuō: “Ànzhào lǎojiā de xísú, zhǐyǒu guòwán le rènào de Yuánxiāojié, zhěnggè Chūnjié cái suàn zhēnzhèng yuánmǎn le.”",
+        "id" => "Tanggal lima belas bulan satu penanggalan imlek adalah Festival Lampion (Yuanxiao Jie) tradisional Tiongkok, sekaligus malam bulan purnama pertama di tahun baru. Malam itu, jalanan besar maupun gang kecil di kota tua dipenuhi ribuan lampion merah berkilauan, menerangi seluruh jalan seterang siang hari. Linlin yang pulang kampung menjenguk kerabat menggandeng lengan neneknya, sambil menikmati indahnya lentera hias dan mencium aroma manis yang semerbak di udara. Nenek tersenyum berkata kepada Linlin: 'Menurut adat kampung halaman kita, hanya setelah melewati Festival Lampion yang meriah ini, barulah seluruh rangkaian Tahun Baru Imlek dianggap benar-benar sempurna.'"
+      ],
+      [
+        "cn" => "广场中央搭起了一个大舞台，每盏灯笼下面都挂着一张写满趣味汉字谜语的红纸条，吸引了很多年轻人和小朋友围观竞猜。林林对传统文化一直特别感兴趣，他仔细读着一张纸条上的谜面：“古人生活靠它光明，左边是日右边是月——打一个汉字。”他兴奋地大声回答：“我知道了，是‘明’字！”工作人员笑着点头，送给了他一盏可爱的兔子花灯。",
+        "pinyin" => "Guǎngchǎng zhōngyāng dāqǐ le yí gè dà wǔtái, měi zhǎn dēnglong xiàmiàn dōu guàzhe yì zhāng xiěmǎn qùwèi Hànzì míyǔ de hóng zhǐtiáo, xīyǐn le hěn duō niánqīngrén hé xiǎopéngyou wéiguān jìngcāi. Línlin duì chuántǒng wénhuà yìzhí tèbié gǎn xìngqù, tā zǐxì dúzhe yì zhāng zhǐtiáo shang de mímiàn: “Gǔ rén shēnghuó kào tā guāngmíng, zuǒbiān shì rì yòubiān shì yuè——dǎ yí gè Hànzì.” Tā xīngfèn de dàshēng huídá: “Wǒ zhīdào le, shì ‘míng’ zì!” Gōngzuò rényuán xiàozhe diǎntóu, sòng gěi le tā yì zhǎn kě'ài de tùzi huādēng.",
+        "id" => "Di tengah alun-alun didirikan sebuah panggung besar, di bawah setiap lampion tergantung secarik kertas merah berisi teka-teki Hanzi yang seru, menarik minat banyak pemuda dan anak-anak untuk ikut menebak. Linlin sejak dulu sangat tertarik pada budaya tradisional; ia membaca dengan saksama sebuah soal teka-teki: 'Orang dahulu mengandalkannya untuk penerangan; sebelah kiri matahari, sebelah kanan bulan—tebaklah satu karakter Hanzi!' Ia dengan antusias berseru lantang: 'Aku tahu, itu aksara Ming (明)!' Petugas tersenyum mengangguk dan menghadiahinya sebuah lampion berbentuk kelinci yang menggemaskan."
+      ],
+      [
+        "cn" => "回到温暖的家里以后，奶奶从厨房端出了刚煮好的黑芝麻汤圆。白白胖胖的汤圆浮在清甜的热汤里，咬一口香甜软糯，让人心里感到无比踏实。林林把赢得的兔子花灯挂在客厅窗前，举起小碗认真地对全家人说：“汤圆圆圆的，象征着我们一家人整整齐齐、团团圆圆。无论明年我在外面工作多忙，每年元宵节我都要回来陪您一起赏花灯、吃汤圆！”",
+        "pinyin" => "Huí dào wēnnuǎn de jiālǐ yǐhòu, nǎinai cóng chúfáng duānchū le gāng zhǔhǎo de hēizhīma tāngyuán. Báibái pàngpàng de tāngyuán fú zài qīngtián de rètāng lǐ, yǎo yì kǒu xiāngtián ruǎnnuò, ràng rén xīnlǐ gǎndào wúbǐ tāshi. Línlin bǎ yíngdé de tùzi huādēng guà zài kètīng chuāngqián, jǔqǐ xiǎo wǎn rènzhēn de duì quán jiā rén shuō: “Tāngyuán yuányuán de, xiàngzhēngzhe wǒmen yì jiā rén zhěngzhěng qíqí, tuántuán yuányuán. Wúlùn míngnián wǒ zài wàimiàn gōngzuò duō máng, měinián Yuánxiāojié wǒ dōu yào huílái péi nín yìqǐ shǎng huādēng, chī tāngyuán!”",
+        "id" => "Sekembalinya ke rumah yang hangat, nenek membawakan onde-onde Tangyuan isi wijen hitam yang baru matang dari dapur. Tangyuan yang putih bulat mengapung di kuah hangat manis; digigit sekali terasa harum, manis, dan lembut kenyal sehingga membuat hati sangat tenteram. Linlin menggantungkan lentera kelinci kemenangannya di jendela ruang tamu, mengangkat mangkuk kecilnya dan berkata sungguh-sungguh kepada seluruh keluarga: 'Bentuk Tangyuan yang bulat melambangkan seluruh keluarga kita utuh rukun berkumpul bersama. Tak peduli sesibuk apa pun aku bekerja di perantauan tahun depan, setiap Festival Lampion aku pasti pulang menemani Nenek menikmati lentera dan menyantap Tangyuan!'"
+      ]
+    ],
+    "vocabularies" => [
+      ["hanzi" => "元宵节", "pinyin" => "Yuánxiāojié", "meaning" => "Festival Lampion (Cap Go Meh)"],
+      ["hanzi" => "灯笼", "pinyin" => "dēnglong", "meaning" => "lampion / lentera"],
+      ["hanzi" => "猜灯谜", "pinyin" => "cāi dēngmí", "meaning" => "menebak teka-teki lampion"],
+      ["hanzi" => "汤圆", "pinyin" => "tāngyuán", "meaning" => "onde-onde kuah manis simbol keutuhan"],
+      ["hanzi" => "象征", "pinyin" => "xiàngzhēng", "meaning" => "melambangkan / simbol"],
+      ["hanzi" => "团圆", "pinyin" => "tuányuán", "meaning" => "berkumpul kembali dengan keluarga"]
+    ],
+    "grammarNotes" => [
+      [
+        "title" => "1. Kalimat Manipulasi Objek: '把……照得……'",
+        "formula" => "Subjek + 把 + Objek + Kata Kerja + 得 + Keadaan",
+        "explanation" => "Menunjukkan akibat kondisi yang dialami objek setelah tindakan terjadi.",
+        "exampleInStory" => "把整条街道照得像白天一样明亮。"
+      ],
+      [
+        "title" => "2. Syarat Mutlak: '只有……才……'",
+        "formula" => "只有 + Syarat Wajib, Subjek + 才 + Hasil",
+        "explanation" => "Menyatakan bahwa hanya jika syarat tertentu terpenuhi, hasil barulah terwujud.",
+        "exampleInStory" => "只有过完了元宵节，春节才算真正圆满了。"
+      ],
+      [
+        "title" => "3. Ketertarikan Terhadap Topik: '对……感兴趣'",
+        "formula" => "Subjek + 对 + Topik + (特别) 感兴趣",
+        "explanation" => "Mengungkapkan minat mendalam terhadap suatu bidang.",
+        "exampleInStory" => "林林对传统文化一直特别感兴趣。"
+      ]
+    ],
+    "questions" => [
+      [
+        "question" => "元宵节在农历的哪一天庆祝？(Pada tanggal berapa Festival Lampion dirayakan menurut kalender Imlek?)",
+        "options" => ["正月初一", "正月十五", "五月初五", "八月十五"],
+        "answer" => 1,
+        "explanation" => "Kalimat pembuka: '农历正月十五是中国传统的元宵节'."
+      ],
+      [
+        "question" => "灯笼下面挂着的红纸条上写着什么内容？(Apa isi kertas merah yang digantung di bawah lampion?)",
+        "options" => ["餐厅的菜单", "趣味汉字谜语", "电影票价格", "地图路线"],
+        "answer" => 1,
+        "explanation" => "Paragraf kedua: '挂着一张写满趣味汉字谜语的红纸条'."
+      ],
+      [
+        "question" => "“左边是日右边是月”这个灯谜的答案是什么汉字？(Apakah jawaban teka-teki karakter 'kiri matahari kanan bulan'?)",
+        "options" => ["好字", "明字", "春字", "林字"],
+        "answer" => 1,
+        "explanation" => "Karakter 日 (matahari) + 月 (bulan) bergabung menjadi karakter 明 (míng)."
+      ],
+      [
+        "question" => "林林答对灯谜后赢得了什么奖品？(Hadiah apa yang dimenangkan Linlin setelah menjawab teka-teki?)",
+        "options" => ["一本词典", "一盏可爱的兔子花灯", "一盒黑芝麻糖", "一条红围巾"],
+        "answer" => 1,
+        "explanation" => "Petugas menghadiahinya: '送给了一盏可爱的兔子花灯'."
+      ],
+      [
+        "question" => "元宵节吃圆圆的“汤圆”象征着什么美好意义？(Menyantap Tangyuan yang bulat saat Festival Lampion melambangkan apa?)",
+        "options" => ["天气变冷", "一家人整整齐齐、团团圆圆", "工作越来越多", "考试必须得第一名"],
+        "answer" => 1,
+        "explanation" => "Paragraf penutup: '汤圆圆圆的，象征着我们一家人整整齐齐、团团圆圆'."
+      ]
+    ]
   ]
 ];

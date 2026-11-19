@@ -211,7 +211,7 @@ foreach ($allCerita as $idx => &$story) {
 unset($story);
 
 $jsonData = json_encode($allCerita, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-$jsContent = "/**\n * Mandarinku - Data Kumpulan Cerita Panjang Mandarin HSK 1 - 6\n * Total: " . count($allCerita) . " Cerita Lengkap (3 Cerita x 6 Level HSK) dengan Anotasi Pinyin Ruby di atas Hanzi.\n */\nwindow.MandarinkuCeritaData = " . $jsonData . ";\n";
+$jsContent = "/**\n * Mandarinku - Data Kumpulan Cerita Panjang Mandarin HSK 1 - 6\n * Total: " . count($allCerita) . " Cerita Lengkap (4 Cerita x 6 Level HSK) dengan Anotasi Pinyin Ruby di atas Hanzi.\n */\nwindow.MandarinkuCeritaData = " . $jsonData . ";\n";
 
 file_put_contents(__DIR__ . '/js/cerita-data.js', $jsContent);
 echo "SUCCESS: Berhasil mengompilasi " . count($allCerita) . " cerita dengan anotasi Ruby ke js/cerita-data.js!\n";

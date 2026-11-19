@@ -270,5 +270,95 @@ return [
         "explanation" => "Mary menulis: '在中国，我找到了最温暖的友情，这是我人生中最难忘的一个生日！'."
       ]
     ]
+  ],
+  [
+    "id" => "cerita-hsk-2-4",
+    "level" => 2,
+    "levelName" => "HSK 2 (Dasar Lanjutan)",
+    "badgeColor" => "#0284c7",
+    "badgeBg" => "#f0f9ff",
+    "theme" => "Olahraga, Kesehatan & Persahabatan (运动与健康生活)",
+    "titleCn" => "晨跑俱乐部与健康好习惯",
+    "titlePinyin" => "Chénpǎo Jùlèbù yǔ Jiànkāng Hǎo Xíguàn",
+    "titleId" => "Klub Lari Pagi dan Kebiasaan Hidup Sehat",
+    "estimatedMinutes" => 6,
+    "summary" => "Kisah inspiratif Zhang Qiang yang dulu sering kelelahan karena kurang olahraga, lalu bergabung dengan klub lari pagi kampus dan merasakan perubahan besar pada kesehatannya.",
+    "paragraphs" => [
+      [
+        "cn" => "两个月以前，大学生张强常常觉得很累，每天早上总是起不来床。因为经常晚上玩手机睡得太晚，他上课的时候很容易困。朋友王明看见他脸色不太好，关心地问：“张强，你最近是不是身体不舒服？”张强叹了口气回答：“我也觉得自己比以前容易生病了，医生说我缺少运动。”",
+        "pinyin" => "Liǎng gè yuè yǐqián, dàxuéshēng Zhāng Qiáng chángcháng juéde hěn lèi, měitiān zǎoshang zǒngshì qǐ bù lái chuáng. Yīnwèi jīngcháng wǎnshang wán shǒujī shuì de tài wǎn, tā shàngkè de shíhou hěn róngyì kùn. Péngyou Wáng Míng kànjiàn tā liǎnsè bú tài hǎo, guānxīn de wèn: “Zhāng Qiáng, nǐ zuìjìn shì bú shì shēntǐ bù shūfu?” Zhāng Qiáng tàn le kǒu qì huídá: “Wǒ yě juéde zìjǐ bǐ yǐqián róngyì shēngbìng le, yīshēng shuō wǒ quēshǎo yùndòng.”",
+        "id" => "Dua bulan lalu, mahasiswa Zhang Qiang sering merasa sangat lelah dan setiap pagi selalu tidak sanggup bangun tidur. Karena malam hari sering bermain ponsel dan tidur terlalu larut, ia mudah mengantuk saat kuliah. Temannya Wang Ming melihat raut wajahnya kurang baik dan bertanya penuh perhatian: 'Zhang Qiang, apakah akhir-akhir ini badanmu kurang sehat?' Zhang Qiang menghela napas menjawab: 'Aku juga merasa diriku lebih mudah sakit dibanding sebelumnya, dokter bilang aku kurang olahraga.'"
+      ],
+      [
+        "cn" => "从那天起，王明每天早上六点半都到宿舍楼下叫张强一起去操场跑步。刚开始跑的时候，张强跑了不到五分钟就累得喘不过气来，腿也非常酸。王明鼓励他说：“别着急，慢慢来，每天比昨天多跑一百米就够了。”虽然有时候早晨天气很冷，但是因为有朋友陪着，张强一天也没有放弃过。",
+        "pinyin" => "Cóng nà tiān qǐ, Wáng Míng měitiān zǎoshang liù diǎn bàn dōu dào sùshè lóu xià jiào Zhāng Qiáng yìqǐ qù cāochǎng pǎobù. Gāng kāishǐ pǎo de shíhou, Zhāng Qiáng pǎo le bú dào wǔ fēnzhōng jiù lèi de chuǎn bú guò qì lái, tuǐ yě fēicháng suān. Wáng Míng gǔlì tā shuō: “Bié zháojí, mànmàn lái, měitiān bǐ zuótiān duō pǎo yìbǎi mǐ jiù gòu le.” Suīrán yǒu shíhou zǎochén tiānqì hěn lěng, dànshì yīnwèi yǒu péngyou péizhe, Zhāng Qiáng yì tiān yě méiyǒu fàngqì guo.",
+        "id" => "Sejak hari itu, Wang Ming setiap pagi jam setengah tujuh selalu datang ke bawah asrama memanggil Zhang Qiang pergi berlari bersama di lapangan. Saat baru mulai berlari, belum sampai lima menit Zhang Qiang sudah terengah-engah kelelahan dan kakinya terasa pegal sekali. Wang Ming menyemangatinya: 'Jangan terburu-buru, pelan-pelan saja, setiap hari lari seratus meter lebih jauh dari kemarin sudah cukup.' Meski terkadang udara pagi sangat dingin, karena ditemani sahabatnya, Zhang Qiang tidak pernah menyerah barang sehari pun."
+      ],
+      [
+        "cn" => "两个月以后，张强完全变了一个人。现在他每天早上可以轻松地跑三千米，晚上十点半就准时睡觉，早上也不用闹钟叫了。更令他高兴的是，更多同学也加入了他们的晨跑俱乐部。张强开心地对大家说：“运动不但让我的身体更健康，还让我认识了这么多充满活力的朋友，这真是最好的生活习惯！”",
+        "pinyin" => "Liǎng gè yuè yǐhòu, Zhāng Qiáng wánquán biàn le yí gè rén. Xiànzài tā měitiān zǎoshang kěyǐ qīngsōng de pǎo sānqīan mǐ, wǎnshang shí diǎn bàn jiù zhǔnshí shuìjiào, zǎoshang yě bú yòng nàozhōng jiào le. Gèng lìng tā gāoxìng de shì, gèng duō tóngxué yě jiārù le tāmen de chénpǎo jùlèbù. Zhāng Qiáng kāixīn de duì dàjiā shuō: “Yùndòng búdàn ràng wǒ de shēntǐ gèng jiànkāng, hái ràng wǒ rènshi le zhème duō chōngmǎn huólì de péngyou, zhè zhēn shì zuì hǎo de shēnghuó xíguàn!”",
+        "id" => "Dua bulan kemudian, Zhang Qiang berubah menjadi sosok yang sama sekali baru. Sekarang setiap pagi ia dapat berlari tiga ribu meter dengan santai, tidur tepat waktu pukul setengah sebelas malam, dan paginya tidak lagi membutuhkan jam weker. Hal yang lebih membuatnya senang, semakin banyak teman sekelas bergabung ke dalam klub lari pagi mereka. Zhang Qiang berkata ceria kepada semua orang: 'Berolahraga tidak hanya membuat tubuhku lebih sehat, tetapi juga mempertemukanku dengan begitu banyak teman yang penuh semangat, ini sungguh kebiasaan hidup terbaik!'"
+      ]
+    ],
+    "vocabularies" => [
+      ["hanzi" => "运动", "pinyin" => "yùndòng", "meaning" => "berolahraga / olahraga"],
+      ["hanzi" => "操场", "pinyin" => "cāochǎng", "meaning" => "lapangan olahraga"],
+      ["hanzi" => "健康", "pinyin" => "jiànkāng", "meaning" => "sehat / kesehatan"],
+      ["hanzi" => "鼓励", "pinyin" => "gǔlì", "meaning" => "menyemangati / mendorong"],
+      ["hanzi" => "准时", "pinyin" => "zhǔnshí", "meaning" => "tepat waktu"],
+      ["hanzi" => "习惯", "pinyin" => "xíguàn", "meaning" => "kebiasaan"]
+    ],
+    "grammarNotes" => [
+      [
+        "title" => "1. Pelengkap Potensial Negatif: '起不来' (qǐ bù lái)",
+        "formula" => "Kata Kerja + 不 + Pelengkap",
+        "explanation" => "Menunjukkan ketidakmampuan melakukan tindakan karena suatu kendala ('tidak sanggup bangun').",
+        "exampleInStory" => "每天早上总是起不来床。(Setiap pagi selalu tidak sanggup bangun dari tempat tidur.)"
+      ],
+      [
+        "title" => "2. Komparasi Kemajuan Harian: '比昨天多 + Kerja'",
+        "formula" => "比 + Acuan Waktu + 多 + Kata Kerja + Jumlah",
+        "explanation" => "Menyatakan target yang lebih banyak daripada sebelumnya.",
+        "exampleInStory" => "每天比昨天多跑一百米就够了。"
+      ],
+      [
+        "title" => "3. Konjungsi Progresif: '不但……还……'",
+        "formula" => "Subjek + 不但 A，还 B",
+        "explanation" => "Menghubungkan dua manfaat yang saling melengkapi ('tidak hanya A, tetapi juga B').",
+        "exampleInStory" => "运动不但让我的身体更健康，还让我认识了这么多朋友。"
+      ]
+    ],
+    "questions" => [
+      [
+        "question" => "两个月以前，张强为什么上课的时候容易困？(Mengapa dua bulan lalu Zhang Qiang mudah mengantuk saat kuliah?)",
+        "options" => ["因为他每天跑三千米太累", "因为晚上玩手机睡得太晚，还缺少运动", "因为教室没有空调", "因为他吃了太多面包"],
+        "answer" => 1,
+        "explanation" => "Paragraf pertama: '因为经常晚上玩手机睡得太晚...医生说我缺少运动'."
+      ],
+      [
+        "question" => "每天早上几点王明来宿舍楼下叫张强跑步？(Jam berapa Wang Ming menjemput Zhang Qiang untuk lari pagi?)",
+        "options" => ["五点半", "六点半", "七点半", "八点整"],
+        "answer" => 1,
+        "explanation" => "Paragraf kedua: '王明每天早上六点半都到宿舍楼下叫张强一起去操场跑步'."
+      ],
+      [
+        "question" => "刚开始跑步时，王明是怎么鼓励张强的？(Bagaimana Wang Ming menyemangati Zhang Qiang di awal latihan?)",
+        "options" => ["让他立刻跑完五千米", "让他别着急，每天比昨天多跑一百米就够了", "让他别再运动了", "让他下午再去操场"],
+        "answer" => 1,
+        "explanation" => "Wang Ming berkata: '别着急，慢慢来，每天比昨天多跑一百米就够了'."
+      ],
+      [
+        "question" => "两个月以后，张强现在早上能轻松跑多少米？(Setelah dua bulan, berapa jarak yang sanggup Zhang Qiang lari dengan santai?)",
+        "options" => ["五百米", "一千米", "三千米", "一万米"],
+        "answer" => 2,
+        "explanation" => "Paragraf ketiga: '现在他每天早上可以轻松地跑三千米'."
+      ],
+      [
+        "question" => "张强觉得晨跑俱乐部给他带来了什么好处？(Manfaat apa yang dirasakan Zhang Qiang dari klub lari pagi?)",
+        "options" => ["可以不用去上课", "身体更健康，还认识了很多充满活力的朋友", "省下了很多钱", "买到了新手机"],
+        "answer" => 1,
+        "explanation" => "Kalimat penutup: '运动不但让我的身体更健康，还让我认识了这么多充满活力的朋友'."
+      ]
+    ]
   ]
 ];

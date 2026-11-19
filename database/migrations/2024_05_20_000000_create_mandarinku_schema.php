@@ -19,8 +19,12 @@ return new class extends Migration
             $table->enum('role', ['student', 'teacher', 'admin'])->default('student');
             $table->integer('level')->default(1);
             $table->integer('exp')->default(0);
+            $table->integer('max_exp')->default(500);
             $table->integer('points')->default(0);
             $table->integer('streak')->default(1);
+            $table->integer('study_hours')->default(1);
+            $table->integer('completed_modules')->default(0);
+            $table->text('progress_json')->nullable();
             $table->timestamps();
         });
 
@@ -131,10 +135,27 @@ return new class extends Migration
             $table->boolean('is_user')->default(false);
             $table->timestamps();
         });
+
+        Schema::create('quiz_histories', function (Blueprint $table) {
+            $table->id();
+            $table->string('user_email', 100);
+            $table->string('user_name', 100);
+            $table->string('hsk_level', 30);
+            $table->string('skill_type', 50)->default('all');
+            $table->string('quiz_mode', 30)->default('practice');
+            $table->integer('total_questions')->default(10);
+            $table->integer('correct_answers')->default(0);
+            $table->integer('score_percent')->default(0);
+            $table->string('grade', 10)->default('A');
+            $table->integer('exp_earned')->default(0);
+            $table->integer('points_earned')->default(0);
+            $table->timestamps();
+        });
     }
 
     public function down(): void
     {
+        Schema::dropIfExists('quiz_histories');
         Schema::dropIfExists('smart_leaderboard');
         Schema::dropIfExists('smart_hanzi_anatomy');
         Schema::dropIfExists('game_pinyin_hanzi');

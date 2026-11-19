@@ -270,5 +270,95 @@ return [
         "explanation" => "Paragraf penutup menegaskan bahwa Hanzi adalah tali pengikat emosional lintas dialek yang menyatukan identitas kebangsaan."
       ]
     ]
+  ],
+  [
+    "id" => "cerita-hsk-6-4",
+    "level" => 6,
+    "levelName" => "HSK 6 (Tingkat Master / Sastra)",
+    "badgeColor" => "#be185d",
+    "badgeBg" => "#fdf2f8",
+    "theme" => "Ekspedisi Maritim Jalur Sutra & Dialog Peradaban (海上丝路与文明互鉴)",
+    "titleCn" => "碧海瓷韵：沉船文物折射出的千年文明互鉴",
+    "titlePinyin" => "Bìhǎi Cíyùn: Chénchuán Wénwù Zhéshè Chū de Qiānnián Wénmíng Hùjiàn",
+    "titleId" => "Pesona Porselen Laut Biru: Artefak Kapal Karam sebagai Cermin Pertukaran Peradaban Seribu Tahun",
+    "estimatedMinutes" => 11,
+    "summary" => "Esai sastra sejarah maritim mengenai pengangkatan kapal dagang Dinasti Song Selatan di Laut Tiongkok Selatan yang mengungkap dialog estetika keramik antara peradaban Timur dan Barat.",
+    "paragraphs" => [
+      [
+        "cn" => "在南海深邃幽蓝的海底淤泥深处，一艘沉睡了逾八百载的南宋远洋商船缓缓揭开了历史的神秘面纱。随着现代深海考古技术与高精度机械臂的协同作业，成千上万件来自景德镇、龙泉窑与德化窑的宋代青白瓷在重见天日之际，依然闪烁着温润如玉的釉面光泽。考古学家们在打捞清单中惊奇地发现，除了符合中原传统文人审美的淡雅莲纹瓷碗外，船舱核心货区竟装载着大量专为阿拉伯世界与东南亚宫廷定制的几何花卉纹执壶与大口径青瓷盘。这些历经咸涩海水浸润却毫发无损的脆弱瓷器，如同一部凝固在深海的时间胶囊，无声却雄辩地诉说着古代“海上丝绸之路”波澜壮阔的贸易奇观。",
+        "pinyin" => "Zài Nánhǎi shēnsuì yōulán de hǎidǐ yūní shēnchù, yì sōu chénshuì le yú bābǎi zǎi de Nán Sòng yuǎnyáng shāngchuán huǎnhuǎn jiēkāi le lìshǐ de shénmì miànshā. Suízhe xiàndài shēnhǎi kǎogǔ jìshù yǔ gāo jīngdù jīxièbì de xiétóng zuòyè, chéngqiān shàngwàn jiàn láizì Jǐngdézhèn, Lóngquányáo yǔ Déhuàyáo de Sòng dài qīngbáicí zài chóngjiàn tiānrì zhī jì, yīrán shǎnshuòzhe wēnrùn rú yù de yòumiàn guāngzé. Kǎogǔxuéjiāmen zài dǎlāo qīngdān zhōng jīngqí de fāxiàn, chúle fúhé Zhōngyuán chuántǒng wénrén shěnměi de dànyǎ liánwén cíwǎn wài, chuáncāng héxīn huòqū jìng zhuāngzàizhe dàliàng zhuānwèi Ālābó shìjiè yǔ Dōngnányà gōngtíng dìngzhì de jǐhé huāhuìwén zhíhú yǔ dà kǒujìng qīngcípán. Zhèxiē lìjīng xiánsè hǎishuǐ jìnrùn què háofà wúsǔn de cuìruò cíqì, rútóng yí bù nínggù zài shēnhǎi de shíjiān jiāonáng, wúshēng què xióngbiàn de sùshuōzhe gǔdài “Hǎishàng Sīchóu zhī Lù” bōlán zhuàngkuò de màoyì qíguān.",
+        "id" => "Di dasar endapan lumpur biru tua yang dalam di Laut Tiongkok Selatan, sebuah kapal dagang samudra dari Dinasti Song Selatan yang telah tertidur lebih dari delapan ratus tahun perlahan menyingkap tabir misterinya. Seiring kerja terpadu teknologi arkeologi laut dalam modern dan lengan robotik presisi tinggi, puluhan ribu benda porselen biru-putih dari kiln Jingdezhen, Longquan, dan Dehua yang kembali menyentuh cahaya matahari tetap memancarkan kilau glasir sehalus giok. Dalam daftar pengangkatan artefak, para arkeolog terkejut mendapati bahwa selain mangkuk bermotif teratai anggun sesuai selera sastrawan Dataran Tengah, ruang kargo inti kapal ternyata memuat banyak kendi bermotif geometris bunga dan piring seladon berdiameter besar yang dipesan khusus bagi istana dunia Arab maupun Asia Tenggara. Porselen rapuh yang terendam air asin selama berabad-abad namun tetap utuh tanpa cela itu laksana kapsul waktu yang membeku di dasar laut, bertutur dalam sunyi namun penuh daya tentang keajaiban niaga Jalur Sutra Maritim purba yang megah."
+      ],
+      [
+        "cn" => "历史学界曾长久存在一种狭隘的刻板成见，误以为古代跨海商贸仅仅局限于“东方倾销原料、西方被动接受”的单向物质交换。然而，这批出水外销瓷的工艺细节却以确凿无疑的实物证据彻底颠覆了上述谬误。研究团队借助微区光谱分析技术，追踪到了瓷器釉下青花彩料中所含的微克级钴元素——那正是沿波斯湾商道远渡重洋输入中国内陆的“苏麻离青”矿料。与此同时，中国南方的窑工们虚心汲取伊斯兰金银器造型中的棱角曲线与植物藤蔓美学，将其巧妙融入东方窑火的温度与瓷土的骨血之中，锻造出了兼收并蓄、浑然天成的艺术杰作。一件看似平常的陶瓷器具，实则蕴含着欧亚大陆两端工匠跨越山海阻隔而达成的默契共创。",
+        "pinyin" => "Lìshǐxuéjiè céng chángjiǔ cúnzài yì zhǒng xiá'ài de kèbǎn chéngjiàn, wùyǐwéi gǔdài kuàhǎi shāngmào jǐnjǐn júxiànyú “Dōngfāng qīngxiāo yuánliào, Xīfāng bèidòng jiēshòu” de dānxiàng wùzhì jiāohuàn. Rán'ér, zhè pī chūshuǐ wàixiāocí de gōngyì xìjié què yǐ quèzáo wúyí de shíwù zhèngjù chèdǐ diānfù le shàngshù miùwù. Yánjiū tuánduì jièzhù wēiqū guāngpǔ fēnxī jìshù, zhuīzōng dào le cíqì yòuxià qīnghuā cǎiliào zhōng suǒ hán de wēikèjí gǔ yuánsù——nà zhèng shì yán Bōsīwān shāngdào yuǎndù chóngyáng shūrù Zhōngguó nèilù de “Sūmálíqīng” kuàngliào. Yǔcǐ tóngshí, Zhōngguó nánfāng de yáogōngmen xūxīn jíqǔ Yīsīlán jīnyínqì zàoxíng zhōng de léngjiǎo qūxiàn yǔ zhíwù téngwàn měixué, jiāng qí qiǎomiào róngrù Dōngfāng yáohuǒ de wēndù yǔ cítǔ de gǔxuè zhī zhōng, duànzào chū le jiānshōu bìngxù, húnrán tiānchéng de yìshù jiézuò. Yí jiàn kànsì píngcháng de táocí qìjù, shízé yùnhánzhe Ōu-Yà dàlù liǎngduān gōngjiàng kuàyuè shānhǎi zǔgé ér dáchéng de mòqì gòngchuàng.",
+        "id" => "Kalangan sejarawan pernah lama terbelenggu prasangka kaku yang keliru menduga bahwa perdagangan maritim kuno sekadar berupa pertukaran materi satu arah di mana Timur mengekspor komoditas dan Barat menerima secara pasif. Namun detail pengerjaan porselen ekspor dari dasar laut ini secara telak mematahkan kekeliruan itu melalui bukti fisik tak terbantahkan. Memanfaatkan teknologi analisis spektroskopi mikro, tim peneliti melacak kadar elemen kobalt dalam pigmen biru-putih di bawah glasir porselen—itulah mineral legendaris 'Smalt Blue / Sumaliqing' yang menempuh jalur niaga Teluk Persia menyeberangi samudra menuju pedalaman Tiongkok. Di saat yang sama, para perajin pembakaran porselen Tiongkok selatan dengan rendah hati menyerap lengkungan bersudut serta estetika sulur tumbuhan dari kriya logam mulia Islam, memadukannya dengan suhu api tungku dan raga lempung porselen Timur untuk melahirkan mahakarya seni yang harmonis dan inklusif. Seperangkat tembikar yang tampak sederhana nyatanya menyimpan kolaborasi batin para perajin di dua ujung benua Eurasia yang melampaui rintangan gunung dan samudra."
+      ],
+      [
+        "cn" => "当博物馆聚光灯下陈列着这些经历沧海桑田的古代珍宝时，穿梭其间的各国观众无不为其超越时空的美学张力而叹为观止。考古发现再一次印证了一个朴素而深刻的历史真理：任何一种辉煌灿烂的文明，绝非在孤立封闭、画地为牢的环境中独自孕育，而总是在敞开胸怀、与异域文化平等对话、互通有无的碰撞中焕发出蓬勃生机。在百年未有之大变局交织的当下，深海瓷器所承载的“和而不同、美美与共”的智慧余韵，依旧为人类构建超越地理疆界与文化隔阂的精神共同体提供着深邃启迪。",
+        "pinyin" => "Dāng bówùguǎn jùguāngdēng xià chénlièzhe zhèxiē jīnglì cānghǎi sāngtián de gǔdài zhēnbǎo shí, chuānsuō qíjiān de gèguó guānzhòng wúbù wèi qí chāoyuè shíkōng de měixué zhānglì ér tànwéiguānzhǐ. Kǎogǔ fāxiàn zài yí cì yìnzhèng le yí gè pǔsù ér shēnkè de lìshǐ zhēnlǐ: rènhé yì zhǒng huīhuáng cànlàn de wénmíng, juéfēi zài gūlì fēngbì, huàdì wéiláo de huánjìng zhōng dúzì yùnyù, ér zǒngshì zài chǎngkāi xiōnghuái, yǔ yìyù wénhuà píngděng duìhuà, hùtōng yǒuwú de pèngzhuàng zhōng huànfā chū péngbó shēngjī. Zài bǎinián wèi yǒu zhī dà biànjú jiāozhī de dāngxià, shēnhǎi cíqì suǒ chéngzài de “hé'érbùtóng, měiměiyǔgòng” de zhìhuì yúyùn, yījiù wèi rénlèi gòujiàn chāoyuè dìlǐ jiāngjiè yǔ wénhuà géhé de jīngshén gòngtóngtǐ tígōngzhe shēnsuì qǐdí.",
+        "id" => "Ketika sorot lampu museum menerangi benda-benda pusaka yang telah menyaksikan pasang surut zaman ini, pengunjung dari berbagai penjuru dunia tak hentinya berdecak kagum atas daya pikat estetika yang menembus batas ruang dan waktu. Penemuan arkeologi ini sekali lagi menegaskan kebenaran sejarah yang bersahaja namun mendalam: tiada satu pun peradaban gemilang yang lahir dari ruang tertutup yang mengisolasi diri dan memenjarakan cakrawala, melainkan senantiasa memancarkan vitalitas melimpah melalui keterbukaan hati, dialog setara dengan budaya seberang, serta saling melengkapi kebutuhan satu sama lain. Di tengah arus perubahan besar abad ini yang saling berkelindan, gema kearifan 'harmoni dalam keberagaman dan keindahan bersama' yang terpancar dari porselen laut dalam terus menghadirkan ilham mendalam bagi umat manusia dalam membangun komunitas batin melampaui sekat geografis maupun jurang budaya."
+      ]
+    ],
+    "vocabularies" => [
+      ["hanzi" => "考古", "pinyin" => "kǎogǔ", "meaning" => "arkeologi / penelitian purbakala"],
+      ["hanzi" => "颠覆", "pinyin" => "diānfù", "meaning" => "membalikkan / membongkar asumsi lama"],
+      ["hanzi" => "兼收并蓄", "pinyin" => "jiānshōu bìngxù", "meaning" => "menyerap unsur baik dari berbagai sumber"],
+      ["hanzi" => "叹为观止", "pinyin" => "tànwéiguānzhǐ", "meaning" => "berdecak kagum hingga puncak pujian"],
+      ["hanzi" => "画地为牢", "pinyin" => "huàdì wéiláo", "meaning" => "membatasi diri dalam ruang sempit"],
+      ["hanzi" => "互鉴", "pinyin" => "hùjiàn", "meaning" => "saling belajar dan berkaca antarperadaban"]
+    ],
+    "grammarNotes" => [
+      [
+        "title" => "1. Penegasan Kontras Mutlak Sastra: '绝非……而总是……'",
+        "formula" => "任何 A，绝非在 B 状态下产生，而总是在 C 互动中形成",
+        "explanation" => "Gaya bahasa esai filosofis tingkat HSK 6 untuk menolak determinisme sempit dan merumuskan hukum universal.",
+        "exampleInStory" => "任何一种辉煌灿烂的文明，绝非在孤立封闭的环境中独自孕育，而总是在平等对话中焕发生机。"
+      ],
+      [
+        "title" => "2. Penyangkalan Komparatif Realitas: '看似……实则……'",
+        "formula" => "A 看似 + Kesan Permukaan，实则 + Makna Tersembunyi",
+        "explanation" => "Menyingkap kedalaman hakiki di balik objek yang sekilas tampak biasa.",
+        "exampleInStory" => "一件看似平常的陶瓷器具，实则蕴含着欧亚大陆两端工匠达成的默契共创。"
+      ],
+      [
+        "title" => "3. Idiom Klasik Sejarah: '沧海桑田' & '和而不同'",
+        "formula" => "经历沧海桑田 (Melewati perubahan dahsyat zaman) | 和而不同 (Harmoni dalam perbedaan)",
+        "explanation" => "Penggunaan Chengyu klasik untuk memperkaya diksi wacana budaya dan humaniora.",
+        "exampleInStory" => "深海瓷器所承载的“和而不同、美美与共”的智慧余韵。"
+      ]
+    ],
+    "questions" => [
+      [
+        "question" => "水下考古队在这艘南宋远洋商船的货舱里发现了什么特别之处？(Temuan khusus apa yang dijumpai tim arkeologi di ruang kargo kapal Dinasti Song Selatan?)",
+        "options" => ["里面全是现代制造的金属船只", "除了中原莲纹瓷碗，还装载着大量专为阿拉伯与东南亚宫廷定制的瓷器", "只有几块普通的石头和木材", "里面只有古代纸质印刷书"],
+        "answer" => 1,
+        "explanation" => "Paragraf pertama: kapal memuat baik porselen gaya Dataran Tengah maupun pesanan khusus geometris/bunga untuk istana dunia Arab dan Asia Tenggara."
+      ],
+      [
+        "question" => "文章中提到的青花瓷彩料“苏麻离青”来自哪里，推翻了何种偏见？(Dari mana asal pigmen 'Sumaliqing' dan prasangka apa yang diruntuhkannya?)",
+        "options" => ["完全产自南方农田泥土，证明古代闭关锁国", "沿波斯湾商道输入中国内陆的钴料，推翻了“古代贸易只是单向倾销”的刻板偏见", "由现代化学实验室合成", "来自北极冰川"],
+        "answer" => 1,
+        "explanation" => "Paragraf kedua menjelaskan bahwa kobalt 'Sumaliqing' masuk dari jalur Teluk Persia, mematahkan mitos perdagangan satu arah."
+      ],
+      [
+        "question" => "南方窑工们如何创造出“兼收并蓄”的外销瓷艺术杰作？(Bagaimana para perajin tungku Tiongkok selatan menciptakan mahakarya porselen ekspor inklusif itu?)",
+        "options" => ["完全照搬欧洲油画放弃本土陶瓷技术", "虚心汲取伊斯兰金银器的棱角曲线与植物藤蔓美学，融入东方窑火与瓷土工艺", "只制作没有任何花纹的白碗", "把金银融化贴在木头上"],
+        "answer" => 1,
+        "explanation" => "Mereka menyerap estetika kurva kriya logam Islam dan sulur tanaman ke dalam teknik pembakaran tungku Timur."
+      ],
+      [
+        "question" => "下列哪一项最能概括第3段中提到的“历史真理”？(Manakah yang paling tepat merangkum 'kebenaran sejarah' di paragraf ke-3?)",
+        "options" => ["文明只有封闭发展才能保持纯洁", "任何辉煌文明绝非孤立封闭孕育，而是在敞开胸怀与异域平等对话中焕发生机", "陶瓷是最昂贵的收藏品", "人类应该停止航海贸易"],
+        "answer" => 1,
+        "explanation" => "Paragraf ketiga: '任何一种辉煌灿烂的文明，绝非在孤立封闭……而总是在敞开胸怀、与异域文化平等对话的碰撞中焕发生机'."
+      ],
+      [
+        "question" => "这批深海瓷器在当代对人类社会具有何种文化启迪？(Ilham budaya apa yang diberikan artefak porselen laut dalam ini bagi dunia masa kini?)",
+        "options" => ["“和而不同、美美与共”，跨越地理疆界与文化隔阂构建人类精神共同体", "鼓励各国只使用同一种语言", "证明陶瓷已经没有实用价值", "强调只有古代贸易才值得研究"],
+        "answer" => 0,
+        "explanation" => "Kalimat penutup menegaskan kearifan '和而不同、美美与共' dalam membangun kebersamaan melampaui batas geografis dan sekat budaya."
+      ]
+    ]
   ]
 ];

@@ -270,5 +270,95 @@ return [
         "explanation" => "Kaligrafi adalah wahana rohani di mana jiwa mengendalikan kuas untuk menyatu dalam harmoni alam semesta."
       ]
     ]
+  ],
+  [
+    "id" => "cerita-hsk-5-4",
+    "level" => 5,
+    "levelName" => "HSK 5 (Tingkat Mahir)",
+    "badgeColor" => "#9333ea",
+    "badgeBg" => "#faf5ff",
+    "theme" => "Revitalisasi Pedesaan & Ekonomi Digital (乡村振兴与数字助农)",
+    "titleCn" => "云端果园：从深山滞销到全国畅销的蜕变",
+    "titlePinyin" => "Yúnduān Guǒyuán: Cóng Shēnshān Zhìxiāo dào Quánguó Chàngxiāo de Tuìbiàn",
+    "titleId" => "Kebun Buah di Awan Digital: Transformasi Desa Pegunungan Menuju Pasar Nasional",
+    "estimatedMinutes" => 9,
+    "summary" => "Kisah nyata sarjana muda Yang Fan kembali ke desa pegunungan terpencil membangun rantai dingin dan siaran langsung digital demi mengangkat kesejahteraan petani jeruk lokal.",
+    "paragraphs" => [
+      [
+        "cn" => "坐落于西南群山深处的青溪村盛产一种汁水丰沛、清甜爽口的晚熟脐橙。然而，受限于山高路陡、交通闭塞与信息不对称，多年来果农们辛苦耕耘了一整年，却往往只能眼睁睁看着优质果子烂在枝头，或者以极其低廉的价格被收购商压价拉走。目睹乡亲们望果兴叹的困境，在繁华都市互联网企业担任运营主管的九零后青年杨帆毅然辞去高薪职务。面对父母的不解和质疑，他坚定地表示：“城市里多我一个运营专员无关紧要，但家乡的果园正迫切需要懂得数字营销与现代供应链的人去打通销路。”",
+        "pinyin" => "Zuòluò yú Xīnán qúnshān shēnchù de Qīngxīcūn shèngchǎn yì zhǒng zhīshuǐ fēngpèi, qīngtián shuǎngkǒu de wǎnshú qíchéng. Rán'ér, shòuxiàn yú shān gāo lù dǒu, jiāotōng bìsè yǔ xìnxī bú duìchèn, duōnián lái guǒnóngmen xīnkǔ gēngyún le yì zhěng nián, què wǎngwǎng zhǐnéng yǎnzhēngzhēng kànzhe yōuzhì guǒzi làn zài zhītóu, huòzhě yǐ jíqí dīlián de jiàgé bèi shōugòushāng yājià lāzǒu. Mùdǔ xiāngqīnmen wàng guǒ xīngtàn de kùnjìng, zài fánhuá dūshì hùliánwǎng qǐyè dānrèn yùnyíng zhǔguǎn de jiǔlínghòu qīngnián Yáng Fān yìrán cíqù gāoxīn zhíwù. Miànduì fùmǔ de bùjiě hé zhìyí, tā jiāndìng de biǎoshì: “Chéngshì lǐ duō wǒ yí gè yùnyíng zhuānyuán wúguān jǐnyào, dàn jiāxiāng de guǒyuán zhèng pòqiè xūyào dǒngde shùzì yíngxiāo yǔ xiàndài gōngyìngliàn de rén qù dǎtōng xiāolù.”",
+        "id" => "Terletak jauh di balik gugusan pegunungan Barat Daya, Desa Qingxi terkenal menghasilkan jeruk navel panen akhir yang berair melimpah dan manis menyegarkan. Namun karena terhambat medan pegunungan curam, akses transportasi tertutup, serta ketimpangan informasi pasar, bertahun-tahun para petani yang bekerja keras sepanjang tahun kerap hanya bisa menatap pasrah buah bermutu itu membusuk di tangkai, atau diborong tengkulak dengan harga ditekan sangat rendah. Menyaksikan kepedihan warga desa menatap hasil panen dengan putus asa, Yang Fan—pemuda generasi pasca-90-an yang menjabat manajer operasional perusahaan internet kota metropolitan—mantap mengundurkan diri dari gaji tingginya. Menghadapi keheranan orang tuanya, ia menegaskan: 'Di kota besar tambahan satu staf operasional sepertiku tidak berarti banyak, tetapi kebun buah kampung halaman amat mendesak membutuhkan orang yang paham pemasaran digital dan rantai pasok modern untuk membuka jalur penjualan.'"
+      ],
+      [
+        "cn" => "返乡之初，杨帆并没有盲目架起手机就开始带货直播，而是用整整两个月时间跑遍了全村所有果园，重新梳理品质分级标准与冷链物流方案。他发现，传统农产品之所以很难打出高附加值，关键症结在于包装简陋且缺乏品控意识——大小不一、表皮有斑点的果子混装发货，极易损害消费者口碑。于是，杨帆协调合作社建立起智能化光电分选流水线，根据糖度与果径将橙子划分为精品礼盒与家庭实惠装，并为每一箱水果贴上可溯源二维码。当直播间镜头对准晨雾缭绕的生态果园和树枝上挂满露珠的鲜橙时，短短一晚便创下了五万斤订单的奇迹。",
+        "pinyin" => "Fǎnxiāng zhī chū, Yáng Fān bìng méiyǒu mángmù jiàqǐ shǒujī jiù kāishǐ dàihuò zhíbò, érshì yòng zhěngzhěng liǎng gè yuè shíjiān pǎobiàn le quán cūn suǒyǒu guǒyuán, chóngxīn shūlǐ pǐnzhì fēnjí biāozhǔn yǔ lěngliàn wùliú fāng'àn. Tā fāxiàn, chuántǒng nóngchǎnpǐn zhīsuǒyǐ hěn nán dǎchū gāo fùjiāzhí, guānjiàn zhēngjié zàiyú bāozhuāng jiǎnlòu qiě quēfá pǐnkòng yìshí——dàxiǎo bù yī, biǎopí yǒu bāndiǎn de guǒzi hùnzhuāng fāhuò, jí yì sǔnhài xiāofèizhě kǒubēi. Yúshì, Yáng Fān xiétiáo hézuòshè jiànlì qǐ zhìnénghuà guāngdiàn fēnxuǎn liúshuǐxiàn, gēnjù tángdù yǔ guǒjìng jiāng chéngzi huàfēn wéi jīngpǐn lǐhé yǔ jiātíng shíhuì zhuāng, bìng wèi měi yì xiāng shuǐguǒ tiēshang kě sùyuán èrwéimǎ. Dāng zhíbòjiān jìngtóu duìzhǔn chénwù liáorào de shēngtài guǒyuán hé shùzhī shang guàmǎn lùzhū de xiānchéng shí, duǎnduǎn yì wǎn biàn chuàngxià le wǔwàn jīn dìngdān de qíjì.",
+        "id" => "Pada awal kepulangannya ke desa, Yang Fan tidak serta-merta mendirikan ponsel untuk berjualan lewat siaran langsung secara membabi buta; sebaliknya ia menghabiskan dua bulan penuh menelusuri seluruh kebun di desa untuk menata ulang standar grading mutu dan skema logistik rantai dingin. Ia menemukan penyebab utama produk tani tradisional sulit meraih nilai tambah tinggi terletak pada kemasan seadanya dan minimnya kendali mutu—buah berukuran serampangan atau bernoda dicampur dalam satu kirim sehingga merusak reputasi pembeli. Maka Yang Fan mengoordinasikan koperasi membangun lini sortir optoelektronik cerdas yang mengklasifikasikan jeruk menurut kadar gula dan diameter ke dalam paket kado premium maupun kemasan keluarga ekonomis, serta menempelkan kode QR pelacakan asal pada tiap kotak. Ketika kamera siaran langsung diarahkan ke kebun ekologis berkabut pagi dan jeruk segar berembun di ranting, hanya dalam semalam tercipta keajaiban lima puluh ribu kati pesanan."
+      ],
+      [
+        "cn" => "如今的青溪村早已告别昔日的萧条，不仅修建了直达山脚的宽阔硬化公路，连曾经外出打工的年轻人也纷纷回乡担任主播和打包技师。村民们不仅卖出了农产品，更依托“云端认养一棵果树”的文旅新模式，吸引大批城市家庭周末前来采摘体验。看着乡亲们脸上洋溢的自信笑容，杨帆由衷感慨：“乡村振兴绝不是单靠外部输血就能实现的一蹴而就，唯有将现代互联网思维、标准化产业体系与当地独特的绿水青山深度融合，才能真正激发出源源不断的内生动力。”",
+        "pinyin" => "Rújīn de Qīngxīcūn zǎoyǐ gàobié xīrì de xiāotiáo, bùjǐn xiūjiàn le zhídá shānjiǎo de kuānkuò yìnghuà gōnglù, lián céngjīng wàichū dǎgōng de niánqīngrén yě fēnfēn huíxiāng dānrèn zhǔbō hé dǎbāo jìshī. Cūnmínmen bùjǐn màichū le nóngchǎnpǐn, gèng yītuō “yúnduān rènyǎng yì kē guǒshù” de wénlǚ xīn móshì, xīyǐn dàpī chéngshì jiātíng zhōumò qiánlái cǎizhāi tǐyàn. Kànzhe xiāngqīnmen liǎnshang yángyì de zìxìn xiàoróng, Yáng Fān yóuzhōng gǎnkǎi: “Xiāngcūn zhènxīng juébúshì dānkào wàibù shūxuè jiù néng shíxiàn de yícù'érjiù, wéiyǒu jiāng xiàndài hùliánwǎng sīwéi, biāozhǔnhuà chǎnyè tǐxì yǔ dāngdì dútè de lǜshuǐ qīngshān shēndù rónghé, cái néng zhēnzhèng jīfā chū yuányuán búduàn de nèishēng dònglì.”",
+        "id" => "Kini Desa Qingxi telah lama meninggalkan kelesuan masa lampau; bukan hanya dibangun jalan aspal lebar menembus kaki gunung, bahkan para pemuda yang dulu merantau bekerja di kota kini berbondong-bondong pulang menjadi pembawa siaran langsung dan teknisi pengemasan. Warga desa tidak sekadar menjual hasil panen, melainkan juga meluncurkan model agro-wisata baru 'Adopsi Sepohon Buah di Cloud' yang menarik banyak keluarga urban datang memetik buah di akhir pekan. Menyaksikan senyum percaya diri terpancar di wajah para tetangganya, Yang Fan terharu menuturkan: 'Revitalisasi pedesaan bukanlah keajaiban instan yang tercapai hanya mengandalkan suntikan bantuan luar; hanya dengan memadukan pola pikir internet modern, tata kelola industri terstandar, dan kekayaan alam hijau asri setempat, barulah daya dorong mandiri yang tak pernah surut benar-benar bangkit.'"
+      ]
+    ],
+    "vocabularies" => [
+      ["hanzi" => "盛产", "pinyin" => "shèngchǎn", "meaning" => "kaya menghasilkan / penghasil utama"],
+      ["hanzi" => "困境", "pinyin" => "kùnjìng", "meaning" => "situasi sulit / dilema"],
+      ["hanzi" => "供应链", "pinyin" => "gōngyìngliàn", "meaning" => "rantai pasokan (supply chain)"],
+      ["hanzi" => "品质", "pinyin" => "pǐnzhì", "meaning" => "kualitas / mutu"],
+      ["hanzi" => "溯源", "pinyin" => "sùyuán", "meaning" => "melacak sumber asal"],
+      ["hanzi" => "振兴", "pinyin" => "zhènxīng", "meaning" => "merevitalisasi / membangkitkan"]
+    ],
+    "grammarNotes" => [
+      [
+        "title" => "1. Penjelasan Faktor Penyebab Formal: '之所以……关键在于……'",
+        "formula" => "Subjek + 之所以 + Fenomena, 关键（症结）在于 + Akar Masalah",
+        "explanation" => "Struktur esai HSK 5 untuk membedah akar permasalahan di balik suatu gejala.",
+        "exampleInStory" => "传统农产品之所以很难打出高附加值，关键症结在于包装简陋且缺乏品控意识。"
+      ],
+      [
+        "title" => "2. Penegasan Tanpa Kompromi: '并不是……而是……'",
+        "formula" => "Subjek + 并不是 + Dugaan Keliru, 而是 + Langkah Tepat",
+        "explanation" => "Meluruskan pendekatan yang salah sekaligus menyoroti tindakan strategis.",
+        "exampleInStory" => "杨帆并没有盲目架起手机就开始带货，而是用两个月梳理分级标准。"
+      ],
+      [
+        "title" => "3. Syarat Eksklusif Tingkat Tinggi: '唯有……才能……'",
+        "formula" => "唯有 + Upaya Terintegrasi, 才能 + Hasil Transformasional",
+        "explanation" => "Kalimat retoris kuat untuk kesimpulan esai resmi.",
+        "exampleInStory" => "唯有将现代互联网思维与当地资源深度融合，才能激发出内生动力。"
+      ]
+    ],
+    "questions" => [
+      [
+        "question" => "过去多年里，青溪村的优质晚熟脐橙为什么经常滞销或被压价？(Mengapa dulu jeruk unggul Desa Qingxi sering tidak laku atau ditekan harganya?)",
+        "options" => ["因为橙子味道太酸没人爱吃", "受限于山高路陡、交通闭塞与信息不对称", "因为村里根本没有果农种植", "因为没有网络直播手机"],
+        "answer" => 1,
+        "explanation" => "Paragraf pertama: '受限于山高路陡、交通闭塞与信息不对称'."
+      ],
+      [
+        "question" => "杨帆返乡之初做的第一件事是什么？(Apa hal pertama yang dilakukan Yang Fan setibanya kembali di desa?)",
+        "options" => ["立刻开播卖货赚钱", "用两个月跑遍全村果园，梳理品质分级标准与冷链物流方案", "只把橙子送给城市朋友品尝", "重新回城市互联网公司上班"],
+        "answer" => 1,
+        "explanation" => "Paragraf kedua: ia menghabiskan 2 bulan meninjau semua kebun untuk menyusun standar kualitas dan rantai dingin terlebih dahulu."
+      ],
+      [
+        "question" => "杨帆通过哪项技术措施保障了水果发货的品质与可信度？(Langkah teknologi apa yang dibangun Yang Fan untuk menjamin mutu pengiriman?)",
+        "options" => ["用塑料袋把好坏果子混装在一起", "建立智能化光电分选流水线并为每箱贴上可溯源二维码", "全部改用马车运输", "把水果晒干变成零食"],
+        "answer" => 1,
+        "explanation" => "Ia membangun lini sortir optoelektronik cerdas dan menempelkan kode QR pelacakan asal ('可溯源二维码')."
+      ],
+      [
+        "question" => "青溪村后来还创新推出了哪种吸引城市家庭的新模式？(Model pariwisata inovatif apa yang kemudian diluncurkan Desa Qingxi bagi keluarga kota?)",
+        "options" => ["在城里建高楼大厦", "“云端认养一棵果树”结合周末采摘体验的文旅模式", "免费赠送所有水果", "关停全部果园改建工厂"],
+        "answer" => 1,
+        "explanation" => "Paragraf ketiga: '依托“云端认养一棵果树”的文旅新模式，吸引大批城市家庭周末前来采摘体验'."
+      ],
+      [
+        "question" => "在杨帆看来，实现乡村振兴的根本路径是什么？(Menurut Yang Fan, apa jalan fundamental untuk mencapai revitalisasi desa?)",
+        "options" => ["完全依赖外部不停输血补助", "将现代互联网思维、标准化产业体系与当地生态优势深度融合以激发内生动力", "让所有年轻人继续背井离乡打工", "放弃农业专攻旅游业"],
+        "answer" => 1,
+        "explanation" => "Kalimat penutup menekankan integrasi pemikiran internet modern, standar industri, dan kekayaan lokal demi membangkitkan daya dorong mandiri."
+      ]
+    ]
   ]
 ];

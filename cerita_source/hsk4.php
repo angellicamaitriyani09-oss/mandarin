@@ -270,5 +270,95 @@ return [
         "explanation" => "Kakek berujar: '其实人生就像这杯工夫茶，头道苦，二道甜，三道回味无穷'."
       ]
     ]
+  ],
+  [
+    "id" => "cerita-hsk-4-4",
+    "level" => 4,
+    "levelName" => "HSK 4 (Menengah Mandiri)",
+    "badgeColor" => "#ea580c",
+    "badgeBg" => "#fff7ed",
+    "theme" => "Inovasi Ramah Lingkungan & Teknologi Hijau (绿色生活与环境保护)",
+    "titleCn" => "绿色校园：旧塑料瓶变成环保书包的奇迹",
+    "titlePinyin" => "Lǜsè Xiàoyuán: Jiù Sùliàopíng Biànchéng Huánbǎo Shūbāo de Qíjì",
+    "titleId" => "Kampus Hijau: Keajaiban Botol Plastik Bekas Menjadi Tas Sekolah Ramah Lingkungan",
+    "estimatedMinutes" => 8,
+    "summary" => "Kisah inspiratif mahasiswa desain Zhou Jing bersama timnya meluncurkan program daur ulang sampah botol plastik kampus menjadi serat tekstil tas ransel ramah lingkungan.",
+    "paragraphs" => [
+      [
+        "cn" => "随着校园人口不断增加，大学食堂和宿舍楼下每天都会产生大量废弃塑料水瓶。虽然保洁阿姨每天辛苦分类清运，但是仍有不少可回收物被当成普通垃圾处理，不仅浪费资源，还给环境带来了沉重负担。主修环境设计的周静注意到了这个现象，她对环保社团的同学们说：“如果我们光靠发传单宣传保护环境，效果往往有限；不如想个切实可行的办法，让同学们亲眼看到旧塑料瓶重新发挥价值！”",
+        "pinyin" => "Suízhe xiàoyuán rénkǒu búduàn zēngjiā, dàxué shítáng hé sùshè lóu xià měitiān dōu huì chǎnshēng dàliàng fèiqì sùliào shuǐpíng. Suīrán bǎojié āyí měitiān xīnkǔ fēnlèi qīngyùn, dànshì réng yǒu bùshǎo kěhuíshōuwù bèi dàngchéng pǔtōng lājī chǔlǐ, bùjǐn làngfèi zīyuán, hái gěi huánjìng dàilái le chénzhòng fùdān. Zhǔxiū huánjìng shèjì de Zhōu Jìng zhùyì dào le zhège xiànxiàng, tā duì huánbǎo shètuán de tóngxuémen shuō: “Rúguǒ wǒmen guāng kào fā chuándān xuānchuán bǎohù huánjìng, xiàoguǒ wǎngwǎng yǒuxiàn; bùrú xiǎng gè qièshí kěxíng de bànfǎ, ràng tóngxuémen qīnyǎn kàndào jiù sùliàopíng chóngxīn fāhuī jiàzhí!”",
+        "id" => "Seiring bertambahnya populasi kampus, kantin universitas dan halaman asrama setiap hari menghasilkan limbah botol air plastik dalam jumlah besar. Meski petugas kebersihan bekerja keras memilahnya setiap hari, masih banyak barang daur ulang diperlakukan sebagai sampah biasa—tidak hanya memboroskan sumber daya, tetapi juga membebani lingkungan. Zhou Jing yang mengambil jurusan desain lingkungan menyadari fenomena ini dan berkata kepada rekan klub pecinta alamnya: 'Kalau kita hanya mengandalkan sebar brosur demi menyuarakan pelestarian lingkungan, dampaknya sering terbatas; lebih baik mencari cara nyata yang dapat diterapkan agar mahasiswa menyaksikan sendiri botol bekas bernilai guna kembali!'"
+      ],
+      [
+        "cn" => "在学校创新基金和当地一家再生科技企业的支持下，周静的团队设计了一款外观时尚的“校园绿色回收智能箱”。学生只要把喝完水的塑料瓶放进机器，系统就会自动记录减碳积分。随后，这些洗净压扁的瓶子被统一送往工厂，经过高温熔融、拉丝纺纱，竟被制成了结实防水的再生聚酯纤维布料。利用这种新型布料，周静团队设计出了一系列印有校园风景图案的轻便双肩包与文具袋，深受师生欢迎。",
+        "pinyin" => "Zài xuéxiào chuàngxīn jījīn hé dāngdì yì jiā zàishēng kējì qǐyè de zhīchí xià, Zhōu Jìng de tuánduì shèjì le yì kuǎn wàiguān shíshàng de “xiàoyuán lǜsè huíshōu zhìnéngxiāng”. Xuésheng zhǐyào bǎ hēwán shuǐ de sùliàopíng fàngjìn jīqì, xìtǒng jiù huì zìdòng jìlù jiǎntàn jīfēn. Suíhòu, zhèxiē xǐjìng yābiǎn de píngzi bèi tǒngyī sòngwǎng gōngchǎng, jīngguò gāowēn róngróng, lāsī fǎngshā, jìng bèi zhìchéng le jiēshi fángshuǐ de zàishēng jùzhǐ xiānwéi bùliào. Lìyòng zhè zhǒng xīnxíng bùliào, Zhōu Jìng tuánduì shèjì chū le yì xìliè yìnyǒu xiàoyuán fēngjǐng tú'àn de qīngbiàn shuāngjiānbāo yǔ wénjùdài, shēnshòu shīshēng huānyíng.",
+        "id" => "Dengan dukungan dana inovasi kampus dan perusahaan teknologi daur ulang setempat, tim Zhou Jing merancang sebuah 'Kotak Pintar Daur Ulang Kampus Hijau' berdesain modern. Mahasiswa cukup memasukkan botol plastik kosong ke dalam mesin, dan sistem otomatis mencatat poin pengurangan karbon. Selanjutnya botol yang telah dibersihkan dan dipipihkan dikirim ke pabrik; melalui pelelehan suhu tinggi dan pemintalan benang, botol itu disulap menjadi kain serat poliester daur ulang yang kuat serta tahan air. Memanfaatkan bahan baru ini, tim Zhou Jing mendesain seri tas ransel ringan dan tempat pensil bermotif pemandangan kampus yang sangat digemari dosen maupun mahasiswa."
+      ],
+      [
+        "cn" => "学期末的成果展示会上，周静骄傲地向大家宣布：“平均每十二个旧塑料瓶就能制成一个耐用环保书包！这半年来，我们学校通过这种方式共减少了三万多个废弃塑料瓶，相当于为地球种下了一片绿色森林。”听完报告，现场响起了热烈持久的掌声。越来越多青年学生体会到，保护自然并非遥不可及的口号，而是从身边每一个具体行动开始的社会责任。",
+        "pinyin" => "Xuéqīmò de chéngguǒ zhǎnshìhuì shang, Zhōu Jìng jiāo'ào de xiàng dàjiā xuānbù: “Píngjūn měi shí'èr gè jiù sùliàopíng jiù néng zhìchéng yí gè nàiyòng huánbǎo shūbāo! Zhè bànnián lái, wǒmen xuéxiào tōngguò zhège fāngshì gòng jiǎnshǎo le sānwàn duō gè fèiqì sùliàopíng, xiāngdāngyú wèi dìqiú zhòngxià le yí piàn lǜsè sēnlín.” Tīngwán bàogào, xiànchǎng xiǎngqǐ le rèliè chíjiǔ de zhǎngshēng. Yuèláiyuè duō qīngnián xuésheng tǐhuì dào, bǎohù zìrán bìngfēi yáobùkějí de kǒuhào, érshì cóng shēnbiān měi yí gè jùtǐ xíngdòng kāishǐ de shèhuì zérèn.",
+        "id" => "Pada pameran capaian akhir semester, Zhou Jing dengan bangga mengumumkan kepada hadirin: 'Rata-rata setiap dua belas botol plastik bekas dapat diolah menjadi satu tas sekolah ramah lingkungan yang tahan lama! Dalam setengah tahun ini, lewat program ini kampus kita telah memangkas lebih dari tiga puluh ribu botol limbah plastik, setara dengan menanam hutan hijau bagi bumi.' Usai laporan itu, tepuk tangan meriah berkepanjangan bergemuruh di ruangan. Semakin banyak mahasiswa muda menyadari bahwa menjaga alam bukanlah slogan muluk yang jauh di awan, melainkan tanggung jawab sosial yang berawal dari tindakan nyata di sekitar kita."
+      ]
+    ],
+    "vocabularies" => [
+      ["hanzi" => "塑料瓶", "pinyin" => "sùliàopíng", "meaning" => "botol plastik"],
+      ["hanzi" => "回收", "pinyin" => "huíshōu", "meaning" => "mendaur ulang / menarik kembali"],
+      ["hanzi" => "环保", "pinyin" => "huánbǎo", "meaning" => "ramah lingkungan"],
+      ["hanzi" => "浪费", "pinyin" => "làngfèi", "meaning" => "memboroskan / sia-sia"],
+      ["hanzi" => "支持", "pinyin" => "zhīchí", "meaning" => "mendukung / dukungan"],
+      ["hanzi" => "责任", "pinyin" => "zérèn", "meaning" => "tanggung jawab"]
+    ],
+    "grammarNotes" => [
+      [
+        "title" => "1. Pola Preferensi Solutif: '光靠……往往有限，不如……'",
+        "formula" => "如果光靠 + Cara Sederhana，效果往往有限；不如 + Solusi Nyata",
+        "explanation" => "Membandingkan cara pasif dengan solusi alternatif yang lebih berdampak.",
+        "exampleInStory" => "如果我们光靠发传单宣传保护环境，效果往往有限；不如想个切实可行的办法。"
+      ],
+      [
+        "title" => "2. Penegasan Kontras Hakiki: '并非……而是……'",
+        "formula" => "Subjek + 并非 + Kesalahpahaman, 而是 + Kebenaran",
+        "explanation" => "Membantah persepsi keliru dan menegaskan hakikat sebenarnya ('sama sekali bukan..., melainkan...').",
+        "exampleInStory" => "保护自然并非遥不可及的口号，而是从身边具体行动开始的责任。"
+      ],
+      [
+        "title" => "3. Kalimat Pasif Formal: '被……制成……'",
+        "formula" => "Bahan Mentah + 被 + Diproses + 制成 + Produk Jadi",
+        "explanation" => "Menyatakan bahan baku yang telah diubah menjadi suatu benda jadi.",
+        "exampleInStory" => "这些瓶子竟被制成了结实防水的再生聚酯纤维布料。"
+      ]
+    ],
+    "questions" => [
+      [
+        "question" => "周静和团队为什么要设计“校园绿色回收智能箱”？(Mengapa Zhou Jing dan timnya merancang kotak daur ulang pintar di kampus?)",
+        "options" => ["为了收集旧手机卖钱", "为了解决校园废弃塑料瓶浪费资源的问题，让旧瓶子重新发挥价值", "为了装饰宿舍大门", "为了代替所有书包商店"],
+        "answer" => 1,
+        "explanation" => "Paragraf pertama: banyak botol plastik bekas terbuang sia-sia, maka mereka mencari solusi nyata agar botol bekas bernilai guna lagi."
+      ],
+      [
+        "question" => "学生把喝完水的塑料瓶放进智能箱后，系统会自动做什么？(Apa yang otomatis dicatat sistem saat mahasiswa memasukkan botol ke mesin?)",
+        "options" => ["自动播放流行音乐", "自动记录减碳积分", "自动发一张电影票", "自动清洗宿舍房间"],
+        "answer" => 1,
+        "explanation" => "Paragraf kedua: '系统就会自动记录减碳积分'."
+      ],
+      [
+        "question" => "废弃塑料瓶送到工厂经过加工后变成了什么材料？(Botol plastik bekas yang diolah di pabrik berubah menjadi bahan apa?)",
+        "options" => ["易碎玻璃片", "结实防水的再生聚酯纤维布料", "厚厚的纸箱", "金属铁板"],
+        "answer" => 1,
+        "explanation" => "Teks menyebutkan: '制成了结实防水的再生聚酯纤维布料' (kain serat poliester daur ulang yang kuat dan tahan air)."
+      ],
+      [
+        "question" => "平均多少个旧塑料瓶可以制成一个耐用的环保书包？(Rata-rata berapa botol bekas yang dibutuhkan untuk membuat satu tas sekolah?)",
+        "options" => ["两个", "五个", "十二个", "五十个"],
+        "answer" => 2,
+        "explanation" => "Paragraf ketiga: '平均每十二个旧塑料瓶就能制成一个耐用环保书包'."
+      ],
+      [
+        "question" => "通过这次实践，学生们明白了什么道理？(Pelajaran apa yang dipetik para mahasiswa lewat program ini?)",
+        "options" => ["环保只是科学家的事情", "保护自然并非遥不可及的口号，而是从身边具体行动开始的社会责任", "买新书包最浪费钱", "塑料瓶不能喝水"],
+        "answer" => 1,
+        "explanation" => "Kalimat terakhir: pelestarian alam bukan slogan kosong, melainkan tanggung jawab dari aksi nyata sehari-hari."
+      ]
+    ]
   ]
 ];

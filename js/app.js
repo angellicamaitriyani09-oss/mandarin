@@ -42,7 +42,9 @@ const DEFAULT_STUDENT_PROFILE = {
     writing: [],
     bankSoal: []
   },
-  weeklyHistory: [25, 40, 30, 50, 45, 60, 35]
+  weeklyHistory: [25, 40, 30, 50, 45, 60, 35],
+  quizHistory: [],
+  lastSyncedAt: null
 };
 
 const UserManager = {
@@ -125,6 +127,104 @@ const UserManager = {
     profiles[email] = State.currentUser;
     this.saveProfiles(profiles);
     this.setActiveEmail(email);
+    this.syncToServer(false);
+  },
+
+  syncTimer: null,
+  syncToServer(showNotification = false) {
+    if (!State.currentUser || !State.currentUser.email) return;
+    const payload = {
+      name: State.currentUser.name,
+      email: State.currentUser.email,
+      role: State.currentUser.role || 'student',
+      level: State.currentUser.level || 1,
+      exp: State.currentUser.exp || 0,
+      max_exp: State.currentUser.maxExp || 500,
+      points: State.currentUser.points || 0,
+      streak: State.currentUser.streak || 1,
+      study_hours: State.currentUser.studyHours || 1,
+      completed_modules: State.currentUser.completedModules || 0,
+      progress: State.currentUser.progress || { listening: 0, speaking: 0, reading: 0, writing: 0 }
+    };
+
+    const runSync = () => {
+      fetch('api/user-progress', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(res => res.ok ? res.json() : null)
+      .then(json => {
+        if (json && json.status === 'success') {
+          State.currentUser.lastSyncedAt = new Date().toISOString();
+          const profiles = this.getProfiles();
+          const email = State.currentUser.email.toLowerCase().trim();
+          profiles[email] = State.currentUser;
+          this.saveProfiles(profiles);
+          if (showNotification && typeof showToast === 'function') {
+            showToast('☁️ Progres belajar berhasil disinkronkan ke database!', 'success');
+          }
+          if (State.currentTab === 'profil') {
+            renderProfileModule();
+            setTimeout(initAnalyticsChart, 50);
+          }
+        }
+      })
+      .catch(() => {});
+    };
+
+    if (showNotification) {
+      runSync();
+      return;
+    }
+    if (this.syncTimer) clearTimeout(this.syncTimer);
+    this.syncTimer = setTimeout(runSync, 350);
+  },
+
+  async fetchFromServer(email) {
+    const cleanEmail = (email || (State.currentUser && State.currentUser.email) || 'learner@mandarinku.com').toLowerCase().trim();
+    try {
+      const res = await fetch('api/user-progress?email=' + encodeURIComponent(cleanEmail));
+      if (!res.ok) return;
+      const json = await res.json();
+      if (!json || json.status !== 'success' || !json.data) return;
+
+      const srv = json.data;
+      const srvHist = Array.isArray(json.quiz_history) ? json.quiz_history : [];
+      if (!State.currentUser || State.currentUser.email.toLowerCase().trim() !== cleanEmail) {
+        return;
+      }
+
+      // Merge authoritative server stats if server has recorded activity or newer totals
+      if (typeof srv.exp === 'number' && (srv.level > State.currentUser.level || (srv.level === State.currentUser.level && srv.exp > State.currentUser.exp))) {
+        State.currentUser.level = srv.level;
+        State.currentUser.exp = srv.exp;
+        State.currentUser.maxExp = srv.max_exp || State.currentUser.maxExp;
+      }
+      if (typeof srv.points === 'number' && srv.points > (State.currentUser.points || 0)) {
+        State.currentUser.points = srv.points;
+      }
+      if (typeof srv.streak === 'number' && srv.streak > (State.currentUser.streak || 1)) {
+        State.currentUser.streak = srv.streak;
+      }
+      if (srvHist.length > 0) {
+        State.currentUser.quizHistory = srvHist;
+      } else if (!Array.isArray(State.currentUser.quizHistory)) {
+        State.currentUser.quizHistory = [];
+      }
+      State.currentUser.lastSyncedAt = new Date().toISOString();
+
+      const profiles = this.getProfiles();
+      profiles[cleanEmail] = State.currentUser;
+      this.saveProfiles(profiles);
+
+      if (typeof updateUserNavDisplay === 'function') updateUserNavDisplay();
+      if (typeof updateHomeDashboard === 'function') updateHomeDashboard();
+      if (State.currentTab === 'profil' && typeof renderProfileModule === 'function') {
+        renderProfileModule();
+        setTimeout(initAnalyticsChart, 50);
+      }
+    } catch (e) {}
   }
 };
 
@@ -4613,6 +4713,9 @@ document.addEventListener("DOMContentLoaded", () => {
   initFallingSakura();
   initNavigation();
   initAuthSystem();
+  if (State.currentUser && State.currentUser.email) {
+    UserManager.fetchFromServer(State.currentUser.email);
+  }
   updateUserNavDisplay();
   updateHomeDashboard();
   renderListeningModule();
@@ -4930,6 +5033,7 @@ function initAuthSystem() {
       State.currentUser = UserManager.getUser(email, role);
       UserManager.setActiveEmail(State.currentUser.email);
       UserManager.saveCurrentUser();
+      UserManager.fetchFromServer(State.currentUser.email);
 
       updateUserNavDisplay();
       updateHomeDashboard();
@@ -8829,9 +8933,6 @@ function finishInteractiveQuiz() {
   if (State.quizTimerInterval) clearInterval(State.quizTimerInterval);
   State.quizState = "result";
 
-  const container = document.getElementById("quiz-interactive-workspace");
-  if (!container) return;
-
   // Calculate Scores
   let correctCount = 0;
   const total = State.quizQuestions.length;
@@ -8842,6 +8943,7 @@ function finishInteractiveQuiz() {
     }
   });
 
+  const wrongCount = Math.max(0, total - correctCount);
   const scorePercent = total > 0 ? Math.round((correctCount / total) * 100) : 0;
   const grade = scorePercent >= 90 ? 'A+' : scorePercent >= 80 ? 'A' : scorePercent >= 70 ? 'B' : scorePercent >= 60 ? 'C' : 'D';
   const gradeTitle = scorePercent >= 90 
@@ -8851,6 +8953,85 @@ function finishInteractiveQuiz() {
     : scorePercent >= 60 
     ? "Hasil Cukup Baik, Terus Semangat! 🌸" 
     : "Jangan Menyerah, Mari Berlatih Lagi! 💪";
+
+  const earnedExp = (correctCount * 15) + (scorePercent >= 80 ? 30 : 10);
+  const earnedPoints = (correctCount * 10) + (scorePercent >= 80 ? 20 : 5);
+
+  State.lastQuizResult = {
+    correctCount,
+    wrongCount,
+    total,
+    scorePercent,
+    grade,
+    gradeTitle,
+    earnedExp,
+    earnedPoints
+  };
+
+  // Update XP, Points, & Skill Progress locally and trigger Cloud Sync
+  const activeSkill = (!State.currentQuizSkill || State.currentQuizSkill === 'all') ? 'reading' : State.currentQuizSkill;
+  if (typeof recordUserActivity === 'function') {
+    recordUserActivity(activeSkill, earnedExp, earnedPoints, null, Math.max(2, Math.round(total * 0.8)));
+  }
+
+  // Record to Student Quiz History (Local + MySQL Server)
+  if (State.currentUser) {
+    const quizEntry = {
+      user_email: State.currentUser.email,
+      user_name: State.currentUser.name,
+      hsk_level: State.currentQuizLevel === 'all' ? 'HSK 1-6' : `HSK ${State.currentQuizLevel}`,
+      skill_type: State.currentQuizSkill || 'all',
+      quiz_mode: State.currentQuizMode || 'practice',
+      total_questions: total,
+      correct_answers: correctCount,
+      score_percent: scorePercent,
+      grade: grade,
+      exp_earned: earnedExp,
+      points_earned: earnedPoints,
+      created_at: new Date().toISOString(),
+      skip_user_increment: true
+    };
+    if (!Array.isArray(State.currentUser.quizHistory)) {
+      State.currentUser.quizHistory = [];
+    }
+    State.currentUser.quizHistory.unshift(quizEntry);
+    State.currentUser.quizHistory = State.currentUser.quizHistory.slice(0, 30);
+    UserManager.saveCurrentUser();
+
+    fetch('api/quiz-history', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(quizEntry)
+    }).catch(() => {});
+  }
+
+  const container = document.getElementById("quiz-content-container") || document.getElementById("quiz-interactive-workspace");
+  if (container) {
+    renderQuizResultScreen(container);
+  }
+}
+
+function renderQuizResultScreen(container) {
+  if (!container) return;
+  const total = State.quizQuestions.length;
+  let correctCount = 0;
+  State.quizQuestions.forEach((q, idx) => {
+    if (State.quizUserAnswers[idx] === q.correct) correctCount++;
+  });
+
+  const cached = State.lastQuizResult || {};
+  const wrongCount = cached.wrongCount !== undefined ? cached.wrongCount : Math.max(0, total - correctCount);
+  const scorePercent = cached.scorePercent !== undefined ? cached.scorePercent : (total > 0 ? Math.round((correctCount / total) * 100) : 0);
+  const grade = cached.grade || (scorePercent >= 90 ? 'A+' : scorePercent >= 80 ? 'A' : scorePercent >= 70 ? 'B' : scorePercent >= 60 ? 'C' : 'D');
+  const gradeTitle = cached.gradeTitle || (scorePercent >= 90 
+    ? "Mastery Tingkat Dewa! 🏆" 
+    : scorePercent >= 75 
+    ? "Hebat Sekali! Anda Lulus Ujian 🎉" 
+    : scorePercent >= 60 
+    ? "Hasil Cukup Baik, Terus Semangat! 🌸" 
+    : "Jangan Menyerah, Mari Berlatih Lagi! 💪");
+  const earnedExp = cached.earnedExp !== undefined ? cached.earnedExp : ((correctCount * 15) + (scorePercent >= 80 ? 30 : 10));
+  const earnedPoints = cached.earnedPoints !== undefined ? cached.earnedPoints : ((correctCount * 10) + (scorePercent >= 80 ? 20 : 5));
 
   container.innerHTML = `
     <div style="background: #ffffff; border-radius: var(--radius-xl); padding: 2.5rem 1.5rem; box-shadow: var(--card-shadow); text-align: center; max-width: 800px; margin: 0 auto 2rem auto; border: 1.5px solid #fcdfe5;">
@@ -8900,8 +9081,8 @@ function finishInteractiveQuiz() {
         <button class="btn-learn-outline" style="margin: 0; padding: 10px 22px; font-size: 0.9rem;" onclick="exitQuizToLobby()">
           🎯 Ganti Level / Kategori
         </button>
-        <button class="btn-learn-outline" style="margin: 0; padding: 10px 22px; font-size: 0.9rem;" onclick="navigateTo('hsk')">
-          📖 Buka Modul Pembelajaran
+        <button class="btn-learn-outline" style="margin: 0; padding: 10px 22px; font-size: 0.9rem;" onclick="navigateTo('profil')">
+          📊 Lihat Riwayat Nilai
         </button>
       </div>
     </div>
@@ -8922,7 +9103,7 @@ function finishInteractiveQuiz() {
             <div style="background: #ffffff; border: 1.5px solid ${isCorrect ? '#a7f3d0' : '#fecdd3'}; border-radius: var(--radius-md); padding: 1.25rem; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                 <span style="font-size: 0.8rem; font-weight: 800; color: var(--text-muted);">
-                  SOAL #${idx + 1} (${q.type.toUpperCase()})
+                  SOAL #${idx + 1} (${(q.type || 'reading').toUpperCase()})
                 </span>
                 <span class="role-badge" style="background: ${isCorrect ? '#ecfdf5' : '#fef2f2'}; color: ${isCorrect ? '#059669' : '#dc2626'}; font-weight: 800; font-size: 0.75rem;">
                   ${isCorrect ? '✓ TEPAT' : '✕ SALAH'}
@@ -8951,8 +9132,9 @@ function finishInteractiveQuiz() {
     </div>
   `;
 
-  // Inisialisasi Canvas Interaktif Menulis
-  setTimeout(initWritingCanvas, 60);
+  if (typeof initWritingCanvas === 'function') {
+    setTimeout(initWritingCanvas, 60);
+  }
 }
 
 function exitQuizToLobby() {
@@ -10223,6 +10405,65 @@ function renderProfileModule() {
           </div>
           <div style="height: 220px; position: relative;">
             <canvas id="dailyAnalyticsChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Riwayat Kuis & Sinkronisasi Database (Cloud Sync) -->
+        <div class="interactive-panel">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 1rem;">
+            <div>
+              <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--dark-text);">📊 Riwayat Kuis &amp; Sinkronisasi Database (Cloud Sync)</h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
+                <span style="display: inline-block; background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; padding: 2px 10px; border-radius: 99px; font-weight: 700; font-size: 0.74rem;">
+                  ☁️ Tersinkron ke Database MySQL
+                </span>
+                ${u.lastSyncedAt ? `• Terakhir disinkron: ${new Date(u.lastSyncedAt).toLocaleString('id-ID')}` : ''}
+              </p>
+            </div>
+            <button type="button" class="btn-learn-outline" style="margin: 0; padding: 8px 14px; font-size: 0.82rem;" onclick="UserManager.syncToServer(true)">
+              🔄 Sinkronkan Sekarang
+            </button>
+          </div>
+
+          <div style="overflow-x: auto;">
+            ${(!u.quizHistory || u.quizHistory.length === 0) ? `
+              <div style="text-align: center; padding: 1.5rem; background: var(--soft-bg, #f8fafc); border-radius: 12px; color: var(--text-muted); font-size: 0.86rem;">
+                Belum ada riwayat kuis tersimpan. Yuk kerjakan <strong>Quiz HSK</strong> untuk mencatat skor Anda secara otomatis ke database!
+              </div>
+            ` : `
+              <table style="width: 100%; border-collapse: collapse; font-size: 0.84rem;">
+                <thead>
+                  <tr style="border-bottom: 1.5px solid var(--border-color, #e2e8f0); text-align: left; color: var(--text-muted);">
+                    <th style="padding: 10px 8px;">Tanggal</th>
+                    <th style="padding: 10px 8px;">Level HSK</th>
+                    <th style="padding: 10px 8px;">Kategori</th>
+                    <th style="padding: 10px 8px;">Skor Benar</th>
+                    <th style="padding: 10px 8px;">Nilai (%)</th>
+                    <th style="padding: 10px 8px;">Predikat</th>
+                    <th style="padding: 10px 8px;">EXP / Poin</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${u.quizHistory.slice(0, 15).map(qh => {
+                    const pct = parseInt(qh.score_percent || 0);
+                    const badgeBg = pct >= 80 ? '#ecfdf5' : (pct >= 60 ? '#fef9c3' : '#fef2f2');
+                    const badgeCol = pct >= 80 ? '#059669' : (pct >= 60 ? '#ca8a04' : '#dc2626');
+                    const dateStr = qh.created_at ? new Date(qh.created_at.replace(' ', 'T')).toLocaleDateString('id-ID', { day: '2-digit', month: 'short', year: 'numeric' }) : '-';
+                    return `
+                      <tr style="border-bottom: 1px solid var(--border-color, #f1f5f9);">
+                        <td style="padding: 10px 8px; color: var(--text-muted);">${dateStr}</td>
+                        <td style="padding: 10px 8px; font-weight: 700; color: var(--dark-text);">${qh.hsk_level || 'HSK 1'}</td>
+                        <td style="padding: 10px 8px; text-transform: uppercase; font-size: 0.76rem; color: var(--text-muted);">${qh.skill_type || 'all'}</td>
+                        <td style="padding: 10px 8px; font-weight: 700;">${qh.correct_answers || 0}/${qh.total_questions || 0}</td>
+                        <td style="padding: 10px 8px; font-weight: 800; color: ${badgeCol};">${pct}%</td>
+                        <td style="padding: 10px 8px;"><span style="background: ${badgeBg}; color: ${badgeCol}; padding: 2px 10px; border-radius: 99px; font-weight: 800; font-size: 0.76rem;">${qh.grade || 'A'}</span></td>
+                        <td style="padding: 10px 8px; font-weight: 700; color: var(--primary-pink);">+${qh.exp_earned || 0} EXP • +${qh.points_earned || 0} Pts</td>
+                      </tr>
+                    `;
+                  }).join('')}
+                </tbody>
+              </table>
+            `}
           </div>
         </div>
 

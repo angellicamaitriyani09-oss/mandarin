@@ -4,18 +4,28 @@
 <?php
 require_once base_path('config/database.php');
 require_once base_path('config/game_features_db.php');
+$service = new \App\Services\GameFeaturesService();
 // Get counts
-$users_count = 0;
+$users_count = count($service->getAllUsersWithStats());
 $modules_count = 0;
 $questions_count = 0;
 $flashcards_count = 0;
 
 if ($db_connected && $pdo) {
-    try { $users_count = $pdo->query("SELECT COUNT(*) FROM users")->fetchColumn(); } catch (Exception $e) {}
+    try {
+        $dbUsers = $pdo->query("SELECT COUNT(*) FROM users")->fetchColumn();
+        if ($dbUsers > 0) $users_count = $dbUsers;
+    } catch (Exception $e) {}
     try { $modules_count = $pdo->query("SELECT COUNT(*) FROM modules")->fetchColumn(); } catch (Exception $e) {}
     try { $questions_count = $pdo->query("SELECT COUNT(*) FROM questions")->fetchColumn(); } catch (Exception $e) {}
     try { $flashcards_count = $pdo->query("SELECT COUNT(*) FROM flashcards")->fetchColumn(); } catch (Exception $e) {}
 }
+
+$quiz_histories = $service->getQuizHistories();
+$quiz_history_count = count($quiz_histories);
+$quiz_avg_score = $quiz_history_count > 0
+    ? round(array_sum(array_map(fn($q) => (int)($q['score_percent'] ?? 0), $quiz_histories)) / $quiz_history_count, 1)
+    : 0;
 
 $game_tone_count = count(get_all_tone_trainer());
 $game_link_count = count(get_all_word_link());
@@ -65,6 +75,14 @@ $total_smart_items = $smart_anat_count + $smart_lb_count;
     </h3>
     <div style="font-size: 2rem; font-weight: 900; color: #0369a1;"><?= $total_smart_items ?></div>
     <div style="font-size: 0.75rem; color: #0284c7; margin-top: 4px;">Anatomi Karakter & Leaderboard</div>
+  </a>
+  <a href="users.php" class="admin-card" style="border-left: 5px solid #059669; text-decoration: none; display: block; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+    <h3 style="margin-top: 0; color: #047857; font-size: 0.9rem; display: flex; justify-content: space-between; align-items: center;">
+      <span>📊 Riwayat Kuis Siswa</span>
+      <span style="font-size: 0.75rem; background: #ecfdf5; color: #059669; padding: 2px 8px; border-radius: 99px;">Laporan ➔</span>
+    </h3>
+    <div style="font-size: 2rem; font-weight: 900; color: #065f46;"><?= $quiz_history_count ?></div>
+    <div style="font-size: 0.75rem; color: #059669; margin-top: 4px;">Rata-rata Nilai: <?= $quiz_avg_score ?>% • Ekspor & Cetak PDF</div>
   </a>
 </div>
 

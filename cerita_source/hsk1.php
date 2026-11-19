@@ -270,5 +270,95 @@ return [
         "explanation" => "Dari 50 Yuan dikurangi 19 Yuan: '老爷爷找给小华三十一块钱' (Kakek mengembalikan 31 Yuan)."
       ]
     ]
+  ],
+  [
+    "id" => "cerita-hsk-1-4",
+    "level" => 1,
+    "levelName" => "HSK 1 (Pemula)",
+    "badgeColor" => "#059669",
+    "badgeBg" => "#ecfdf5",
+    "theme" => "Cuaca, Alam & Taman Kota (天气与公园散步)",
+    "titleCn" => "秋天的公园和小鸟",
+    "titlePinyin" => "Qiūtiān de Gōngyuán hé Xiǎoniǎo",
+    "titleId" => "Taman di Musim Gugur dan Burung Kecil",
+    "estimatedMinutes" => 5,
+    "summary" => "Kisah hangat tentang Lily dan teman sekelasnya berjalan-jalan ke taman saat cuaca cerah di musim gugur, menikmati pemandangan bunga dan memberi makan burung kecil.",
+    "paragraphs" => [
+      [
+        "cn" => "今天是星期六，天气很好，不冷也不热。早上八点，小丽和朋友小明一起去学校前面的公园玩儿。公园里有很多树，还有很多漂亮的花。今天来公园玩儿的人真多，大家都很开心。",
+        "pinyin" => "Jīntiān shì xīngqīliù, tiānqì hěn hǎo, bù lěng yě bú rè. Zǎoshang bā diǎn, Xiǎolì hé péngyou Xiǎomíng yìqǐ qù xuéxiào qiánmiàn de gōngyuán wánr. Gōngyuán lǐ yǒu hěn duō shù, hái yǒu hěn duō piàoliang de huā. Jīntiān lái gōngyuán wánr de rén zhēn duō, dàjiā dōu hěn kāixīn.",
+        "id" => "Hari ini hari Sabtu, cuacanya sangat cerah, tidak dingin dan tidak panas. Pukul delapan pagi, Xiaoli bersama temannya Xiaoming pergi bermain ke taman di depan sekolah. Di dalam taman ada banyak pohon serta banyak bunga yang indah. Hari ini orang yang datang bermain ke taman sangat ramai, semua orang sangat senang."
+      ],
+      [
+        "cn" => "上午九点半，他们走累了，就坐在一棵大树下的椅子上休息。忽然，他们看见树上有一只红色的小鸟。这只小鸟的眼睛亮亮的，正在唱好听的歌。小明拿出书包里的一块面包，轻轻地放在椅子旁边。小鸟飞了下来，高兴地吃起了面包。",
+        "pinyin" => "Shàngwǔ jiǔ diǎn bàn, tāmen zǒu lèi le, jiù zuò zài yì kē dàshù xià de yǐzi shang xiūxi. Hūrán, tāmen kànjiàn shù shang yǒu yì zhī hóngsè de xiǎoniǎo. Zhè zhī xiǎoniǎo de yǎnjing liàngliàng de, zhèngzài chàng hǎotīng de gē. Xiǎomíng náchū shūbāo lǐ de yí kuài miànbāo, qīngqīng de fàng zài yǐzi pángbiān. Xiǎoniǎo fēi le xiàlái, gāoxìng de chī qǐlái le miànbāo.",
+        "id" => "Pukul sembilan tiga puluh pagi, mereka lelah berjalan lalu duduk beristirahat di bangku bawah pohon besar. Tiba-tiba mereka melihat di atas pohon ada seekor burung kecil berwarna merah. Mata burung kecil ini berbinar cerah dan sedang menyanyikan lagu yang merdu. Xiaoming mengeluarkan sepotong roti dari tasnya, lalu meletakkannya perlahan di samping bangku. Burung kecil itu terbang turun dan memakan roti dengan gembira."
+      ],
+      [
+        "cn" => "中午十一点，他们准备回家吃午饭。小丽用手机拍了几张小鸟的照片。在回家的路上，小丽对小明说：“今天我认识了一只可爱的小鸟，明天我们再来看它，好吗？”小明笑着点头说：“好啊！明天我还带水果来呢。”",
+        "pinyin" => "Zhōngwǔ shíyī diǎn, tāmen zhǔnbèi huí jiā chī wǔfàn. Xiǎolì yòng shǒujī pāi le jǐ zhāng xiǎoniǎo de zhàopiàn. Zài huí jiā de lùshang, Xiǎolì duì Xiǎomíng shuō: “Jīntiān wǒ rènshi le yì zhī kě'ài de xiǎoniǎo, míngtiān wǒmen zài lái kàn tā, hǎo ma?” Xiǎomíng xiàozhe diǎntóu shuō: “Hǎo a! Míngtiān wǒ hái dài shuǐguǒ lái ne.”",
+        "id" => "Pukul sebelas siang, mereka bersiap pulang ke rumah untuk makan siang. Xiaoli memotret beberapa foto burung kecil dengan ponselnya. Di jalan pulang, Xiaoli berkata kepada Xiaoming: 'Hari ini aku berkenalan dengan burung kecil yang lucu, besok kita datang melihatnya lagi, bagaimana?' Xiaoming tersenyum mengangguk: 'Baiklah! Besok aku juga akan membawa buah ke sini.'"
+      ]
+    ],
+    "vocabularies" => [
+      ["hanzi" => "公园", "pinyin" => "gōngyuán", "meaning" => "taman"],
+      ["hanzi" => "天气", "pinyin" => "tiānqì", "meaning" => "cuaca"],
+      ["hanzi" => "小鸟", "pinyin" => "xiǎoniǎo", "meaning" => "burung kecil"],
+      ["hanzi" => "椅子", "pinyin" => "yǐzi", "meaning" => "kursi / bangku"],
+      ["hanzi" => "面包", "pinyin" => "miànbāo", "meaning" => "roti"],
+      ["hanzi" => "照片", "pinyin" => "zhàopiàn", "meaning" => "foto"]
+    ],
+    "grammarNotes" => [
+      [
+        "title" => "1. Pola Gabungan Sifat: '不……也不……'",
+        "formula" => "不 + Kata Sifat A + 也 + 不 + Kata Sifat B",
+        "explanation" => "Menyatakan keadaan seimbang di tengah-tengah ('tidak A dan juga tidak B').",
+        "exampleInStory" => "今天天气很好，不冷也不热。(Cuaca tidak dingin dan juga tidak panas.)"
+      ],
+      [
+        "title" => "2. Kata Bantu Posisi: '……里面 / 下面 / 旁边'",
+        "formula" => "Kata Benda + 里 / 下 / 旁边",
+        "explanation" => "Menunjukkan lokasi di dalam (里), di bawah (下), atau di samping (旁边).",
+        "exampleInStory" => "在一棵大树下的椅子上休息。"
+      ],
+      [
+        "title" => "3. Kalimat Tanya Persetujuan: '……，好吗？'",
+        "formula" => "Kalimat Usulan + 好吗？",
+        "explanation" => "Cara halus untuk meminta kesepakatan dari lawan bicara.",
+        "exampleInStory" => "明天我们再来看它，好吗？"
+      ]
+    ],
+    "questions" => [
+      [
+        "question" => "星期六早上的天气怎么样？(Bagaimana cuaca pada hari Sabtu pagi?)",
+        "options" => ["下雨而且很冷", "天气很好，不冷也不热", "风很大也很热", "下雪了"],
+        "answer" => 1,
+        "explanation" => "Paragraf pertama: '今天是星期六，天气很好，不冷也不热'."
+      ],
+      [
+        "question" => "小丽和小明去哪儿玩儿？(Ke mana Xiaoli dan Xiaoming pergi bermain?)",
+        "options" => ["学校后面的商店", "学校前面的公园", "朋友家的厨房", "北京火车站"],
+        "answer" => 1,
+        "explanation" => "Teks menyebutkan: '一起去学校前面的公园玩儿'."
+      ],
+      [
+        "question" => "他们在公园的大树上看见了什么？(Apa yang mereka lihat di atas pohon besar?)",
+        "options" => ["一只白色的小猫", "一只红色的小鸟", "一只黑色的小狗", "很多苹果"],
+        "answer" => 1,
+        "explanation" => "Paragraf kedua: '看见树上有一只红色的小鸟'."
+      ],
+      [
+        "question" => "小明拿什么给小鸟吃？(Apa yang dikeluarkan Xiaoming untuk dimakan burung kecil?)",
+        "options" => ["一个苹果", "一块面包", "一杯水", "一条小鱼"],
+        "answer" => 1,
+        "explanation" => "Teks: '小明拿出书包里的一块面包，轻轻地放在椅子旁边'."
+      ],
+      [
+        "question" => "小丽用手机做了什么？(Apa yang dilakukan Xiaoli dengan ponselnya?)",
+        "options" => ["打电话给妈妈", "拍了几张小鸟的照片", "看汉语电影", "买了几本书"],
+        "answer" => 1,
+        "explanation" => "Paragraf ketiga: '小丽用手机拍了几张小鸟的照片'."
+      ]
+    ]
   ]
 ];
